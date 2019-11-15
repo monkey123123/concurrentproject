@@ -1,0 +1,34 @@
+server:
+  port: 9191
+
+module:
+  name: concurrent-mqtt
+
+HOST: ssl://127.0.0.100:1883
+TOPIC: mqtt/server/topic
+clientid: cliendid-server
+userName: server
+#passWord: admin  //鉴于是物联网平台，安全由双向认证保证，普通的密码已无意义
+caFilePath: E:/mqtt/certlatest/ca/ca.crt
+clientCrtFilePath: E:/mqtt/certlatest/client/client.crt
+clientKeyFilePath: E:/mqtt/certlatest/client/client.key
+
+
+## MQTT##
+mqtt.host: ssl://127.0.0.100:1883
+mqtt.clientId: mqttClient
+mqtt.username: server2222
+mqtt.password: serverpsw2222
+mqtt.topicName1: mqtt/server/topic
+mqtt.topicName2: mqtt/server/topic2
+#翻阅源码，发现单位是s
+mqtt.timeout: 1
+#翻阅源码，发现单位是s
+mqtt.keepalive: 2
+#单位ms
+mqtt.waitSeconds: 20
+
+#镜像所在路径
+uploadPath: E:/mqtt/upload/
+
+

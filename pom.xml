@@ -18,6 +18,7 @@
     </parent>
     <modules>
         <module>concurrent-common</module>
+		<module>concurrent-mqtt</module>
         <module>concurrent-logging</module>
         <module>concurrent-system</module>
         <module>concurrent-tools</module>
