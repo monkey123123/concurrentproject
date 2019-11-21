@@ -117,12 +117,42 @@
 			<artifactId>mqtt-client</artifactId>
 			<version>0.4.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.beanpodtech.pkms</groupId>
 			<artifactId>pkms-common</artifactId>
 			<version>1.0</version>
 		</dependency>
+
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- CRUD自动生成工具 -->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 <!--      
     <dependencyManagement>

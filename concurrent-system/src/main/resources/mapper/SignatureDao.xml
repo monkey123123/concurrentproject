@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beanpodtech.pkms.dbadapter.dao.ISignatureDao">
+
+    <!-- SIGNATURE_REQ 操作 -->
+    <insert id="insertSignatureReq" parameterType="SignatureReq" useGeneratedKeys="true" keyProperty="signReqId">
+        INSERT INTO SIGNATURE_REQ(USER_NAME,REQUEST_TIME,MANAGER_NAME,CHECK_TIME,PROJECT_ID,IMAGE_TYPE_ID,FILE_ID,FILE_NAME,
+                                  COUNTER,SIGNATURE_HASH,HANDLE_STATUS,SDK_VERSION,DL_COUNT,SIGNATURE,SIGNATURE_APPENDING,DELETE_FLAG,OPER_ID,OPER_TIME)
+        VALUES (#{userName},CURRENT_TIMESTAMP,#{managerName},#{checkTime},#{projectId},#{imageTypeId},#{fileId},#{fileName},
+                #{counter},#{signHash},#{handleStatus},#{sdkVersion},#{dlCount},#{signature},#{signatureAppending},#{deleteFlag},#{operId},CURRENT_TIMESTAMP )
+    </insert>
+
+    <select id="selectSignatureReq" parameterType="SignatureReq" resultType="SignatureReqDetailsInfo">
+        SELECT a.SIGN_REQ_ID AS 'signReqId',
+               a.USER_NAME AS 'userName',
+               a.REQUEST_TIME AS 'requestTime',
+               a.MANAGER_NAME AS 'managerName',
+               a.CHECK_TIME AS 'checkTime',
+               a.PROJECT_ID AS 'projectId',
+               a.IMAGE_TYPE_ID AS 'imageTypeId',
+               b.IMAGE_TYPE_NAME AS 'imageTypeName',
+               d.KEY_ID AS 'hsmkeyId',
+               a.FILE_ID AS 'fileId',
+               a.FILE_NAME AS 'fileName',
+               a.COUNTER AS 'counter',
+               a.SIGNATURE_HASH AS 'signHash',
+               c.FILE_HASH AS 'fileHash',
+               a.HANDLE_STATUS AS 'handleStatus',
+               a.SDK_VERSION AS 'sdkVersion',
+               a.DL_COUNT AS 'dlCount',
+               a.SIGNATURE AS 'signature',
+               a.SIGNATURE_APPENDING 'signatureAppending',
+               a.OPER_ID AS 'operId',
+               a.OPER_TIME AS 'oeprTime'
+        FROM SIGNATURE_REQ a,
+             IMAGE_TYPE b,
+             FILE_INFO c,
+             PROJECT_KEY d
+        WHERE a.IMAGE_TYPE_ID = b.IMAGE_TYPE_ID
+        AND a.FILE_ID = c.FILE_ID
+        AND a.PROJECT_ID = d.PROJECT_ID
+        AND a.IMAGE_TYPE_ID = d.IMAGE_TYPE_ID
+        AND a.DELETE_FLAG = 1
+        <if test="signReqId != -1">
+            AND SIGN_REQ_ID = #{signReqId}
+        </if>
+        <if test="handleStatus != null">
+            AND HANDLE_STATUS = #{handleStatus}
+        </if>
+        <if test="userName != null">
+            AND USER_NAME = #{userName}
+        </if>
+        <if test="managerName != null">
+            AND MANAGER_NAME = #{managerName}
+        </if>
+        <if test="requestTime != null">
+            AND REQUEST_TIME > #{requestTime}
+        </if>
+    </select>
+
+    <update id="updateSignatureReq" parameterType="SignatureReq">
+        UPDATE SIGNATURE_REQ
+        SET
+            <if test="managerName != null">MANAGER_NAME = #{managerName}, CHECK_TIME = CURRENT_TIMESTAMP, </if>
+            <if test="dlCount != -1">DL_COUNT = #{dlCount},</if>
+            <if test="handleStatus != null">HANDLE_STATUS = #{handleStatus},</if>
+            <if test="signature != null">SIGNATURE = #{signature},</if>
+            <if test="signatureAppending != null">SIGNATURE_APPENDING = #{signatureAppending},</if>
+            <if test="deleteFlag != -1">DELETE_FLAG = #{deleteFlag},</if>
+            OPER_ID = #{operId},
+            OPER_TIME = CURRENT_TIMESTAMP
+        WHERE SIGN_REQ_ID = #{signReqId}
+    </update>
+</mapper>

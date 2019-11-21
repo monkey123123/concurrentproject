@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beanpodtech.pkms.dbadapter.dao.IHSMAdapterDao">
+
+    <!-- HSMENCRYPTED_KEY 操作 -->
+    <select id="selectHsmEncryptedKeyById" parameterType="HSMEncryptedKey" resultType="HSMEncryptedKey">
+        SELECT HSMKEY_ID AS 'hsmkeyId',
+               ENCRYPTED_SECRET_KEY AS 'encryptedSecretKey',
+               PUBLICKEY AS 'publickey',
+               ALGORITHM_ID AS 'algorithmId',
+               HSMINDEX AS 'hsmindex',
+               KEY_ID AS 'keyId',
+               DESCRIPTION AS 'description',
+               DELETE_FLAG AS 'deleteFlag',
+               OPER_ID AS 'operId',
+               OPER_TIME AS 'oeprTime'
+        FROM HSMENCRYPTED_KEY
+        WHERE DELETE_FLAG = 1
+        <if test="hsmkeyId != -1">
+            AND HSMKEY_ID = #{hsmkeyId}
+        </if>
+        <if test="keyId != null">
+            AND KEY_ID = #{keyId}
+        </if>
+    </select>
+
+    <!-- DONGLE_INFO 操作 -->
+    <insert id="insertDongleInfo" parameterType="DongleInfo">
+        INSERT INTO DONGLE_INFO(DONGLE_ID,STATUS_ID,PUBLIC_KEY,DONGLE_SDK_VERSION,DONGLE_TYPE,DONGLE_VENDOR,OPER_ID,OPER_TIME)
+        VALUES (#{dongleId},#{statusId},#{publicKey},#{dongleSdkVersion},#{dongleType},#{dongleVendor},#{operId}, CURRENT_TIMESTAMP)
+    </insert>
+
+    <select id="selectDonglePublicKey" parameterType="string" resultType="string">
+        SELECT PUBLIC_KEY AS 'publicKey'
+        FROM DONGLE_INFO
+        WHERE DONGLE_ID = #{dongleId}
+        AND STATUS_ID = 1
+    </select>
+
+    <update id="updateDongleStatus" parameterType="DongleInfo">
+        UPDATE DONGLE_INFO
+        SET STATUS_ID = #{statusId},
+            OPER_ID = #{operId},
+            OPER_TIME = CURRENT_TIMESTAMP
+        WHERE DONGLE_ID = #{dongleId}
+    </update>
+
+    <delete id="deleteDongle" parameterType="DongleInfo">
+        DELETE FROM DONGLE_INFO WHERE DONGLE_ID = #{dongleId}
+    </delete>
+</mapper>

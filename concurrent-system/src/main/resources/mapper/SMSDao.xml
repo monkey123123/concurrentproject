@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beanpodtech.pkms.dbadapter.dao.ISMSDao">
+<!--查询银行用户信息-->
+    <select id="getBankUser" parameterType="BankUserInfo" resultType="BankUserInfo">
+        SELECT USER_ID AS userId,
+        USER_NAME AS userName,
+        USER_TELPHONE AS telPhone,
+        BANK_ID AS bankId
+        FROM bank_user_info
+        WHERE USER_TELPHONE = #{telPhone}
+    </select>
+    <!--保存银行用户信息-->
+    <insert id="saveBankUser" parameterType="BankUserInfo" useGeneratedKeys="true" keyProperty="userId">
+        insert into bank_user_info(USER_NAME,USER_TELPHONE,BANK_ID) VALUES(#{userName},#{telPhone},#{bankId})
+    </insert>
+    <!--保存银行用户请求记录信息-->
+    <insert id="saveReqRecode" parameterType="SmsReqRecode" useGeneratedKeys="true" keyProperty="reqId">
+        insert into sms_req_recode(DEVICE_ID,ACTION_ID,BANKUSER_ID,OPER_TIME) VALUES(#{deviceId},#{actionId},#{bankUserId},CURRENT_TIMESTAMP)
+    </insert>
+    <!--保存银行用户响应记录信息-->
+    <insert id="saveRespRecode" parameterType="SmsRespRecode" useGeneratedKeys="true" keyProperty="respId">
+        insert into sms_resp_recode(REQ_ID,SMS_CONTENT,OPER_TIME,EXPIRE_TIME) VALUES(#{reqId},#{smsContent},CURRENT_TIMESTAMP,#{expireTime})
+    </insert>
+</mapper>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beanpodtech.pkms.dbadapter.dao.ILogDao">
+
+    <!-- LOG_INFO 操作 -->
+    <select id="selectLogInfo" parameterType="java.util.HashMap" resultType="LogInfo">
+        SELECT LOG_ID AS 'logId',
+               SERVICE_TYPE AS 'serviceType',
+               LOG_TRACE_ID AS 'logTraceId',
+               TRIGER_ACTION AS 'triggerAction',
+               PARAM1 AS 'param1',
+               PARAM_DESCRIPTION1 AS 'paramDescription1',
+               PARAM2 AS 'param2',
+               PARAM_DESCRIPTION2 AS 'paramDescription2',
+               PARAM3 AS 'param3',
+               PARAM_DESCRIPTION3 AS 'paramDescription3',
+               PARAM4 AS 'param4',
+               PARAM_DESCRIPTION4 AS 'paramDescription4',
+               PARAM5 AS 'param5',
+               PARAM_DESCRIPTION5 AS 'paramDescription5',
+               PARAM6 AS 'param6',
+               PARAM_DESCRIPTION6 AS 'paramDescription6',
+               PARAM7 AS 'param7',
+               PARAM_DESCRIPTION7 AS 'paramDescription7',
+               PARAM8 AS 'param8',
+               PARAM_DESCRIPTION8 AS 'paramDescription8',
+               PARAM9 AS 'param9',
+               PARAM_DESCRIPTION9 AS 'paramDescription9',
+               PARAM10 AS 'param10',
+               PARAM_DESCRIPTION10 AS 'paramDescription10',
+               LOG_LEVEL AS 'logLevel',
+               ERROR_CODE AS 'errorCode',
+               DEBUG_INFO AS 'debugInfo',
+               DEBUG_MESSAGE AS 'debugMessage',
+               OPER_ID AS 'operId',
+               OPER_TIME AS 'oeprTime'
+        FROM LOG_INFO
+        <where>
+            <if test="serviceType != -1">
+                AND SERVICE_TYPE = #{serviceType}
+            </if>
+            <if test="logTraceIdList != null">
+                AND LOG_TRACE_ID IN
+                <foreach item="item" index="index" collection="logTraceIdList" open="("
+                         separator="," close=")"> #{item} </foreach>
+            </if>
+            <if test="startTime != null">
+                AND OPER_TIME &gt;= #{startTime}
+            </if>
+            <if test="endTime != null">
+                AND OPER_TIME &lt;= #{endTime}
+            </if>
+            <if test="userName != null">
+                AND OPER_ID = #{userName}
+            </if>
+            <if test="likeString != null and parameter != null">
+                <bind name="pattern" value="'%' + likeString + '%'" />
+                AND ${parameter} LIKE #{pattern}
+            </if>
+            <if test="filterString != null and parameter != null">
+                AND ${parameter} = #{filterString}
+            </if>
+            <if test="filterMoreThanNumber != null and parameter != null">
+                AND ${parameter} &gt;= #{filterMoreThanNumber}
+            </if>
+            <if test="filterLessThanNumber != null and parameter != null">
+                AND ${parameter} &lt;= #{filterLessThanNumber}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insertLogInfo" parameterType="LogInfo">
+        INSERT INTO LOG_INFO(SERVICE_TYPE,LOG_TRACE_ID,TRIGER_ACTION,PARAM1,PARAM_DESCRIPTION1,
+                     PARAM2,PARAM_DESCRIPTION2,PARAM3,PARAM_DESCRIPTION3,PARAM4,PARAM_DESCRIPTION4,
+                     PARAM5,PARAM_DESCRIPTION5,PARAM6,PARAM_DESCRIPTION6,PARAM7,PARAM_DESCRIPTION7,
+                     PARAM8,PARAM_DESCRIPTION8,PARAM9,PARAM_DESCRIPTION9,PARAM10,PARAM_DESCRIPTION10,
+                     LOG_LEVEL,ERROR_CODE,DEBUG_INFO,DEBUG_MESSAGE,OPER_ID,OPER_TIME)
+        VALUES (#{serviceType},#{logTraceId},#{triggerAction},#{param1},#{paramDescription1},
+                #{param2},#{paramDescription2},#{param3},#{paramDescription3},#{param4},#{paramDescription4},
+                #{param5},#{paramDescription5},#{param6},#{paramDescription6},#{param7},#{paramDescription7},
+                #{param8},#{paramDescription8},#{param9},#{paramDescription9},#{param10},#{paramDescription10},
+                #{logLevel},#{errorCode},#{debugInfo},#{debugMessage},#{operId},CURRENT_TIMESTAMP)
+    </insert>
+
+    <select id="selectParamInfoByLogTraceId" parameterType="int" resultType="ParamInfo">
+        SELECT LOG_TRACE_ID AS 'logTraceId',
+               PARAM_INDEX AS 'paramIndex',
+               PARAM_POSITION AS 'paramPosition',
+               DELETE_FLAG AS 'deleteFlag',
+               OPER_ID AS 'operId',
+               OPER_TIME AS 'oeprTime'
+        FROM PARAM_INFO
+        WHERE LOG_TRACE_ID = #{logTraceId}
+        ORDER BY PARAM_INDEX
+    </select>
+</mapper>

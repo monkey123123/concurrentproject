@@ -1,0 +1,39 @@
+server:
+  port: 8101
+  
+mybatis:
+  type-aliases-package: com.beanpodtech.pkms.common.model
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+
+module:
+  name: concurrent-system
+
+spring:
+  application:
+    name: concurrent-system
+  datasource:
+    url: jdbc:mysql://localhost:3306/pkms_dev_db?serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+      instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+      ip-address: true
+    config:
+      discovery:
+        enabled: true
+        service-id: sc-config-server
+      fail-fast: true
+      username: root
+      password: booszy
+      profile: csdn
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage: 1.0

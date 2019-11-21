@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beanpodtech.pkms.dbadapter.dao.INbiotLockDao">
+    <select id="lockInfoQuery" parameterType="NbiotLock" resultType="com.beanpodtech.pkms.common.model.nbiot.NbiotLock">
+        SELECT
+        NBIOT_LOCK_ID nbiotLockId,LOCK_SN nbiotLockSn,IP ip,
+        PORT port,IMEI iMei ,IMSI iMsi,CREATE_TIME createTime,OPER_ID operId,OPER_TIME operTime
+        FROM nbiot_lock
+        <where>
+            LOCK_SN = #{nbiotLockSn}
+            <if test="iMsi != null">
+                and IMSI = #{iMsi}
+            </if>
+            <if test="iMei != null">
+                and IMEI = #{iMei}
+            </if>
+        </where>
+    </select>
+    <select id="UserInfoQuery" parameterType="string"
+            resultType="com.beanpodtech.pkms.common.model.nbiot.NbiotLockUser">
+        SELECT
+        NBIOT_LOCK_USER_ID nbiotLockUserId,STATUS status,PHONE phone,
+        PUBLIC_KEY publicKey,NBIOT_LOCK_ID nbiotLockId,CREATE_TIME createTime,OPER_ID operId,OPER_TIME operTime
+        FROM nbiot_lock_user
+        WHERE PHONE=#{phone}
+    </select>
+    <insert id="userLockInfoSave" parameterType="NbiotLock">
+insert into nbiot_lock VALUES (null,#{nbiotLockSn},#{ip},#{port},#{iMei},#{iMsi},#{createTime},#{operId},CURRENT_TIMESTAMP)
+    </insert>
+    <insert id="userRegistDeviceInfoSave" parameterType="NbiotLockUser">
+insert into nbiot_lock_user VALUES (null,#{status},#{phone},#{publicKey},#{nbiotLockId},#{createTime},#{operId},CURRENT_TIMESTAMP)
+    </insert>
+    <update id="userLockInfoUpdate" parameterType="NbiotLock">
+        UPDATE nbiot_lock set IP = #{ip},PORT = #{port} where LOCK_SN = #{nbiotLockSn}
+    </update>
+    <update id="updateUserInfo" parameterType="NbiotLockUser">
+        UPDATE nbiot_lock_user set PUBLIC_KEY = #{publicKey} where PHONE = #{phone}
+    </update>
+</mapper>

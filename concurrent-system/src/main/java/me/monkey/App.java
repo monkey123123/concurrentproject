@@ -1,5 +1,6 @@
 package me.monkey;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableAsync;
@@ -16,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAsync
 @SpringBootApplication
 @EnableTransactionManagement
+@MapperScan("me.monkey.dao")
 //@EnableMongoRepositories("me.monkey.modules.system.repository.mongodb")
 public class App {
 
@@ -23,7 +25,4 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-
-    
-    
 }

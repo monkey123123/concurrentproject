@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beanpodtech.pkms.dbadapter.dao.ITeeCapabilityInfoDao">
+
+    <!--add by Allen -->
+    <resultMap id="ResultMap_TeeCapabilityInfo" type="com.beanpodtech.pkms.common.model.tam.TeeCapabilityInfo" >
+        <id column="CAPABILITY_ID" property="capabilityId" jdbcType="INTEGER" />
+        <result column="CAPABILITY_VALUE" property="capabilityValue" jdbcType="INTEGER" />
+        <result column="DESCRIPTION" property="description" jdbcType="VARCHAR" />
+        <result column="DELETE_FLAG" property="deleteFlag" jdbcType="INTEGER" />
+        <result column="CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="OPER_ID" property="operId" jdbcType="VARCHAR" />
+        <result column="OPER_TIME" property="operTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="sql_select">
+        CAPABILITY_ID,
+        CAPABILITY_VALUE,
+        DESCRIPTION,
+        DELETE_FLAG,
+        CREATE_TIME,
+        OPER_ID,
+        OPER_TIME
+    </sql>
+    <sql id="sql_insert">
+        CAPABILITY_VALUE,
+        DESCRIPTION,
+        DELETE_FLAG,
+        CREATE_TIME,
+        OPER_ID,
+        OPER_TIME
+    </sql>
+
+    <!-- 单表 操作 useGeneratedKeys="true"会将自动生成的主键赋值给parameterType="TeeCapabilityInfo"的实体对象 -->
+    <insert id="insertTeeCapabilityInfo" parameterType="TeeCapabilityInfo" useGeneratedKeys="true" keyProperty="capabilityId">
+        INSERT INTO tee_capability_info(<include refid="sql_insert"/>)
+        VALUES (#{capabilityValue},#{description},#{deleteFlag},#{createTime},#{operId},CURRENT_TIMESTAMP )
+    </insert>
+    <!--not in use-->
+    <update id="updateTeeCapabilityInfo" parameterType="TeeCapabilityInfo">
+        UPDATE tee_capability_info
+        SET
+        <if test="capabilityValue != null">CAPABILITY_VALUE = #{capabilityValue},</if>
+        <if test="description != null">DESCRIPTION = #{description},</if>
+        <if test="operId != null">OPER_ID = #{operId},</if>
+        OPER_TIME = CURRENT_TIMESTAMP
+        WHERE CAPABILITY_ID = #{capabilityId}
+    </update>
+
+    <!--in use-->
+    <update id="updateByMap" parameterType="java.util.HashMap">
+        UPDATE tee_capability_info
+        SET
+        <if test="capabilityValue != null">CAPABILITY_VALUE = #{capabilityValue},</if>
+        <if test="description != null">DESCRIPTION = #{description},</if>
+        <if test="operId != null">OPER_ID = #{operId},</if>
+        OPER_TIME = CURRENT_TIMESTAMP
+        WHERE CAPABILITY_ID = #{capabilityId}
+    </update>
+    <!--批量逻辑删除-->
+    <update id="deleteLogic" parameterType="java.util.HashMap">
+        UPDATE tee_capability_info
+        SET
+        <if test="deleteFlag != null">DELETE_FLAG = #{deleteFlag},</if>
+        <if test="operId != null">OPER_ID = #{operId},</if>
+        OPER_TIME = CURRENT_TIMESTAMP
+        WHERE CAPABILITY_ID IN
+        <foreach collection="idList" item="itemId" index="index"
+                 open="(" close=")" separator=",">
+            #{itemId}
+        </foreach>
+    </update>
+
+    <select id="selectById" parameterType="TeeCapabilityInfo" resultMap="ResultMap_TeeCapabilityInfo">
+        SELECT <include refid="sql_select"/>
+        FROM tee_capability_info
+        where
+        CAPABILITY_ID = #{capabilityId}
+        AND DELETE_FLAG = #{deleteFlag}
+    </select>
+
+    <select id="selectByMap" parameterType="java.util.HashMap" resultMap="ResultMap_TeeCapabilityInfo">
+        SELECT <include refid="sql_select"/>
+        FROM tee_capability_info
+        <where>
+            <if test="capabilityId != null">
+                AND CAPABILITY_ID = #{capabilityId}
+            </if>
+            <if test="capabilityValue != null">
+                AND CAPABILITY_VALUE = #{capabilityValue}
+            </if>
+            <if test="deleteFlag != null">
+                AND DELETE_FLAG = #{deleteFlag}
+            </if>
+            <if test="operId != null">
+                AND OPER_ID = #{operId}
+            </if>
+            <if test="startTime != null">
+                AND CREATE_TIME &gt;= #{startTime}
+            </if>
+            <if test="endTime != null">
+                AND CREATE_TIME &lt;= #{endTime}
+            </if>
+            <if test="start != null">
+                order by CAPABILITY_ID desc
+                limit #{start},#{limit}
+            </if>
+        </where>
+    </select>
+    <select id="selectCountByMap" parameterType="java.util.HashMap" resultType="integer">
+        SELECT count(CAPABILITY_ID)
+        FROM tee_capability_info
+        <where>
+            <if test="capabilityId != null">
+                AND CAPABILITY_ID = #{capabilityId}
+            </if>
+            <if test="capabilityValue != null">
+                AND CAPABILITY_VALUE = #{capabilityValue}
+            </if>
+            <if test="deleteFlag != null">
+                AND DELETE_FLAG = #{deleteFlag}
+            </if>
+            <if test="operId != null">
+                AND OPER_ID = #{operId}
+            </if>
+            <if test="startTime != null">
+                AND CREATE_TIME &gt;= #{startTime}
+            </if>
+            <if test="endTime != null">
+                AND CREATE_TIME &lt;= #{endTime}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>
