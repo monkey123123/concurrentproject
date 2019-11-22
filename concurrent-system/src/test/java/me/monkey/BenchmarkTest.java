@@ -21,7 +21,11 @@ public class BenchmarkTest {
     private IMessageDao messageDao;
     int count = 10000;
     CountDownLatch latch = new CountDownLatch(1);
-
+    /*
+        测试结果：
+        qps只能到几百，到1000就会有很多问题。
+        但是db里的数据太少。应通过批量增加一批数据来再次测试才有意义。
+     */
     @Test
     public void mysqlSelect0(){
 
