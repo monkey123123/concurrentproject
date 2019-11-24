@@ -118,11 +118,11 @@
 			<version>0.4.0</version>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.beanpodtech.pkms</groupId>
 			<artifactId>pkms-common</artifactId>
 			<version>1.0</version>
-		</dependency>
+		</dependency> -->
 
 
         <dependency>

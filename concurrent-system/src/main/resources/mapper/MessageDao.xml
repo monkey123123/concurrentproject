@@ -3,7 +3,7 @@
 <mapper namespace="me.monkey.dao.IMessageDao">
 
     <!--add by Allen -->
-    <resultMap id="ResultMap_MESSAGE" type="com.beanpodtech.pkms.common.model.Message" >
+    <resultMap id="ResultMap_MESSAGE" type="me.monkey.pojo.Message" >
         <id column="MESSAGE_ID" property="messageId" jdbcType="INTEGER" />
         <id column="SHOW_TYPE" property="showType" jdbcType="INTEGER" />
         <result column="PUSH_TYPE" property="pushType" jdbcType="INTEGER" />

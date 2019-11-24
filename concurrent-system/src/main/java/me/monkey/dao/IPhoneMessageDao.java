@@ -1,10 +1,10 @@
 package me.monkey.dao;
 
-import com.beanpodtech.pkms.common.model.Message;
-import com.beanpodtech.pkms.common.model.PhoneMessage;
 
 import java.util.HashMap;
 import java.util.List;
+
+import me.monkey.pojo.PhoneMessage;
 
 /**
  * Created by renzhibin on 17-8-18.

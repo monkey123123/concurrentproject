@@ -1,0 +1,48 @@
+spring:
+  data:
+    mongodb:
+      database: iotdb
+      host: 127.0.0.1
+      #host: 47.93.32.73
+      port: 27017
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
+  application:
+    name: concurrent-mqtt
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+      instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+      ip-address: true
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+
+  boot:
+      admin:
+        client:
+          username: ${username}
+          password: ${password}
+          enabled: true
+          url: http://localhost:8778
+          instance:
+            metadata:
+              user.name: ${username}
+              user.password: ${password}
+
+  username: "beanpodtech"
+  password: "doujia123456"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
