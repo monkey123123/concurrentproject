@@ -1,10 +1,13 @@
 package me.monkey;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+import me.monkey.dao.IPhoneMessageDao;
+import me.monkey.pojo.PhoneMessage;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,14 +16,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.alibaba.fastjson.JSONObject;
 
-import me.monkey.dao.IMessageDao;
 import me.monkey.pojo.Message;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class BenchmarkTest {
     @Autowired
-    private IMessageDao messageDao;
+    private IPhoneMessageDao messageDao;
     int count = 10000;
     CountDownLatch latch = new CountDownLatch(1);
     /*
@@ -35,7 +37,7 @@ public class BenchmarkTest {
         System.out.println("------1111-----"+start);
         HashMap map = new HashMap();
         map.put("needAck",1);
-        List<Message> list = messageDao.selectMessage(map);
+        List<PhoneMessage> list = messageDao.selectPhoneMessage(map);
         System.out.println(JSONObject.toJSONString(list));
 
         long end = System.currentTimeMillis();
@@ -51,7 +53,7 @@ public class BenchmarkTest {
                 public void run() {
                     HashMap map = new HashMap();
                     map.put("needAck",1);
-                    List<Message> list = messageDao.selectMessage(map);
+                    List<PhoneMessage> list = messageDao.selectPhoneMessage(map);
                     System.out.println(JSONObject.toJSONString(list));
                 }
             }).start();
@@ -79,8 +81,11 @@ public class BenchmarkTest {
     private void test(){
         HashMap map = new HashMap();
         map.put("needAck",1);
-        List<Message> list = messageDao.selectMessage(map);
+        List<PhoneMessage> list = messageDao.selectPhoneMessage(map);
         System.out.println(JSONObject.toJSONString(list));
+
+
+
     }
 }
 

@@ -17,12 +17,9 @@
         <relativePath/>
     </parent>
     <modules>
-        <module>concurrent-common</module>
+		<module>concurrent-common</module>
 		<module>concurrent-mqtt</module>
-        <module>concurrent-logging</module>
         <module>concurrent-system</module>
-        <module>concurrent-tools</module>
-        <module>concurrent-generator</module>
     </modules>
 
     <name>el-admin</name>
@@ -54,10 +51,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
+        <!-- 启用security 访问接口报401        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        </dependency>-->
         <!-- spring cache -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -1,6 +1,7 @@
 package me.monkey.demo;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /*
 CountDownLatch可以代替wait/notify的使用,并去掉synchronized,下面重写第一个例子:
@@ -60,5 +61,9 @@ public class CountDown {
 
     t1.start();
     t2.start();
+
+
+//    ScheduledExecutorService
+//    ThreadPoolExecutor();
   }
 }

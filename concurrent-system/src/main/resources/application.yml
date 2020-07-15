@@ -2,7 +2,7 @@ server:
   port: 8101
   
 mybatis:
-  type-aliases-package: com.beanpodtech.pkms.common.model
+  type-aliases-package: me.monkey.pojo
   mapper-locations: classpath:mapper/*.xml
   config-location: classpath:mybatis-config.xml
 
@@ -13,7 +13,7 @@ spring:
   application:
     name: concurrent-system
   datasource:
-    url: jdbc:mysql://localhost:3306/pkms_dev_db?serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/onlineshop?serverTimezone=GMT%2B8
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
@@ -29,9 +29,9 @@ spring:
         enabled: true
         service-id: sc-config-server
       fail-fast: true
-      username: root
-      password: booszy
-      profile: csdn
+      #username: root
+      #password: booszy
+      #profile: csdn
   zipkin:
     base-url: http://localhost:9411
   sleuth:

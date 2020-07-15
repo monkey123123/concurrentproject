@@ -7,7 +7,6 @@ import java.util.List;
 import me.monkey.pojo.PhoneMessage;
 
 /**
- * Created by renzhibin on 17-8-18.
  */
 public interface IPhoneMessageDao {
 
