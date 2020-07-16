@@ -5,6 +5,9 @@ mybatis:
   type-aliases-package: me.monkey.pojo
   mapper-locations: classpath:mapper/*.xml
   config-location: classpath:mybatis-config.xml
+time:
+  cron: 0 0/1 * * * ?
+  interval: 5
 
 module:
   name: concurrent-system
