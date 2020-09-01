@@ -1,5 +1,6 @@
 server:
-  port: 8101
+  port: 8080
+  #port: 8101
   
 mybatis:
   type-aliases-package: me.monkey.pojo
@@ -9,10 +10,30 @@ time:
   cron: 0 0/1 * * * ?
   interval: 5
 
+
+task:
+  pool:
+    # 核心线程池大小
+    core-pool-size: 10
+    # 最大线程数
+    max-pool-size: 30
+    # 活跃时间
+    keep-alive-seconds: 60
+    # 队列容量
+    queue-capacity: 50
+    name-prefix: task-pool-prefix-
+
 module:
   name: concurrent-system
 
 spring:
+  data:
+    mongodb:
+      database: ai_db
+      host: 127.0.0.1
+      #host: 47.93.32.73
+      port: 27017
+
   application:
     name: concurrent-system
   datasource:
@@ -40,3 +61,9 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
+
+snmp:
+  config:
+    v3User: root
+    password: xxx
+    isSnmp4JLogEnabled:  true

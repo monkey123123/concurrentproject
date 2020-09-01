@@ -6,4 +6,5 @@ public interface TestService {
     void runScheduled();
     void testPlaceholder1();
     void testPlaceholder2();
+    void testTransaction();
 }

@@ -1,5 +1,7 @@
 package me.monkey.demo;
 
+import com.google.gson.Gson;
+
 public class OutOfMemoryErrorDemo
 {
     static String[] arr = null;
@@ -9,5 +11,7 @@ public class OutOfMemoryErrorDemo
             System.out.println(i);
             arr = null;
         }
+
+//        new Gson().
     }
 }
