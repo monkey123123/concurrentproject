@@ -34,7 +34,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @PropertySource(value = {"file:/D:/test.yml"}, encoding = "utf-8", factory = ResponseFactory.class)
 public class App {
     public static void main(String[] args) {
-        ParserConfig.getGlobalInstance().setSafeMode(true);
+//        ParserConfig.getGlobalInstance().setSafeMode(true);
         SpringApplication.run(App.class, args);
     }
 
