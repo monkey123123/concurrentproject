@@ -39,6 +39,9 @@
         <commons-pool2.version>2.5.0</commons-pool2.version>
         <mapstruct.version>1.2.0.Final</mapstruct.version>
         <scala.version>2.11</scala.version>
+        <grpc.version>1.6.1</grpc.version>
+        <protobuf.version>3.3.0</protobuf.version>
+
     </properties>
 
     <dependencies>

@@ -7,3 +7,4 @@ road-map:
 
 git push origin master 如果遇到login失败，
 请使用monkey123123 / 密码 登录，不要使用email，发现使用email经常失败。
+如果多次失败，请等一会儿重试几次，github不太好用。
