@@ -21,6 +21,7 @@
 		<module>concurrent-mqtt</module>
         <module>concurrent-system</module>
         <module>concurrent-gateway</module>
+        <module>concurrent-admin</module>
     </modules>
 
     <name>el-admin</name>
