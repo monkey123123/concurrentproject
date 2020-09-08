@@ -1,5 +1,6 @@
 package me.monkey.gateway.service.impl;
 
+import me.monkey.gateway.controller.User;
 import me.monkey.gateway.modules.db.Device;
 import me.monkey.gateway.modules.db.Item;
 import me.monkey.gateway.service.TestService;
@@ -27,7 +28,7 @@ public class TestServiceImpl implements TestService {
         System.out.println("--------run方法-----休眠3秒----");
     }
 
-//    @Async
+    //    @Async
     @Transactional(rollbackFor = Exception.class)
     @Override
     public void testTransaction() {
@@ -40,6 +41,13 @@ public class TestServiceImpl implements TestService {
         mongoTemplate.save(item);
     }
 
+    @Override
+    public User findUserById(Long id) {
+        User user = new User();
+        user.setUsername("模拟hbase查询");
+        return user;
+    }
+
     @Scheduled(fixedDelay = 5000) //上一次执行完毕时间点之后5秒再执行
     @Override
     public void runScheduled() {
@@ -47,18 +55,17 @@ public class TestServiceImpl implements TestService {
     }
 
 
-    @Scheduled(cron="${time.cron}")
+    @Scheduled(cron = "${time.cron}")
     @Override
     public void testPlaceholder1() {
         System.out.println("Execute testPlaceholder1 at " + System.currentTimeMillis());
     }
 
-    @Scheduled(cron="*/${time.interval} * * * * *")
+    @Scheduled(cron = "*/${time.interval} * * * * *")
     @Override
     public void testPlaceholder2() {
         System.out.println("Execute testPlaceholder2 at " + System.currentTimeMillis());
     }
-
 
 
 }

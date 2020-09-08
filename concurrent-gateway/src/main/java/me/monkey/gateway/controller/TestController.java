@@ -1,5 +1,6 @@
 package me.monkey.gateway.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -12,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,6 +50,28 @@ public class TestController {
 
         System.out.println("criteria = [" + criteria + "], pageable = [" + pageable + "]");
         return new ResponseEntity<>(map, HttpStatus.OK);
+    }
+
+    /**
+     * 使用Hystrix熔断器，当调用findUserById失败后，调用forbackFindUserById方法
+     * @param id
+     * @return
+     */
+    @HystrixCommand(fallbackMethod = "fallbackFindUserById")
+    @RequestMapping(value = "/find/user/{id}",method = RequestMethod.GET)
+    public User findUserById(@PathVariable("id") Long id){
+        User user = testService.findUserById(id);
+        int a = 4/0;
+        return user;
+    }
+    public User fallbackFindUserById(Long id){
+        User user = new User();
+        user.setId(-400L);
+        user.setUsername("hystrix-fallback");
+        user.setMail("hystrix-fallback@sina.com");
+        user.setPhone("13838384381");
+        user.setCreateDate(new Date());
+        return  user;
     }
 
 
