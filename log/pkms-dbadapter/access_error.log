@@ -437,3 +437,18 @@ Action:
 
 Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
 
+2020-09-11 15:09:41 11432 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+

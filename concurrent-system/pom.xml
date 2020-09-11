@@ -8,8 +8,8 @@
         <scala.version>2.11</scala.version>
         <akka.version>2.4.2</akka.version>
         <jjwt.version>0.9.1</jjwt.version>
-        <springboot.version>2.1.0.RELEASE</springboot.version>
-        <springcloud.version>Greenwich.RELEASE</springcloud.version>
+        <springboot.version>2.3.3.RELEASE</springboot.version>
+        <springcloud.version>Hoxton.SR8</springcloud.version>
     </properties>
     <parent>
         <groupId>me.monkey</groupId>
@@ -58,7 +58,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency> -->
-<!-- 		<dependency>
+<!-- 	<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency> -->
