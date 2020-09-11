@@ -1,9 +1,0 @@
-JUC包下的常用工具类。
-线程间通信方式：
-1）线程与线程直接沟通。java里没有用到。
-2）通过共享内存的方式。java采用此方式。
-    2.1）线程通信的4种方式
-    wait/notify
-    Volatile
-    CountDownLatch
-    CyclicBarrier

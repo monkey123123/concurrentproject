@@ -1,0 +1,889 @@
+2020-09-11 10:37:44 2336 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 10:37:44 2347 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020-09-11 11:16:47 2724 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 11:16:47 2729 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020-09-11 11:17:57 2485 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 11:17:57 2491 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020-09-11 11:18:50 2565 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 11:18:50 2569 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020-09-11 11:20:07 2452 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 11:20:07 2461 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020-09-11 11:39:58 2479 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 11:39:58 2484 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:191)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:105)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:71)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+2020-09-11 11:47:19 2110 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 11:47:19 2113 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+2020-09-11 12:01:11 1940 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call the method org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata; but it does not exist. Its class, org.springframework.core.type.AnnotationMetadata, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/core/type/AnnotationMetadata.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.core.type.AnnotationMetadata
+
+2020-09-11 12:01:11 1943 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.NoSuchMethodError: org.springframework.core.type.AnnotationMetadata.introspect(Ljava/lang/Class;)Lorg/springframework/core/type/AnnotationMetadata;
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:253)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:147)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:137)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:158)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:717)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:392)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:212)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:117)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:74)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:54)
+2020-09-11 13:36:30 1866 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-09-11 13:36:31 2228 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-09-11 13:36:32 3291 [main] INFO  m.m.g.GatewaySampleApplication - No active profile set, falling back to default profiles: default
+2020-09-11 13:36:32 4140 [main] TRACE o.s.c.g.c.GatewayAutoConfiguration$OnVerboseDisabledCondition - Condition GatewayAutoConfiguration.OnVerboseDisabledCondition on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$GatewayActuatorConfiguration#gatewayLegacyControllerEndpoint did not match due to NoneNestedConditions 1 matched 0 did not; NestedCondition on GatewayAutoConfiguration.OnVerboseDisabledCondition.VerboseDisabled @ConditionalOnProperty (spring.cloud.gateway.actuator.verbose.enabled) matched
+2020-09-11 13:36:33 4361 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-11 13:36:33 4363 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-11 13:36:33 4474 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98ms. Found 0 Redis repository interfaces.
+2020-09-11 13:36:33 4655 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=24455a67-5d45-38a2-9c35-9546224567e6
+2020-09-11 13:36:33 4689 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 13:36:33 4691 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 13:36:33 4693 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 13:36:33 4900 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-09-11 13:36:33 4910 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-11 13:36:33 4911 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-11 13:36:33 4911 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-11 13:36:33 5051 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-11 13:36:33 5051 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1753 ms
+2020-09-11 13:36:34 5300 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customRouteLocator' defined in me.monkey.gateway.GatewaySampleApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'customRouteLocator' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readBodyPredicateFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'readBodyPredicateFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.http.codec.ServerCodecConfigurer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-09-11 13:36:34 5302 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-09-11 13:36:34 5317 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-11 13:36:34 5471 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-11 13:39:36 1728 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-09-11 13:39:36 2021 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-09-11 13:39:37 3100 [main] INFO  m.m.g.GatewaySampleApplication - No active profile set, falling back to default profiles: default
+2020-09-11 13:39:38 3808 [main] TRACE o.s.c.g.c.GatewayAutoConfiguration$OnVerboseDisabledCondition - Condition GatewayAutoConfiguration.OnVerboseDisabledCondition on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$GatewayActuatorConfiguration#gatewayLegacyControllerEndpoint did not match due to NoneNestedConditions 1 matched 0 did not; NestedCondition on GatewayAutoConfiguration.OnVerboseDisabledCondition.VerboseDisabled @ConditionalOnProperty (spring.cloud.gateway.actuator.verbose.enabled) matched
+2020-09-11 13:39:38 4029 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-11 13:39:38 4032 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-11 13:39:38 4061 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-09-11 13:39:38 4253 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=24455a67-5d45-38a2-9c35-9546224567e6
+2020-09-11 13:39:38 4281 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 13:39:38 4282 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 13:39:38 4283 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 13:39:39 4473 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-09-11 13:39:39 4482 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-11 13:39:39 4483 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-11 13:39:39 4483 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-11 13:39:39 4629 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-11 13:39:39 4629 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1523 ms
+2020-09-11 13:39:39 4846 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customRouteLocator' defined in me.monkey.gateway.GatewaySampleApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'customRouteLocator' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readBodyPredicateFactory' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration.class]: Unsatisfied dependency expressed through method 'readBodyPredicateFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.http.codec.ServerCodecConfigurer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-09-11 13:39:39 4847 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-09-11 13:39:39 4861 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-11 13:39:39 4984 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-11 14:04:59 1917 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-09-11 14:05:00 2273 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-09-11 14:05:01 3357 [main] INFO  m.m.g.GatewaySampleApplication - No active profile set, falling back to default profiles: default
+2020-09-11 14:05:02 4148 [main] TRACE o.s.c.g.c.GatewayAutoConfiguration$OnVerboseDisabledCondition - Condition GatewayAutoConfiguration.OnVerboseDisabledCondition on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$GatewayActuatorConfiguration#gatewayLegacyControllerEndpoint did not match due to NoneNestedConditions 1 matched 0 did not; NestedCondition on GatewayAutoConfiguration.OnVerboseDisabledCondition.VerboseDisabled @ConditionalOnProperty (spring.cloud.gateway.actuator.verbose.enabled) matched
+2020-09-11 14:05:02 4334 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-11 14:05:02 4337 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-11 14:05:02 4367 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-09-11 14:05:02 4593 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=ccdf0ac6-4a7e-313f-a4ec-27b7e5843b5b
+2020-09-11 14:05:02 4618 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:05:02 4619 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:05:02 4620 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:05:02 4644 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=6, workerCount=6}
+2020-09-11 14:05:02 4649 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default ConnectionProvider: reactor.netty.resources.PooledConnectionProvider@5a4d4f9c
+2020-09-11 14:05:02 4918 [main] WARN  o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2020-09-11 14:05:02 4921 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:05:02 4921 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:05:02 4924 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:05:02 4924 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:05:05 7068 [main] DEBUG o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='websocket_test', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/echo}}], filters=[], uri=ws://localhost:9000, order=9000, metadata={}}, RouteDefinition{id='default_path_to_httpbin', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/**}}], filters=[], uri=https://www.baidu.com, order=10000, metadata={}}]
+2020-09-11 14:05:05 7212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2020-09-11 14:05:05 7212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2020-09-11 14:05:05 7212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2020-09-11 14:05:05 7213 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-11 14:05:05 7281 [main] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 2 RouterFunction(s) in 'routerFunctionMapping'
+2020-09-11 14:05:05 7291 [main] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-09-11 14:05:06 8419 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-09-11 14:05:06 8505 [main] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2020-09-11 14:05:07 9744 [main] DEBUG r.netty.resources.DefaultLoopKQueue - Default KQueue support : false
+2020-09-11 14:05:07 9754 [main] DEBUG r.netty.resources.DefaultLoopEpoll - Default Epoll support : false
+2020-09-11 14:05:08 10539 [reactor-http-nio-1] DEBUG reactor.netty.tcp.TcpServer - [id: 0xeaf1c5cf, L:/0:0:0:0:0:0:0:0:8080] Bound new server
+2020-09-11 14:05:08 10541 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2020-09-11 14:05:10 12531 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:05:10 12548 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:05:10 12553 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:05:10 12555 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:05:10 12555 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:05:10 12556 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:05:10 12557 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:05:10 12557 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:05:10 12566 [main] INFO  m.m.g.GatewaySampleApplication - Started GatewaySampleApplication in 12.189 seconds (JVM running for 14.032)
+2020-09-11 14:05:11 13823 [boundedElastic-1] WARN  o.s.b.a.r.RedisReactiveHealthIndicator - Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:985)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:446)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:99)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440)
+	... 16 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:715)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-09-11 14:08:09 2365 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-09-11 14:08:10 2910 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-09-11 14:08:11 4262 [main] INFO  m.m.g.GatewaySampleApplication - No active profile set, falling back to default profiles: default
+2020-09-11 14:08:12 5313 [main] TRACE o.s.c.g.c.GatewayAutoConfiguration$OnVerboseDisabledCondition - Condition GatewayAutoConfiguration.OnVerboseDisabledCondition on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$GatewayActuatorConfiguration#gatewayLegacyControllerEndpoint did not match due to NoneNestedConditions 1 matched 0 did not; NestedCondition on GatewayAutoConfiguration.OnVerboseDisabledCondition.VerboseDisabled @ConditionalOnProperty (spring.cloud.gateway.actuator.verbose.enabled) matched
+2020-09-11 14:08:13 5835 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=c9824bf0-cdfc-3f72-b943-68b9da7ee0ba
+2020-09-11 14:08:13 5860 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:08:13 5862 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:08:13 5863 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:08:13 5890 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=6, workerCount=6}
+2020-09-11 14:08:13 5890 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default ConnectionProvider: reactor.netty.resources.PooledConnectionProvider@7bbcf6f0
+2020-09-11 14:08:13 6285 [main] WARN  o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2020-09-11 14:08:13 6287 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:08:13 6287 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:08:13 6291 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:08:13 6291 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:08:16 9091 [main] DEBUG o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='websocket_test', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/echo}}], filters=[], uri=ws://localhost:9000, order=9000, metadata={}}, RouteDefinition{id='default_path_to_httpbin', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/**}}], filters=[], uri=https://www.baidu.com, order=10000, metadata={}}]
+2020-09-11 14:08:16 9374 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2020-09-11 14:08:16 9375 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2020-09-11 14:08:16 9375 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2020-09-11 14:08:16 9375 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2020-09-11 14:08:16 9375 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2020-09-11 14:08:16 9375 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2020-09-11 14:08:16 9376 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2020-09-11 14:08:16 9376 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2020-09-11 14:08:16 9377 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2020-09-11 14:08:16 9377 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-11 14:08:16 9377 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-11 14:08:16 9377 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2020-09-11 14:08:16 9377 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-11 14:08:16 9464 [main] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 2 RouterFunction(s) in 'routerFunctionMapping'
+2020-09-11 14:08:16 9475 [main] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-09-11 14:08:18 10797 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-09-11 14:08:18 10867 [main] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2020-09-11 14:08:19 12282 [main] DEBUG r.netty.resources.DefaultLoopKQueue - Default KQueue support : false
+2020-09-11 14:08:19 12293 [main] DEBUG r.netty.resources.DefaultLoopEpoll - Default Epoll support : false
+2020-09-11 14:08:20 13316 [reactor-http-nio-1] DEBUG reactor.netty.tcp.TcpServer - [id: 0xf36596b1, L:/0:0:0:0:0:0:0:0:8080] Bound new server
+2020-09-11 14:08:20 13319 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2020-09-11 14:08:23 15949 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:08:23 15966 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:08:23 15972 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:08:23 15974 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:08:23 15975 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:08:23 15976 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:08:23 15976 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:08:23 15977 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:08:23 15985 [main] INFO  m.m.g.GatewaySampleApplication - Started GatewaySampleApplication in 15.559 seconds (JVM running for 17.453)
+2020-09-11 14:09:46 99333 [reactor-http-nio-3] DEBUG r.n.h.server.HttpServerOperations - [id: 0x9edf8ffc, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51267] New http connection, requesting read
+2020-09-11 14:09:46 99333 [reactor-http-nio-2] DEBUG r.n.h.server.HttpServerOperations - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] New http connection, requesting read
+2020-09-11 14:09:46 99334 [reactor-http-nio-3] DEBUG r.netty.channel.BootstrapHandlers - [id: 0x9edf8ffc, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51267] Initialized pipeline DefaultChannelPipeline{(BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpServerCodec), (reactor.left.httpTrafficHandler = reactor.netty.http.server.HttpTrafficHandler), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2020-09-11 14:09:46 99334 [reactor-http-nio-2] DEBUG r.netty.channel.BootstrapHandlers - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] Initialized pipeline DefaultChannelPipeline{(BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpServerCodec), (reactor.left.httpTrafficHandler = reactor.netty.http.server.HttpTrafficHandler), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2020-09-11 14:09:46 99364 [reactor-http-nio-2] DEBUG r.n.h.server.HttpServerOperations - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] Increasing pending responses, now 1
+2020-09-11 14:09:46 99367 [reactor-http-nio-2] DEBUG r.netty.http.server.HttpServer - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] Handler is being applied: org.springframework.http.server.reactive.ReactorHttpHandlerAdapter@4abdd600
+2020-09-11 14:09:46 99389 [reactor-http-nio-2] TRACE o.s.c.g.f.WeightCalculatorWebFilter - Weights attr: {}
+2020-09-11 14:09:46 99424 [reactor-http-nio-2] TRACE o.s.c.g.h.p.RoutePredicateFactory - Pattern "[/image/webp]" does not match against value "/xxx/yyy"
+2020-09-11 14:09:46 99425 [reactor-http-nio-2] TRACE o.s.c.g.h.p.RoutePredicateFactory - Pattern "[/echo]" does not match against value "/xxx/yyy"
+2020-09-11 14:09:46 99425 [reactor-http-nio-2] TRACE o.s.c.g.h.p.RoutePredicateFactory - Pattern "/**" matches against value "/xxx/yyy"
+2020-09-11 14:09:46 99426 [reactor-http-nio-2] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - Route matched: default_path_to_httpbin
+2020-09-11 14:09:46 99430 [reactor-http-nio-2] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - Mapping [Exchange: GET http://localhost:8080/xxx/yyy] to Route{id='default_path_to_httpbin', uri=https://www.baidu.com:443, order=10000, predicate=Paths: [/**], match trailing slash: true, gatewayFilters=[[[PrefixPath prefix = '/httpbin'], order = 1], [[AddResponseHeader X-Response-Default-Foo = 'Default-Bar'], order = 2]], metadata={}}
+2020-09-11 14:09:46 99430 [reactor-http-nio-2] DEBUG o.s.c.g.h.RoutePredicateHandlerMapping - [ace2455a-1] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@3847a7d7
+2020-09-11 14:09:46 99431 [reactor-http-nio-2] DEBUG o.s.c.g.handler.FilteringWebHandler - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@74b1838}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@216f01}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@634aa81e}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@3302035b}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@750cd36d}, order = 0], [[PrefixPath prefix = '/httpbin'], order = 1], [[AddResponseHeader X-Response-Default-Foo = 'Default-Bar'], order = 2], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@52d96367}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerClientFilter@4aa3fc9a}, order = 10100], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@6c5747db}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@70f4f89e}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@5be51aa}, order = 2147483647]]
+2020-09-11 14:09:46 99442 [reactor-http-nio-2] TRACE o.s.c.g.f.f.PrefixPathGatewayFilterFactory - Prefixed URI with: /httpbin -> http://localhost:8080/httpbin/xxx/yyy
+2020-09-11 14:09:46 99443 [reactor-http-nio-2] TRACE o.s.c.g.f.RouteToRequestUrlFilter - RouteToRequestUrlFilter start
+2020-09-11 14:09:47 100453 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - Creating a new client pool [PoolFactory {maxConnections=2147483647, pendingAcquireMaxCount=-1, pendingAcquireTimeout=0, maxIdleTime=-1, maxLifeTime=-1, metricsEnabled=false}] for [www.baidu.com:443]
+2020-09-11 14:09:47 100465 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59] Created a new pooled channel, now 1 active connections and 0 inactive connections
+2020-09-11 14:09:47 100484 [reactor-http-nio-4] DEBUG reactor.netty.tcp.SslProvider - [id: 0xed9c4b59] SSL enabled using engine SSLEngineImpl and SNI www.baidu.com:443
+2020-09-11 14:09:47 100487 [reactor-http-nio-4] DEBUG r.netty.channel.BootstrapHandlers - [id: 0xed9c4b59] Initialized pipeline DefaultChannelPipeline{(reactor.left.sslHandler = io.netty.handler.ssl.SslHandler), (reactor.left.sslReader = reactor.netty.tcp.SslProvider$SslReadHandler), (BootstrapHandlers$BootstrapInitializerHandler#0 = reactor.netty.channel.BootstrapHandlers$BootstrapInitializerHandler), (PooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer#0 = reactor.netty.resources.PooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2020-09-11 14:09:47 100516 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Registering pool release on close event for channel
+2020-09-11 14:09:47 100516 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Channel connected, now 1 active connections and 0 inactive connections
+2020-09-11 14:09:48 100682 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] onStateChange(PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443]}, [connected])
+2020-09-11 14:09:48 100684 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] onStateChange(GET{uri=/, connection=PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443]}}, [configured])
+2020-09-11 14:09:48 100685 [reactor-http-nio-4] DEBUG r.n.http.client.HttpClientConnect - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Handler is being applied: {uri=https://www.baidu.com/httpbin/xxx/yyy, method=GET}
+2020-09-11 14:09:48 100686 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] onStateChange(GET{uri=/httpbin/xxx/yyy, connection=PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443]}}, [request_prepared])
+2020-09-11 14:09:48 100686 [reactor-http-nio-4] TRACE o.s.c.g.filter.NettyRoutingFilter - outbound route: ed9c4b59, inbound: [ace2455a-1] 
+2020-09-11 14:09:48 100690 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: true]
+2020-09-11 14:09:48 100694 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] onStateChange(GET{uri=/httpbin/xxx/yyy, connection=PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443]}}, [request_sent])
+2020-09-11 14:09:48 100702 [reactor-http-nio-4] DEBUG r.n.h.client.HttpClientOperations - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Received response (auto-read:false) : [Cache-Control=max-age=86400, Content-Length=222, Content-Type=text/html; charset=iso-8859-1, Date=Fri, 11 Sep 2020 06:09:49 GMT, Expires=Sat, 12 Sep 2020 06:09:49 GMT, Location=https://www.baidu.com/search/error.html, Server=Apache]
+2020-09-11 14:09:48 100703 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] onStateChange(GET{uri=/httpbin/xxx/yyy, connection=PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443]}}, [response_received])
+2020-09-11 14:09:48 100705 [reactor-http-nio-4] TRACE o.s.c.g.f.NettyWriteResponseFilter - NettyWriteResponseFilter start inbound: ed9c4b59, outbound: [ace2455a-1] 
+2020-09-11 14:09:48 100707 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+2020-09-11 14:09:48 100712 [reactor-http-nio-4] DEBUG r.n.h.client.HttpClientOperations - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Received last HTTP packet
+2020-09-11 14:09:48 100718 [reactor-http-nio-4] TRACE o.s.c.g.filter.GatewayMetricsFilter - gateway.requests tags: [tag(httpMethod=GET),tag(httpStatusCode=302),tag(outcome=REDIRECTION),tag(routeId=default_path_to_httpbin),tag(routeUri=https://www.baidu.com:443),tag(status=FOUND)]
+2020-09-11 14:09:48 100719 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] onStateChange(GET{uri=/httpbin/xxx/yyy, connection=PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443]}}, [response_completed])
+2020-09-11 14:09:48 100720 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] onStateChange(GET{uri=/httpbin/xxx/yyy, connection=PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443]}}, [disconnecting])
+2020-09-11 14:09:48 100720 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Releasing channel
+2020-09-11 14:09:48 100721 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 - R:www.baidu.com/61.135.185.32:443] Channel cleaned, now 0 active connections and 1 inactive connections
+2020-09-11 14:09:48 100728 [reactor-http-nio-2] DEBUG r.n.h.server.HttpServerOperations - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] Last HTTP response frame
+2020-09-11 14:09:48 100728 [reactor-http-nio-2] DEBUG r.n.h.server.HttpServerOperations - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] Decreasing pending responses, now 0
+2020-09-11 14:09:48 100728 [reactor-http-nio-2] DEBUG r.n.h.server.HttpServerOperations - [id: 0xace2455a, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51266] Last HTTP packet was sent, terminating the channel
+2020-09-11 14:10:48 160774 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0xed9c4b59, L:/192.168.50.124:51281 ! R:www.baidu.com/61.135.185.32:443] onStateChange(PooledConnection{channel=[id: 0xed9c4b59, L:/192.168.50.124:51281 ! R:www.baidu.com/61.135.185.32:443]}, [disconnecting])
+2020-09-11 14:21:00 1965 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-09-11 14:21:00 2347 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-09-11 14:21:02 3416 [main] INFO  m.m.g.GatewaySampleApplication - No active profile set, falling back to default profiles: default
+2020-09-11 14:21:02 4260 [main] TRACE o.s.c.g.c.GatewayReactiveLoadBalancerClientAutoConfiguration$OnNoRibbonDefaultCondition - Condition GatewayReactiveLoadBalancerClientAutoConfiguration.OnNoRibbonDefaultCondition on org.springframework.cloud.gateway.config.GatewayReactiveLoadBalancerClientAutoConfiguration#gatewayLoadBalancerClientFilter did not match due to AnyNestedCondition 0 matched 2 did not; NestedCondition on GatewayReactiveLoadBalancerClientAutoConfiguration.OnNoRibbonDefaultCondition.RibbonLoadBalancerNotPresent @ConditionalOnMissingClass found unwanted class 'org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient'; NestedCondition on GatewayReactiveLoadBalancerClientAutoConfiguration.OnNoRibbonDefaultCondition.RibbonNotEnabled @ConditionalOnProperty (spring.cloud.loadbalancer.ribbon.enabled=false) did not find property 'spring.cloud.loadbalancer.ribbon.enabled'
+2020-09-11 14:21:02 4268 [main] TRACE o.s.c.g.c.GatewayAutoConfiguration$OnVerboseDisabledCondition - Condition GatewayAutoConfiguration.OnVerboseDisabledCondition on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$GatewayActuatorConfiguration#gatewayLegacyControllerEndpoint did not match due to NoneNestedConditions 1 matched 0 did not; NestedCondition on GatewayAutoConfiguration.OnVerboseDisabledCondition.VerboseDisabled @ConditionalOnProperty (spring.cloud.gateway.actuator.verbose.enabled) matched
+2020-09-11 14:21:03 4697 [main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-11 14:21:03 4958 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=3f88ed6a-336d-35f6-92ad-ae5fdeefcd55
+2020-09-11 14:21:03 5167 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:21:03 5169 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:21:03 5171 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:21:03 5212 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=6, workerCount=6}
+2020-09-11 14:21:03 5212 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default ConnectionProvider: reactor.netty.resources.PooledConnectionProvider@591be8aa
+2020-09-11 14:21:04 5562 [main] WARN  o.s.c.n.a.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2020-09-11 14:21:04 5564 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:21:04 5564 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:21:04 5569 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:21:04 5569 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:21:05 6743 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.5.3-beta-8ce24f9e675cbefffb8f21a47e06b42864475a60, built on 04/03/2017 16:19 GMT
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=DESKTOP-U1E6SDI
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_261
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=D:\xuchp\soft\Java\jdk1.8.0_261\jre
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\charsets.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\deploy.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\javaws.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jce.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jfr.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jsse.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\management-agent.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\plugin.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\resources.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\rt.jar;D:\xuchp\IdeaProjects\concurrentproject\concurrent-gateway\target\classes;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.3.3.RELEASE\spring-boot-starter-actuator-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter\2.3.3.RELEASE\spring-boot-starter-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot\2.3.3.RELEASE\spring-boot-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.3.RELEASE\spring-boot-autoconfigure-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.3.3.RELEASE\spring-boot-starter-logging-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Administrator\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\Administrator\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\Administrator\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Administrator\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.3.3.RELEASE\spring-boot-actuator-autoconfigure-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-actuator\2.3.3.RELEASE\spring-boot-actuator-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.2\jackson-datatype-jsr310-2.11.2.jar;C:\Users\Administrator\.m2\repository\io\micrometer\micrometer-core\1.5.4\micrometer-core-1.5.4.jar;C:\Users\Administrator\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Administrator\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\2.3.3.RELEASE\spring-boot-starter-webflux-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.3.3.RELEASE\spring-boot-starter-json-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.2\jackson-datatype-jdk8-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.2\jackson-module-parameter-names-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\2.3.3.RELEASE\spring-boot-starter-reactor-netty-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\projectreactor\netty\reactor-netty\0.9.11.RELEASE\reactor-netty-0.9.11.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.51.Final\netty-codec-http-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.51.Final\netty-common-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.51.Final\netty-buffer-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.51.Final\netty-transport-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.51.Final\netty-codec-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http2\4.1.51.Final\netty-codec-http2-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.51.Final\netty-handler-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.51.Final\netty-resolver-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.51.Final\netty-handler-proxy-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.51.Final\netty-codec-socks-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.51.Final\netty-transport-native-epoll-4.1.51.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.51.Final\netty-transport-native-unix-common-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-web\5.2.8.RELEASE\spring-web-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-beans\5.2.8.RELEASE\spring-beans-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-webflux\5.2.8.RELEASE\spring-webflux-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\synchronoss\cloud\nio-multipart-parser\1.1.0\nio-multipart-parser-1.1.0.jar;C:\Users\Administrator\.m2\repository\org\synchronoss\cloud\nio-stream-storage\1.1.3\nio-stream-storage-1.1.3.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-gateway\2.2.5.RELEASE\spring-cloud-starter-gateway-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter\2.2.5.RELEASE\spring-cloud-starter-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-context\2.2.5.RELEASE\spring-cloud-context-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\security\spring-security-rsa\1.0.9.RELEASE\spring-security-rsa-1.0.9.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-gateway-core\2.2.5.RELEASE\spring-cloud-gateway-core-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.3.3.RELEASE\spring-boot-starter-validation-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\Administrator\.m2\repository\org\hibernate\validator\hibernate-validator\6.1.5.Final\hibernate-validator-6.1.5.Final.jar;C:\Users\Administrator\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\Administrator\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\Administrator\.m2\repository\io\projectreactor\addons\reactor-extra\3.3.3.RELEASE\reactor-extra-3.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-ribbon\2.2.5.RELEASE\spring-cloud-starter-netflix-ribbon-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-netflix-ribbon\2.2.5.RELEASE\spring-cloud-netflix-ribbon-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-netflix-archaius\2.2.5.RELEASE\spring-cloud-netflix-archaius-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-archaius\2.2.5.RELEASE\spring-cloud-starter-netflix-archaius-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\netflix\archaius\archaius-core\0.7.6\archaius-core-0.7.6.jar;C:\Users\Administrator\.m2\repository\commons-configuration\commons-configuration\1.8\commons-configuration-1.8.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon\2.3.0\ribbon-2.3.0.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-transport\2.3.0\ribbon-transport-2.3.0.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxnetty-contexts\0.4.9\rxnetty-contexts-0.4.9.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxnetty-servo\0.4.9\rxnetty-servo-0.4.9.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxnetty\0.4.9\rxnetty-0.4.9.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-core\2.3.0\ribbon-core-2.3.0.jar;C:\Users\Administrator\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-httpclient\2.3.0\ribbon-httpclient-2.3.0.jar;C:\Users\Administrator\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.12\httpclient-4.5.12.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.14\commons-codec-1.14.jar;C:\Users\Administrator\.m2\repository\com\sun\jersey\jersey-client\1.19.1\jersey-client-1.19.1.jar;C:\Users\Administrator\.m2\repository\com\sun\jersey\jersey-core\1.19.1\jersey-core-1.19.1.jar;C:\Users\Administrator\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;C:\Users\Administrator\.m2\repository\com\sun\jersey\contribs\jersey-apache-client4\1.19.1\jersey-apache-client4-1.19.1.jar;C:\Users\Administrator\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\Administrator\.m2\repository\com\netflix\netflix-commons\netflix-commons-util\0.3.0\netflix-commons-util-0.3.0.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-loadbalancer\2.3.0\ribbon-loadbalancer-2.3.0.jar;C:\Users\Administrator\.m2\repository\com\netflix\netflix-commons\netflix-statistics\0.1.1\netflix-statistics-0.1.1.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxjava\1.3.8\rxjava-1.3.8.jar;C:\Users\Administrator\.m2\repository\org\isomorphism\token-bucket\1.7\token-bucket-1.7.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\29.0-jre\guava-29.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\2.11.1\checker-qual-2.11.1.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.10.14\byte-buddy-1.10.14.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-core\5.2.8.RELEASE\spring-core-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-jcl\5.2.8.RELEASE\spring-jcl-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\projectreactor\reactor-core\3.3.9.RELEASE\reactor-core-3.3.9.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.72\kotlin-stdlib-1.3.72.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.72\kotlin-stdlib-common-1.3.72.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.3.72\kotlin-reflect-1.3.72.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-zookeeper-discovery\2.2.3.RELEASE\spring-cloud-starter-zookeeper-discovery-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-zookeeper\2.2.3.RELEASE\spring-cloud-starter-zookeeper-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-zookeeper-core\2.2.3.RELEASE\spring-cloud-zookeeper-core-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-zookeeper-discovery\2.2.3.RELEASE\spring-cloud-zookeeper-discovery-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-x-discovery\4.0.1\curator-x-discovery-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-recipes\4.0.1\curator-recipes-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-framework\4.0.1\curator-framework-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-client\4.0.1\curator-client-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\zookeeper\zookeeper\3.5.3-beta\zookeeper-3.5.3-beta.jar;C:\Users\Administrator\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\Administrator\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\Administrator\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-netflix-hystrix\2.2.5.RELEASE\spring-cloud-netflix-hystrix-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\2.2.5.RELEASE\spring-cloud-starter-loadbalancer-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\2.2.5.RELEASE\spring-cloud-loadbalancer-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-zipkin\2.2.5.RELEASE\spring-cloud-starter-zipkin-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-sleuth-zipkin\2.2.5.RELEASE\spring-cloud-sleuth-zipkin-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\zipkin\zipkin2\zipkin\2.21.1\zipkin-2.21.1.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-reporter\2.15.0\zipkin-reporter-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-reporter-brave\2.15.0\zipkin-reporter-brave-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-sender-kafka\2.15.0\zipkin-sender-kafka-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-sender-activemq-client\2.15.0\zipkin-sender-activemq-client-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-sender-amqp-client\2.15.0\zipkin-sender-amqp-client-2.15.0.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-sleuth\2.2.5.RELEASE\spring-cloud-starter-sleuth-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.3.3.RELEASE\spring-boot-starter-aop-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-aop\5.2.8.RELEASE\spring-aop-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-sleuth-core\2.2.5.RELEASE\spring-cloud-sleuth-core-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-context\5.2.8.RELEASE\spring-context-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-expression\5.2.8.RELEASE\spring-expression-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\aspectj\aspectjrt\1.9.6\aspectjrt-1.9.6.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave\5.12.3\brave-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-context-slf4j\5.12.3\brave-context-slf4j-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-messaging\5.12.3\brave-instrumentation-messaging-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-rpc\5.12.3\brave-instrumentation-rpc-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-spring-web\5.12.3\brave-instrumentation-spring-web-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-http\5.12.3\brave-instrumentation-http-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-spring-rabbit\5.12.3\brave-instrumentation-spring-rabbit-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-kafka-clients\5.12.3\brave-instrumentation-kafka-clients-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-kafka-streams\5.12.3\brave-instrumentation-kafka-streams-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-httpclient\5.12.3\brave-instrumentation-httpclient-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-httpasyncclient\5.12.3\brave-instrumentation-httpasyncclient-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-spring-webmvc\5.12.3\brave-instrumentation-spring-webmvc-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-servlet\5.12.3\brave-instrumentation-servlet-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-jms\5.12.3\brave-instrumentation-jms-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-reporter-metrics-micrometer\2.15.0\zipkin-reporter-metrics-micrometer-2.15.0.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\2.2.5.RELEASE\spring-cloud-starter-openfeign-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\2.2.5.RELEASE\spring-cloud-openfeign-core-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\Administrator\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-commons\2.2.5.RELEASE\spring-cloud-commons-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\security\spring-security-crypto\5.3.4.RELEASE\spring-security-crypto-5.3.4.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\feign-core\10.10.1\feign-core-10.10.1.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\feign-slf4j\10.10.1\feign-slf4j-10.10.1.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\feign-hystrix\10.10.1\feign-hystrix-10.10.1.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-hystrix\2.2.5.RELEASE\spring-cloud-starter-netflix-hystrix-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-core\1.5.18\hystrix-core-1.5.18.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-serialization\1.5.18\hystrix-serialization-1.5.18.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\module\jackson-module-afterburner\2.11.2\jackson-module-afterburner-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.2\jackson-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-metrics-event-stream\1.5.18\hystrix-metrics-event-stream-1.5.18.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-javanica\1.5.18\hystrix-javanica-1.5.18.jar;C:\Users\Administrator\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxjava-reactive-streams\1.2.1\rxjava-reactive-streams-1.2.1.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-cache\2.3.3.RELEASE\spring-boot-starter-cache-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-context-support\5.2.8.RELEASE\spring-context-support-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-pool2\2.5.0\commons-pool2-2.5.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-swagger-ui\2.9.2\springfox-swagger-ui-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\swagger\swagger-annotations\1.5.21\swagger-annotations-1.5.21.jar;C:\Users\Administrator\.m2\repository\io\swagger\swagger-models\1.5.21\swagger-models-1.5.21.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.2\jackson-annotations-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\alibaba\fastjson\1.2.54\fastjson-1.2.54.jar;C:\Users\Administrator\.m2\repository\org\mapstruct\mapstruct-jdk8\1.2.0.Final\mapstruct-jdk8-1.2.0.Final.jar;C:\Users\Administrator\.m2\repository\org\mapstruct\mapstruct-processor\1.2.0.Final\mapstruct-processor-1.2.0.Final.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\lib\idea_rt.jar;C:\Users\Administrator\.IntelliJIdea2019.3\system\captureAgent\debugger-agent.jar
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=D:\xuchp\soft\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\xuchp\soft\apache-maven-3.6.3\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;.;D:\xuchp\soft\Java\jdk1.8.0_261\\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;;D:\xuchp\soft\scala-2.13.3\bin;D:\xuchp\soft\apache-maven-3.6.3\bin;;.
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2020-09-11 14:21:05 6744 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=D:\xuchp\IdeaProjects\concurrentproject
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.free=177MB
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.max=3602MB
+2020-09-11 14:21:05 6745 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.total=315MB
+2020-09-11 14:21:05 6768 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Starting
+2020-09-11 14:21:05 6773 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@29c244e
+2020-09-11 14:21:05 6784 [main] INFO  o.apache.zookeeper.ClientCnxnSocket - jute.maxbuffer value is 4194304 Bytes
+2020-09-11 14:21:05 6793 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-09-11 14:21:05 6795 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established, initiating session, client: /127.0.0.1:54363, server: localhost/127.0.0.1:2181
+2020-09-11 14:21:05 6804 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Default schema
+2020-09-11 14:21:05 6808 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1000031c7190003, negotiated timeout = 40000
+2020-09-11 14:21:05 6818 [main-EventThread] INFO  o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+2020-09-11 14:21:05 6831 [main-EventThread] INFO  o.a.c.f.imps.EnsembleTracker - New config event received: {}
+2020-09-11 14:21:05 6831 [main-EventThread] INFO  o.a.c.f.imps.EnsembleTracker - New config event received: {}
+2020-09-11 14:21:07 8930 [main] DEBUG o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='websocket_test', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/echo}}], filters=[], uri=ws://localhost:9000, order=9000, metadata={}}, RouteDefinition{id='default_path_to_httpbin', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/**}}], filters=[], uri=https://www.baidu.com, order=10000, metadata={}}]
+2020-09-11 14:21:07 9211 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2020-09-11 14:21:07 9211 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2020-09-11 14:21:07 9211 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2020-09-11 14:21:07 9211 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2020-09-11 14:21:07 9212 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-11 14:21:07 9307 [main] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 2 RouterFunction(s) in 'routerFunctionMapping'
+2020-09-11 14:21:07 9318 [main] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-09-11 14:21:09 11269 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-09-11 14:21:09 11352 [main] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2020-09-11 14:21:11 12516 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-11 14:21:11 12536 [main] WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger - You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-11 14:21:12 14068 [main] WARN  o.s.c.s.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-09-11 14:21:12 14364 [main] DEBUG r.netty.resources.DefaultLoopKQueue - Default KQueue support : false
+2020-09-11 14:21:12 14367 [main] DEBUG r.netty.resources.DefaultLoopEpoll - Default Epoll support : false
+2020-09-11 14:21:13 15159 [reactor-http-nio-1] DEBUG reactor.netty.tcp.TcpServer - [id: 0x0aa174ca, L:/0:0:0:0:0:0:0:0:8080] Bound new server
+2020-09-11 14:21:13 15160 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2020-09-11 14:21:15 17252 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:21:15 17270 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17276 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17278 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:21:15 17278 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:21:15 17279 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17280 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17280 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:21:15 17298 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:21:15 17300 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17301 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17302 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:21:15 17302 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:21:15 17303 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17304 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17305 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:21:15 17306 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:21:15 17307 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17307 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17308 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:21:15 17308 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:21:15 17309 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17310 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17310 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:21:15 17311 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:21:15 17312 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17312 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17312 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:21:15 17312 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:21:15 17313 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17314 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17314 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:21:15 17316 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:21:15 17317 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17317 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17318 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:21:15 17318 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:21:15 17319 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:21:15 17319 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:21:15 17320 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:21:15 17323 [main] INFO  m.m.g.GatewaySampleApplication - Started GatewaySampleApplication in 16.997 seconds (JVM running for 18.801)
+2020-09-11 14:24:06 187786 [Curator-Framework-0] INFO  o.a.c.f.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+2020-09-11 14:24:06 187792 [SpringContextShutdownHook] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x1000031c7190003 closed
+2020-09-11 14:24:06 187792 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x1000031c7190003
+2020-09-11 14:50:18 1925 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-09-11 14:50:19 2307 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-09-11 14:50:20 3420 [main] INFO  m.m.g.GatewaySampleApplication - No active profile set, falling back to default profiles: default
+2020-09-11 14:50:21 4290 [main] TRACE o.s.c.g.c.GatewayReactiveLoadBalancerClientAutoConfiguration$OnNoRibbonDefaultCondition - Condition GatewayReactiveLoadBalancerClientAutoConfiguration.OnNoRibbonDefaultCondition on org.springframework.cloud.gateway.config.GatewayReactiveLoadBalancerClientAutoConfiguration#gatewayLoadBalancerClientFilter did not match due to AnyNestedCondition 0 matched 2 did not; NestedCondition on GatewayReactiveLoadBalancerClientAutoConfiguration.OnNoRibbonDefaultCondition.RibbonLoadBalancerNotPresent @ConditionalOnMissingClass found unwanted class 'org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient'; NestedCondition on GatewayReactiveLoadBalancerClientAutoConfiguration.OnNoRibbonDefaultCondition.RibbonNotEnabled @ConditionalOnProperty (spring.cloud.loadbalancer.ribbon.enabled=false) did not find property 'spring.cloud.loadbalancer.ribbon.enabled'
+2020-09-11 14:50:21 4298 [main] TRACE o.s.c.g.c.GatewayAutoConfiguration$OnVerboseDisabledCondition - Condition GatewayAutoConfiguration.OnVerboseDisabledCondition on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$GatewayActuatorConfiguration#gatewayLegacyControllerEndpoint did not match due to NoneNestedConditions 1 matched 0 did not; NestedCondition on GatewayAutoConfiguration.OnVerboseDisabledCondition.VerboseDisabled @ConditionalOnProperty (spring.cloud.gateway.actuator.verbose.enabled) matched
+2020-09-11 14:50:21 4556 [main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-11 14:50:21 4797 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=76a3b1ba-8d0f-3739-8d2e-fe1bf1abc37d
+2020-09-11 14:50:21 5070 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:50:21 5072 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:50:21 5074 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-11 14:50:21 5114 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default LoopResources: DefaultLoopResources {prefix=reactor-http, daemon=true, selectCount=6, workerCount=6}
+2020-09-11 14:50:21 5115 [main] DEBUG reactor.netty.tcp.TcpResources - [http] resources will use the default ConnectionProvider: reactor.netty.resources.PooledConnectionProvider@6546371
+2020-09-11 14:50:22 5465 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:50:22 5465 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:50:22 5469 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-11 14:50:22 5469 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-11 14:50:23 6591 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.5.3-beta-8ce24f9e675cbefffb8f21a47e06b42864475a60, built on 04/03/2017 16:19 GMT
+2020-09-11 14:50:23 6591 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=DESKTOP-U1E6SDI
+2020-09-11 14:50:23 6592 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_261
+2020-09-11 14:50:23 6592 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2020-09-11 14:50:23 6592 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=D:\xuchp\soft\Java\jdk1.8.0_261\jre
+2020-09-11 14:50:23 6592 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\charsets.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\deploy.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\javaws.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jce.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jfr.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\jsse.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\management-agent.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\plugin.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\resources.jar;D:\xuchp\soft\Java\jdk1.8.0_261\jre\lib\rt.jar;D:\xuchp\IdeaProjects\concurrentproject\concurrent-gateway\target\classes;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.3.3.RELEASE\spring-boot-starter-actuator-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter\2.3.3.RELEASE\spring-boot-starter-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot\2.3.3.RELEASE\spring-boot-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.3.RELEASE\spring-boot-autoconfigure-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.3.3.RELEASE\spring-boot-starter-logging-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Administrator\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\Administrator\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\Administrator\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Administrator\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.3.3.RELEASE\spring-boot-actuator-autoconfigure-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-actuator\2.3.3.RELEASE\spring-boot-actuator-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.2\jackson-datatype-jsr310-2.11.2.jar;C:\Users\Administrator\.m2\repository\io\micrometer\micrometer-core\1.5.4\micrometer-core-1.5.4.jar;C:\Users\Administrator\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Administrator\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\2.3.3.RELEASE\spring-boot-starter-webflux-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.3.3.RELEASE\spring-boot-starter-json-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.2\jackson-datatype-jdk8-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.2\jackson-module-parameter-names-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\2.3.3.RELEASE\spring-boot-starter-reactor-netty-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\projectreactor\netty\reactor-netty\0.9.11.RELEASE\reactor-netty-0.9.11.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.51.Final\netty-codec-http-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.51.Final\netty-common-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.51.Final\netty-buffer-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.51.Final\netty-transport-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.51.Final\netty-codec-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http2\4.1.51.Final\netty-codec-http2-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.51.Final\netty-handler-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.51.Final\netty-resolver-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.51.Final\netty-handler-proxy-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.51.Final\netty-codec-socks-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.51.Final\netty-transport-native-epoll-4.1.51.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.51.Final\netty-transport-native-unix-common-4.1.51.Final.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-web\5.2.8.RELEASE\spring-web-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-beans\5.2.8.RELEASE\spring-beans-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-webflux\5.2.8.RELEASE\spring-webflux-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\synchronoss\cloud\nio-multipart-parser\1.1.0\nio-multipart-parser-1.1.0.jar;C:\Users\Administrator\.m2\repository\org\synchronoss\cloud\nio-stream-storage\1.1.3\nio-stream-storage-1.1.3.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-gateway\2.2.5.RELEASE\spring-cloud-starter-gateway-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter\2.2.5.RELEASE\spring-cloud-starter-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-context\2.2.5.RELEASE\spring-cloud-context-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\security\spring-security-rsa\1.0.9.RELEASE\spring-security-rsa-1.0.9.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-gateway-core\2.2.5.RELEASE\spring-cloud-gateway-core-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.3.3.RELEASE\spring-boot-starter-validation-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\Administrator\.m2\repository\org\hibernate\validator\hibernate-validator\6.1.5.Final\hibernate-validator-6.1.5.Final.jar;C:\Users\Administrator\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\Administrator\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\Administrator\.m2\repository\io\projectreactor\addons\reactor-extra\3.3.3.RELEASE\reactor-extra-3.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-ribbon\2.2.5.RELEASE\spring-cloud-starter-netflix-ribbon-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-netflix-ribbon\2.2.5.RELEASE\spring-cloud-netflix-ribbon-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-netflix-archaius\2.2.5.RELEASE\spring-cloud-netflix-archaius-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-archaius\2.2.5.RELEASE\spring-cloud-starter-netflix-archaius-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\netflix\archaius\archaius-core\0.7.6\archaius-core-0.7.6.jar;C:\Users\Administrator\.m2\repository\commons-configuration\commons-configuration\1.8\commons-configuration-1.8.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon\2.3.0\ribbon-2.3.0.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-transport\2.3.0\ribbon-transport-2.3.0.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxnetty-contexts\0.4.9\rxnetty-contexts-0.4.9.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxnetty-servo\0.4.9\rxnetty-servo-0.4.9.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxnetty\0.4.9\rxnetty-0.4.9.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-core\2.3.0\ribbon-core-2.3.0.jar;C:\Users\Administrator\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-httpclient\2.3.0\ribbon-httpclient-2.3.0.jar;C:\Users\Administrator\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.12\httpclient-4.5.12.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.14\commons-codec-1.14.jar;C:\Users\Administrator\.m2\repository\com\sun\jersey\jersey-client\1.19.1\jersey-client-1.19.1.jar;C:\Users\Administrator\.m2\repository\com\sun\jersey\jersey-core\1.19.1\jersey-core-1.19.1.jar;C:\Users\Administrator\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;C:\Users\Administrator\.m2\repository\com\sun\jersey\contribs\jersey-apache-client4\1.19.1\jersey-apache-client4-1.19.1.jar;C:\Users\Administrator\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\Administrator\.m2\repository\com\netflix\netflix-commons\netflix-commons-util\0.3.0\netflix-commons-util-0.3.0.jar;C:\Users\Administrator\.m2\repository\com\netflix\ribbon\ribbon-loadbalancer\2.3.0\ribbon-loadbalancer-2.3.0.jar;C:\Users\Administrator\.m2\repository\com\netflix\netflix-commons\netflix-statistics\0.1.1\netflix-statistics-0.1.1.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxjava\1.3.8\rxjava-1.3.8.jar;C:\Users\Administrator\.m2\repository\org\isomorphism\token-bucket\1.7\token-bucket-1.7.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\29.0-jre\guava-29.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\2.11.1\checker-qual-2.11.1.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.10.14\byte-buddy-1.10.14.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-core\5.2.8.RELEASE\spring-core-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-jcl\5.2.8.RELEASE\spring-jcl-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\projectreactor\reactor-core\3.3.9.RELEASE\reactor-core-3.3.9.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.72\kotlin-stdlib-1.3.72.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.72\kotlin-stdlib-common-1.3.72.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Administrator\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.3.72\kotlin-reflect-1.3.72.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-zookeeper-discovery\2.2.3.RELEASE\spring-cloud-starter-zookeeper-discovery-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-zookeeper\2.2.3.RELEASE\spring-cloud-starter-zookeeper-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-zookeeper-core\2.2.3.RELEASE\spring-cloud-zookeeper-core-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-zookeeper-discovery\2.2.3.RELEASE\spring-cloud-zookeeper-discovery-2.2.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-x-discovery\4.0.1\curator-x-discovery-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-recipes\4.0.1\curator-recipes-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-framework\4.0.1\curator-framework-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\curator\curator-client\4.0.1\curator-client-4.0.1.jar;C:\Users\Administrator\.m2\repository\org\apache\zookeeper\zookeeper\3.5.3-beta\zookeeper-3.5.3-beta.jar;C:\Users\Administrator\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\Administrator\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\Administrator\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-netflix-hystrix\2.2.5.RELEASE\spring-cloud-netflix-hystrix-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\2.2.5.RELEASE\spring-cloud-starter-loadbalancer-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\2.2.5.RELEASE\spring-cloud-loadbalancer-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-zipkin\2.2.5.RELEASE\spring-cloud-starter-zipkin-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-sleuth-zipkin\2.2.5.RELEASE\spring-cloud-sleuth-zipkin-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\zipkin\zipkin2\zipkin\2.21.1\zipkin-2.21.1.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-reporter\2.15.0\zipkin-reporter-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-reporter-brave\2.15.0\zipkin-reporter-brave-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-sender-kafka\2.15.0\zipkin-sender-kafka-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-sender-activemq-client\2.15.0\zipkin-sender-activemq-client-2.15.0.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-sender-amqp-client\2.15.0\zipkin-sender-amqp-client-2.15.0.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-sleuth\2.2.5.RELEASE\spring-cloud-starter-sleuth-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.3.3.RELEASE\spring-boot-starter-aop-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-aop\5.2.8.RELEASE\spring-aop-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-sleuth-core\2.2.5.RELEASE\spring-cloud-sleuth-core-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-context\5.2.8.RELEASE\spring-context-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-expression\5.2.8.RELEASE\spring-expression-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\aspectj\aspectjrt\1.9.6\aspectjrt-1.9.6.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave\5.12.3\brave-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-context-slf4j\5.12.3\brave-context-slf4j-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-messaging\5.12.3\brave-instrumentation-messaging-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-rpc\5.12.3\brave-instrumentation-rpc-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-spring-web\5.12.3\brave-instrumentation-spring-web-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-http\5.12.3\brave-instrumentation-http-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-spring-rabbit\5.12.3\brave-instrumentation-spring-rabbit-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-kafka-clients\5.12.3\brave-instrumentation-kafka-clients-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-kafka-streams\5.12.3\brave-instrumentation-kafka-streams-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-httpclient\5.12.3\brave-instrumentation-httpclient-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-httpasyncclient\5.12.3\brave-instrumentation-httpasyncclient-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-spring-webmvc\5.12.3\brave-instrumentation-spring-webmvc-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-servlet\5.12.3\brave-instrumentation-servlet-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\brave\brave-instrumentation-jms\5.12.3\brave-instrumentation-jms-5.12.3.jar;C:\Users\Administrator\.m2\repository\io\zipkin\reporter2\zipkin-reporter-metrics-micrometer\2.15.0\zipkin-reporter-metrics-micrometer-2.15.0.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\2.2.5.RELEASE\spring-cloud-starter-openfeign-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\2.2.5.RELEASE\spring-cloud-openfeign-core-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\Administrator\.m2\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-commons\2.2.5.RELEASE\spring-cloud-commons-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\security\spring-security-crypto\5.3.4.RELEASE\spring-security-crypto-5.3.4.RELEASE.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\feign-core\10.10.1\feign-core-10.10.1.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\feign-slf4j\10.10.1\feign-slf4j-10.10.1.jar;C:\Users\Administrator\.m2\repository\io\github\openfeign\feign-hystrix\10.10.1\feign-hystrix-10.10.1.jar;C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-hystrix\2.2.5.RELEASE\spring-cloud-starter-netflix-hystrix-2.2.5.RELEASE.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-core\1.5.18\hystrix-core-1.5.18.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-serialization\1.5.18\hystrix-serialization-1.5.18.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\module\jackson-module-afterburner\2.11.2\jackson-module-afterburner-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.2\jackson-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-metrics-event-stream\1.5.18\hystrix-metrics-event-stream-1.5.18.jar;C:\Users\Administrator\.m2\repository\com\netflix\hystrix\hystrix-javanica\1.5.18\hystrix-javanica-1.5.18.jar;C:\Users\Administrator\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Administrator\.m2\repository\io\reactivex\rxjava-reactive-streams\1.2.1\rxjava-reactive-streams-1.2.1.jar;C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-cache\2.3.3.RELEASE\spring-boot-starter-cache-2.3.3.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\spring-context-support\5.2.8.RELEASE\spring-context-support-5.2.8.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-pool2\2.5.0\commons-pool2-2.5.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\Administrator\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\Administrator\.m2\repository\io\springfox\springfox-swagger-ui\2.9.2\springfox-swagger-ui-2.9.2.jar;C:\Users\Administrator\.m2\repository\io\swagger\swagger-annotations\1.5.21\swagger-annotations-1.5.21.jar;C:\Users\Administrator\.m2\repository\io\swagger\swagger-models\1.5.21\swagger-models-1.5.21.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.2\jackson-annotations-2.11.2.jar;C:\Users\Administrator\.m2\repository\com\alibaba\fastjson\1.2.54\fastjson-1.2.54.jar;C:\Users\Administrator\.m2\repository\org\mapstruct\mapstruct-jdk8\1.2.0.Final\mapstruct-jdk8-1.2.0.Final.jar;C:\Users\Administrator\.m2\repository\org\mapstruct\mapstruct-processor\1.2.0.Final\mapstruct-processor-1.2.0.Final.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\lib\idea_rt.jar;C:\Users\Administrator\.IntelliJIdea2019.3\system\captureAgent\debugger-agent.jar
+2020-09-11 14:50:23 6592 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=D:\xuchp\soft\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\xuchp\soft\apache-maven-3.6.3\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;.;D:\xuchp\soft\Java\jdk1.8.0_261\\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;;D:\xuchp\soft\scala-2.13.3\bin;D:\xuchp\soft\apache-maven-3.6.3\bin;;.
+2020-09-11 14:50:23 6592 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2020-09-11 14:50:23 6592 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=D:\xuchp\IdeaProjects\concurrentproject
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.free=233MB
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.max=3602MB
+2020-09-11 14:50:23 6593 [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.memory.total=356MB
+2020-09-11 14:50:23 6615 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Starting
+2020-09-11 14:50:23 6621 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@72001c71
+2020-09-11 14:50:23 6632 [main] INFO  o.apache.zookeeper.ClientCnxnSocket - jute.maxbuffer value is 4194304 Bytes
+2020-09-11 14:50:23 6641 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-09-11 14:50:23 6643 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established, initiating session, client: /127.0.0.1:62870, server: localhost/127.0.0.1:2181
+2020-09-11 14:50:23 6650 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Default schema
+2020-09-11 14:50:23 6665 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1000031c7190004, negotiated timeout = 40000
+2020-09-11 14:50:23 6677 [main-EventThread] INFO  o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+2020-09-11 14:50:23 6689 [main-EventThread] INFO  o.a.c.f.imps.EnsembleTracker - New config event received: {}
+2020-09-11 14:50:23 6689 [main-EventThread] INFO  o.a.c.f.imps.EnsembleTracker - New config event received: {}
+2020-09-11 14:50:25 8683 [main] DEBUG o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='websocket_test', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/echo}}], filters=[], uri=ws://localhost:9000, order=9000, metadata={}}, RouteDefinition{id='default_path_to_httpbin', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/**}}], filters=[], uri=https://www.baidu.com, order=10000, metadata={}}]
+2020-09-11 14:50:25 8955 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2020-09-11 14:50:25 8956 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2020-09-11 14:50:25 8957 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-09-11 14:50:25 9048 [main] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 2 RouterFunction(s) in 'routerFunctionMapping'
+2020-09-11 14:50:25 9061 [main] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-09-11 14:50:27 11041 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-09-11 14:50:27 11118 [main] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2020-09-11 14:50:29 12306 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-11 14:50:29 12325 [main] WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger - You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-11 14:50:30 13886 [main] WARN  o.s.c.s.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-09-11 14:50:30 14174 [main] DEBUG r.netty.resources.DefaultLoopKQueue - Default KQueue support : false
+2020-09-11 14:50:30 14176 [main] DEBUG r.netty.resources.DefaultLoopEpoll - Default Epoll support : false
+2020-09-11 14:50:31 14997 [reactor-http-nio-1] DEBUG reactor.netty.tcp.TcpServer - [id: 0xae38eea0, L:/0:0:0:0:0:0:0:0:8080] Bound new server
+2020-09-11 14:50:31 14998 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2020-09-11 14:50:33 17125 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:50:33 17145 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17151 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17154 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:50:33 17154 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:50:33 17155 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17155 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17156 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:50:33 17173 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:50:33 17175 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17176 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17177 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:50:33 17177 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:50:33 17179 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17180 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17180 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:50:33 17181 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:50:33 17182 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17183 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17184 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:50:33 17184 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:50:33 17185 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17185 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17187 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:50:33 17188 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:50:33 17189 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17190 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17191 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:50:33 17191 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:50:33 17192 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17192 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17193 [Curator-TreeCache-0] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:50:33 17197 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/echo} to Path
+2020-09-11 14:50:33 17198 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17199 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17200 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-11 14:50:33 17200 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin applying {_genkey_0=/**} to Path
+2020-09-11 14:50:33 17201 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=/httpbin} to PrefixPath
+2020-09-11 14:50:33 17201 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition defaultFilters applying filter {_genkey_0=X-Response-Default-Foo, _genkey_1=Default-Bar} to AddResponseHeader
+2020-09-11 14:50:33 17202 [main] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin
+2020-09-11 14:50:33 17205 [main] INFO  m.m.g.GatewaySampleApplication - Started GatewaySampleApplication in 16.834 seconds (JVM running for 18.729)

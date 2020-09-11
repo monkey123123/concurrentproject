@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.gateway.sample;
+package me.monkey.gateway;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import me.monkey.gateway.AdditionalRoutes;
-import me.monkey.gateway.ThrottleGatewayFilter;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import reactor.core.publisher.Mono;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -43,6 +43,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
  */
 @SpringBootConfiguration
 @EnableAutoConfiguration
+@EnableDiscoveryClient
 @Import(AdditionalRoutes.class)
 public class GatewaySampleApplication {
 

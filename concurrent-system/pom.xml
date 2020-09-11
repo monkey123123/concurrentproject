@@ -5,6 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>concurrent-system</artifactId>
     <properties>
+        <scala.version>2.11</scala.version>
+        <akka.version>2.4.2</akka.version>
         <jjwt.version>0.9.1</jjwt.version>
         <springboot.version>2.1.0.RELEASE</springboot.version>
         <springcloud.version>Greenwich.RELEASE</springcloud.version>
@@ -204,6 +206,7 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.23</version>
         </dependency>
+<!--
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor_${scala.version}</artifactId>
@@ -212,6 +215,7 @@
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-slf4j_${scala.version}</artifactId>
         </dependency>
+        -->
         <!--尽量不用 漏洞太多-->
         <dependency>
             <groupId>com.alibaba</groupId>

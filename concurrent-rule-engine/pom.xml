@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.monkey</groupId>
-    <artifactId>concurrent-mqtt</artifactId>
+    <artifactId>concurrent-rule-engine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>concurrent-mqtt</name>
-    <description>concurrent-mqtt project for Spring Boot</description>
+    <name>concurrent-rule-engine</name>
+    <description>concurrent-rule-engine project for Spring Boot</description>
     <!-- 此parent可选-->
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -206,7 +206,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>concurrent-mqtt</finalName>
+        <finalName>concurrent-rule-engine</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
