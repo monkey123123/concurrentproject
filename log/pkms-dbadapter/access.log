@@ -3740,3 +3740,4 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739)
 	... 9 common frames omitted
+2020-09-14 18:46:58 124899 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [id: 0x71cfbb85, L:/192.168.50.124:58195 ! R:host.docker.internal/192.168.50.124:8080] onStateChange(PooledConnection{channel=[id: 0x71cfbb85, L:/192.168.50.124:58195 ! R:host.docker.internal/192.168.50.124:8080]}, [disconnecting])
