@@ -1,4 +1,4 @@
-api-application:
+test:
   #  hostport: httpbin.org:80
   #  hostport: localhost:5000
   #  uri: http://${test.hostport}
@@ -9,26 +9,8 @@ api-application:
 server:
   port: 8191
 
-feign:
-  hystrix:
-    enabled: true
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 30000
-
 #module:
   #name: user
-
-default-filters:
-  - name: Hystrix
-    args:
-      name: fallbackcmd
-      fallbackUri: forward:/fallbackcontroller
-
 
 spring:
   application:
@@ -40,7 +22,7 @@ spring:
       default-filters:
         #- PrefixPath=/httpbin
         - AddResponseHeader=X-Response-Default-Foo, Default-Bar
-#  可以使用java代码硬编码配置路由过滤器,也可以使用yml配置
+
       routes:
         # =====================================
         # to run server
@@ -53,11 +35,11 @@ spring:
           predicates:
             - Path=/echo
         # =====================================
-#        - id: default_path_to_httpbin
-#          uri: ${test.uri}
-#          order: 10000
-#          predicates:
-#            - Path=/**
+        - id: default_path_to_httpbin
+          uri: ${test.uri}
+          order: 10000
+          predicates:
+            - Path=/**
     zookeeper:
       connect-string: localhost:2181
         #config:
@@ -98,3 +80,6 @@ logging:
 
 management.endpoints.web.exposure.include: '*'
 
+feign:
+  hystrix:
+    enabled: true

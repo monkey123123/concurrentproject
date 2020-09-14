@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  security:
+    user:
+      name: "root" # springboot admin 用户名
+      password: "root" # 密码
+  mail: # 邮箱告警通知
+      host: smtp.sohu.com  #邮箱主机名
+      username: 514081681@qq.com # 通知邮箱用户名
+      #username: beanpodtechpkms@sohu.com # 通知邮箱用户名
+      password: xxxx # 邮箱密码，代码里不要体现真实密码，部署环境填真实密码即可
+      #password: doujia123456 # 邮箱密码
+      properties:
+        mail.smtp.auth: true # 权限通知
+        mail.smtp.starttls.enable: true
+        mail.smtp.starttls.required: true
+  boot:
+    admin:
+      notify:
+        mail:
+          to: 1031241542@qq.com  # 接收邮箱
+          from: 514081681@qq.com # 通知邮箱
+          #from: beanpodtechpkms@sohu.com # 通知邮箱
+  profiles:
+    active: dev

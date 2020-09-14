@@ -22,6 +22,7 @@
         <module>concurrent-system</module>
         <module>concurrent-gateway</module>
         <module>concurrent-admin</module>
+        <module>concurrent-hystrix-dashboard</module>
     </modules>
     <name>concurrent</name>
 

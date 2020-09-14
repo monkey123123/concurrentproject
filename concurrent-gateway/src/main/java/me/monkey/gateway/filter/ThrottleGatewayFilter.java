@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.monkey.gateway;
+package me.monkey.gateway.filter;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -81,7 +81,7 @@ public class ThrottleGatewayFilter implements GatewayFilter {
 
 	@Override
 	public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-
+		System.out.println("1111----------------");
 		TokenBucket tokenBucket = TokenBuckets.builder().withCapacity(capacity)
 				.withFixedIntervalRefillStrategy(refillTokens, refillPeriod, refillUnit)
 				.build();

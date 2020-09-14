@@ -16,14 +16,21 @@
 
 package me.monkey.gateway;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import me.monkey.gateway.AdditionalRoutes;
+import me.monkey.gateway.filter.AuthFilter;
+import me.monkey.gateway.filter.ThrottleGatewayFilter;
+import me.monkey.gateway.filter.UriConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.gateway.filter.GatewayFilter;
+import org.springframework.web.bind.annotation.RequestMapping;
 import reactor.core.publisher.Mono;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -41,6 +48,13 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 /**
  * @author Spencer Gibb
  */
+
+/**
+ * @EnableCircuitBreaker - 开启断路器。就是开启hystrix服务容错能力。
+ * 当应用启用Hystrix服务容错的时候，必须增加的一个注解。
+ */
+@EnableConfigurationProperties(UriConfiguration.class)
+@EnableCircuitBreaker
 @SpringBootConfiguration
 @EnableAutoConfiguration
 @EnableDiscoveryClient
@@ -49,19 +63,42 @@ public class GatewaySampleApplication {
 
     public static final String HELLO_FROM_FAKE_ACTUATOR_METRICS_GATEWAY_REQUESTS = "hello from fake /actuator/metrics/gateway.requests";
 
-    @Value("${test.uri:http://httpbin.org:80}")
-    String uri;
 
     public static void main(String[] args) {
         SpringApplication.run(GatewaySampleApplication.class, args);
     }
 
+
     @Bean
-    public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
+    public RouteLocator customRouteLocator(RouteLocatorBuilder builder, UriConfiguration uriConfiguration) {
         //@formatter:off
-        // String uri = "http://httpbin.org:80";
+        // String uri = "lb://serviceName";
         // String uri = "http://localhost:9080";
+        String uri = uriConfiguration.getUri();
+
         return builder.routes()
+                .route("default_path_to_httpbin2222",
+                        r -> r.path("/api/**")
+                                .filters(f -> f.filter(new AuthFilter())   // .prefixPath("/") //prefixPath就是在uri最前面加上指定字符串
+                                        .addResponseHeader("X-TestHeader", "foobar2222"))
+                                .uri(uri)
+                )
+                .route(p -> p
+                        .host("*.hystrix.com")
+                        .filters(f -> f.hystrix(config -> config
+                                .setName("mycmd")
+                                .setFallbackUri("forward:/fallback")))
+/*      在 Application.java 中，添加类级别注释 @RestController，然后将以下 @RequestMapping 添加到该类中。
+        src/main/java/gateway/Application.java
+        @RequestMapping("/fallback")
+        public Mono<String> fallback() {
+            return Mono.just("fallback");
+        }
+        */
+                        .uri(uri))
+                .route("hystrix_fallback_route", r -> r.host("*.hystrixfallback.org")
+                        .filters(f -> f.hystrix(c -> c.setName("slowcmd").setFallbackUri("forward:/hystrixfallback")))
+                        .uri(uri))
                 .route(r -> r.host("**.abc.org").and().path("/anything/png")
                         .filters(f ->
                                 f.prefixPath("/httpbin")
@@ -196,4 +233,11 @@ public class GatewaySampleApplication {
 
     }
 
+    @RequestMapping(value = "/fallbackcontroller")
+    public Map<String, String> fallBackController() {
+        Map<String, String> res = new HashMap();
+        res.put("code", "-100");
+        res.put("data", "service not available");
+        return res;
+    }
 }

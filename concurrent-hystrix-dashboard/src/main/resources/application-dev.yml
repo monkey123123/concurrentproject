@@ -1,0 +1,10 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: hystrix-dashboard
+  security:
+    user:
+      name: "root" # springboot admin 用户名
+      password: "root" # 密码
+
