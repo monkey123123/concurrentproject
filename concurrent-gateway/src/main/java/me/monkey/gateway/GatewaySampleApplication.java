@@ -21,6 +21,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import me.monkey.gateway.filter.AuthFilter;
+import me.monkey.gateway.filter.LogGatewayFilterFactory;
 import me.monkey.gateway.filter.ThrottleGatewayFilter;
 import me.monkey.gateway.filter.UriConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +55,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
  * 当应用启用Hystrix服务容错的时候，必须增加的一个注解。
  */
 @EnableConfigurationProperties(UriConfiguration.class)
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 @SpringBootConfiguration
 @EnableAutoConfiguration
 @EnableDiscoveryClient
@@ -68,6 +69,11 @@ public class GatewaySampleApplication {
         SpringApplication.run(GatewaySampleApplication.class, args);
     }
 
+    //注册自定义的filter
+    @Bean
+    public LogGatewayFilterFactory logGatewayFilterFactory() {
+        return new LogGatewayFilterFactory();
+    }
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder, UriConfiguration uriConfiguration) {
@@ -77,28 +83,58 @@ public class GatewaySampleApplication {
         String uri = uriConfiguration.getUri();
 
         return builder.routes()
+                .route("rewrite_empty_response", r -> r.path("/")
+                        .filters(f -> f
+                                .addResponseHeader("X-TestHeader", "rewrite_empty_response")
+                                .modifyResponseBody(String.class, String.class,
+                                        (exchange, s) -> {
+                                            return Mono.just("Error!BecauseOfYouCannotAccessThisAddress!");
+                                        })
+
+                        ).uri(uri)
+                )
+                .route("default_path_to_httpbin1111",
+                        r -> r.path("/")
+                                .filters(
+                                        f -> f.filter(
+                                                new AuthFilter()
+                                        )
+
+                                )
+
+                                .uri(uri)
+                )
                 .route("default_path_to_httpbin2222",
                         r -> r.path("/api/**")
                                 .filters(f -> f.filter(new AuthFilter())   // .prefixPath("/") //prefixPath就是在uri最前面加上指定字符串
-                                        .addResponseHeader("X-TestHeader", "foobar2222"))
+//                                .stripPrefix(1) //转发时去掉请求地址的服务名前缀
+                                .addResponseHeader("X-TestHeader", "foobar2222"))
                                 .uri(uri)
                 )
-                .route(p -> p
-                        .host("*.hystrix.com")
-                        .filters(f -> f.hystrix(config -> config
-                                .setName("mycmd")
-                                .setFallbackUri("forward:/fallback")))
-/*      在 Application.java 中，添加类级别注释 @RestController，然后将以下 @RequestMapping 添加到该类中。
+                .route("default_path_to_websocket1111",
+                        r -> r.path("/websocket/**")
+                                .filters(f -> f.filter(new AuthFilter()))
+                                .uri(uri)
+                )
+
+        /*      在 Application.java 中，添加类级别注释 @RestController，然后将以下 @RequestMapping 添加到该类中。
         src/main/java/gateway/Application.java
         @RequestMapping("/fallback")
         public Mono<String> fallback() {
             return Mono.just("fallback");
         }
         */
+                /*
+                .route(p -> p
+                        .host("*.hystrix.com")
+                        .filters(f -> f.hystrix(config -> config
+                                .setName("mycmd")
+                                .setFallbackUri("forward:/fallback")))
                         .uri(uri))
                 .route("hystrix_fallback_route", r -> r.host("*.hystrixfallback.org")
                         .filters(f -> f.hystrix(c -> c.setName("slowcmd").setFallbackUri("forward:/hystrixfallback")))
                         .uri(uri))
+                */
                 .route(r -> r.host("**.abc.org").and().path("/anything/png")
                         .filters(f ->
                                 f.prefixPath("/httpbin")

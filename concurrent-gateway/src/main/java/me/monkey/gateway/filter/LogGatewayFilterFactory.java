@@ -5,6 +5,7 @@ import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import reactor.core.publisher.Mono;
 
+//简单的过滤器日志过滤器，用于打印出每次请求所花费的时间
 @Slf4j
 public class LogGatewayFilterFactory extends AbstractGatewayFilterFactory<LogGatewayFilterFactory.Config> {
 

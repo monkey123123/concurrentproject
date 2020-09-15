@@ -1,0 +1,614 @@
+2020-09-14 14:12:56 12838 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 14:20:12 11919 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 14:24:38 12187 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 14:26:49 4115 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:64)
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:205)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:177)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158)
+	... 9 common frames omitted
+2020-09-14 14:28:15 13423 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 14:30:40 13650 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 14:37:55 13912 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 14:42:55 13266 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 14:48:44 13555 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method readBodyPredicateFactory in org.springframework.cloud.gateway.config.GatewayAutoConfiguration required a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
+
+2020-09-14 16:16:04 5225 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: No ConfigurationProperties annotation found on  'me.monkey.gateway.filter.UriConfiguration'.
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.registerBeanDefinition(ConfigurationPropertiesBeanRegistrar.java:85)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.register(ConfigurationPropertiesBeanRegistrar.java:59)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.register(ConfigurationPropertiesBeanRegistrar.java:53)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.registerBeanDefinitions(EnableConfigurationPropertiesRegistrar.java:40)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:384)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:383)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:64)
+2020-09-14 16:18:01 4641 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: No ConfigurationProperties annotation found on  'me.monkey.gateway.filter.UriConfiguration'.
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.registerBeanDefinition(ConfigurationPropertiesBeanRegistrar.java:85)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.register(ConfigurationPropertiesBeanRegistrar.java:59)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.register(ConfigurationPropertiesBeanRegistrar.java:53)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.registerBeanDefinitions(EnableConfigurationPropertiesRegistrar.java:40)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:384)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:383)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:64)
+2020-09-14 17:59:33 7725 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customRouteLocator' defined in me.monkey.gateway.GatewaySampleApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'customRouteLocator' threw exception; nested exception is java.lang.ClassCastException: me.monkey.gateway.filter.AuthFilter cannot be cast to org.springframework.cloud.gateway.filter.GatewayFilter
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:69)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'customRouteLocator' threw exception; nested exception is java.lang.ClassCastException: me.monkey.gateway.filter.AuthFilter cannot be cast to org.springframework.cloud.gateway.filter.GatewayFilter
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 20 common frames omitted
+Caused by: java.lang.ClassCastException: me.monkey.gateway.filter.AuthFilter cannot be cast to org.springframework.cloud.gateway.filter.GatewayFilter
+	at me.monkey.gateway.GatewaySampleApplication.lambda$null$0(GatewaySampleApplication.java:83)
+	at org.springframework.cloud.gateway.route.builder.BooleanSpec.filters(BooleanSpec.java:77)
+	at me.monkey.gateway.GatewaySampleApplication.lambda$customRouteLocator$1(GatewaySampleApplication.java:83)
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:70)
+	at me.monkey.gateway.GatewaySampleApplication.customRouteLocator(GatewaySampleApplication.java:81)
+	at me.monkey.gateway.GatewaySampleApplication$$EnhancerBySpringCGLIB$$95d69667.CGLIB$customRouteLocator$2(<generated>)
+	at me.monkey.gateway.GatewaySampleApplication$$EnhancerBySpringCGLIB$$95d69667$$FastClassBySpringCGLIB$$8d42d214.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at me.monkey.gateway.GatewaySampleApplication$$EnhancerBySpringCGLIB$$95d69667.customRouteLocator(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2020-09-14 18:10:01 7451 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customRouteLocator' defined in me.monkey.gateway.GatewaySampleApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'customRouteLocator' threw exception; nested exception is java.lang.ClassCastException: me.monkey.gateway.filter.AuthFilter cannot be cast to org.springframework.cloud.gateway.filter.GatewayFilter
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:68)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.route.RouteLocator]: Factory method 'customRouteLocator' threw exception; nested exception is java.lang.ClassCastException: me.monkey.gateway.filter.AuthFilter cannot be cast to org.springframework.cloud.gateway.filter.GatewayFilter
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 20 common frames omitted
+Caused by: java.lang.ClassCastException: me.monkey.gateway.filter.AuthFilter cannot be cast to org.springframework.cloud.gateway.filter.GatewayFilter
+	at me.monkey.gateway.GatewaySampleApplication.lambda$null$0(GatewaySampleApplication.java:82)
+	at org.springframework.cloud.gateway.route.builder.BooleanSpec.filters(BooleanSpec.java:77)
+	at me.monkey.gateway.GatewaySampleApplication.lambda$customRouteLocator$1(GatewaySampleApplication.java:82)
+	at org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder$Builder.route(RouteLocatorBuilder.java:70)
+	at me.monkey.gateway.GatewaySampleApplication.customRouteLocator(GatewaySampleApplication.java:80)
+	at me.monkey.gateway.GatewaySampleApplication$$EnhancerBySpringCGLIB$$8170d11e.CGLIB$customRouteLocator$0(<generated>)
+	at me.monkey.gateway.GatewaySampleApplication$$EnhancerBySpringCGLIB$$8170d11e$$FastClassBySpringCGLIB$$4bd8ffb.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at me.monkey.gateway.GatewaySampleApplication$$EnhancerBySpringCGLIB$$8170d11e.customRouteLocator(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2020-09-14 18:18:12 65113 [reactor-http-nio-2] ERROR o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler - [8b352c09-1]  500 Server Error for HTTP DELETE "/api/device/e91b12b0-f281-11ea-b41d-8f6d66ffb509"
+com.alibaba.fastjson.JSONException: write javaBean error, fastjson version 1.2.54, class org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext, fieldName : applicationContext, class path resource [META-INF/resources/webjars/] cannot be resolved to absolute file path because it does not reside in the file system: jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.9.2/springfox-swagger-ui-2.9.2.jar!/META-INF/resources/webjars/
+	at com.alibaba.fastjson.serializer.JavaBeanSerializer.write(JavaBeanSerializer.java:523)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
+	|_ checkpoint ⇢ HTTP DELETE "/api/device/e91b12b0-f281-11ea-b41d-8f6d66ffb509" [ExceptionHandlingWebHandler]
+Stack trace:
+		at com.alibaba.fastjson.serializer.JavaBeanSerializer.write(JavaBeanSerializer.java:523)
+		at com.alibaba.fastjson.serializer.JavaBeanSerializer.write(JavaBeanSerializer.java:160)
+		at com.alibaba.fastjson.serializer.JSONSerializer.writeWithFieldName(JSONSerializer.java:310)
+		at com.alibaba.fastjson.serializer.ASMSerializer_1_DefaultServerWebExchange.write(Unknown Source)
+		at com.alibaba.fastjson.serializer.JSONSerializer.write(JSONSerializer.java:281)
+		at com.alibaba.fastjson.JSON.toJSONString(JSON.java:676)
+		at com.alibaba.fastjson.JSON.toJSONString(JSON.java:614)
+		at com.alibaba.fastjson.JSON.toJSONString(JSON.java:579)
+		at me.monkey.gateway.filter.AuthFilter.filter(AuthFilter.java:26)
+		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:118)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:274)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:851)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1782)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:241)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2344)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:230)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:274)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:851)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:73)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:173)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1782)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.innerResult(MonoFilterWhen.java:193)
+		at reactor.core.publisher.MonoFilterWhen$FilterWhenInner.onNext(MonoFilterWhen.java:260)
+		at reactor.core.publisher.MonoFilterWhen$FilterWhenInner.onNext(MonoFilterWhen.java:228)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2344)
+		at reactor.core.publisher.MonoFilterWhen$FilterWhenInner.onSubscribe(MonoFilterWhen.java:249)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:150)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2344)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onSubscribe(MonoFilterWhen.java:103)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:441)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:243)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:91)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:38)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.request(FluxDematerialize.java:120)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:228)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onSubscribe(FluxDematerialize.java:70)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+		at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:441)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:243)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:228)
+		at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at org.springframework.cloud.sleuth.instrument.web.TraceWebFilter$MonoWebFilterTrace.subscribe(TraceWebFilter.java:165)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.netty.http.server.HttpServerHandle.onStateChange(HttpServerHandle.java:65)
+		at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:518)
+		at reactor.netty.tcp.TcpServerBind$ChildObserver.onStateChange(TcpServerBind.java:267)
+		at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:462)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:96)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:170)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:748)
+Caused by: com.alibaba.fastjson.JSONException: class path resource [META-INF/resources/webjars/] cannot be resolved to absolute file path because it does not reside in the file system: jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.9.2/springfox-swagger-ui-2.9.2.jar!/META-INF/resources/webjars/
+	at com.alibaba.fastjson.serializer.JSONSerializer.writeWithFieldName(JSONSerializer.java:312)
+	at com.alibaba.fastjson.serializer.ASMSerializer_25_ResourceWebHandler.write(Unknown Source)
+	at com.alibaba.fastjson.serializer.MapSerializer.write(MapSerializer.java:270)
+	at com.alibaba.fastjson.serializer.MapSerializer.write(MapSerializer.java:44)
+	at com.alibaba.fastjson.serializer.JSONSerializer.writeWithFieldName(JSONSerializer.java:310)
+	at com.alibaba.fastjson.serializer.ASMSerializer_23_ResourceUrlProvider.write(Unknown Source)
+	at com.alibaba.fastjson.serializer.CollectionCodec.write(CollectionCodec.java:104)
+	at com.alibaba.fastjson.serializer.FieldSerializer.writeValue(FieldSerializer.java:313)
+	at com.alibaba.fastjson.serializer.JavaBeanSerializer.write(JavaBeanSerializer.java:454)
+	at com.alibaba.fastjson.serializer.JavaBeanSerializer.write(JavaBeanSerializer.java:160)
+	at com.alibaba.fastjson.serializer.JSONSerializer.writeWithFieldName(JSONSerializer.java:310)
+	at com.alibaba.fastjson.serializer.ASMSerializer_1_DefaultServerWebExchange.write(Unknown Source)
+	at com.alibaba.fastjson.serializer.JSONSerializer.write(JSONSerializer.java:281)
+	at com.alibaba.fastjson.JSON.toJSONString(JSON.java:676)
+	at com.alibaba.fastjson.JSON.toJSONString(JSON.java:614)
+	at com.alibaba.fastjson.JSON.toJSONString(JSON.java:579)
+	at me.monkey.gateway.filter.AuthFilter.filter(AuthFilter.java:26)
+	at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:118)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:274)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:851)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1782)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:241)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2344)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:230)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:274)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:851)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:73)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:173)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1782)
+	at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.innerResult(MonoFilterWhen.java:193)
+	at reactor.core.publisher.MonoFilterWhen$FilterWhenInner.onNext(MonoFilterWhen.java:260)
+	at reactor.core.publisher.MonoFilterWhen$FilterWhenInner.onNext(MonoFilterWhen.java:228)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2344)
+	at reactor.core.publisher.MonoFilterWhen$FilterWhenInner.onSubscribe(MonoFilterWhen.java:249)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:150)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2344)
+	at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onSubscribe(MonoFilterWhen.java:103)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:441)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:243)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:91)
+	at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:38)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+	at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.request(FluxDematerialize.java:120)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:228)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+	at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onSubscribe(FluxDematerialize.java:70)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:441)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:243)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onNext(ScopePassingSpanSubscriber.java:90)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.request(ScopePassingSpanSubscriber.java:76)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:228)
+	at org.springframework.cloud.sleuth.instrument.reactor.ScopePassingSpanSubscriber.onSubscribe(ScopePassingSpanSubscriber.java:69)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at org.springframework.cloud.sleuth.instrument.web.TraceWebFilter$MonoWebFilterTrace.subscribe(TraceWebFilter.java:165)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.netty.http.server.HttpServerHandle.onStateChange(HttpServerHandle.java:65)
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:518)
+	at reactor.netty.tcp.TcpServerBind$ChildObserver.onStateChange(TcpServerBind.java:267)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:462)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:96)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:170)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: class path resource [META-INF/resources/webjars/] cannot be resolved to absolute file path because it does not reside in the file system: jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.9.2/springfox-swagger-ui-2.9.2.jar!/META-INF/resources/webjars/
+	at org.springframework.util.ResourceUtils.getFile(ResourceUtils.java:217)
+	at org.springframework.core.io.AbstractFileResolvingResource.getFile(AbstractFileResolvingResource.java:154)
+	at com.alibaba.fastjson.serializer.ASMSerializer_26_ClassPathResource.write(Unknown Source)
+	at com.alibaba.fastjson.serializer.JSONSerializer.writeWithFieldName(JSONSerializer.java:310)
+	... 161 common frames omitted
