@@ -26,7 +26,6 @@ default-filters:
       name: fallbackcmd
       fallbackUri: forward:/fallbackcontroller
 
-
 spring:
   application:
     name: concurrent-gateway
@@ -35,6 +34,9 @@ spring:
   cloud:
     gateway:
       loadbalancer:
+        ribbon:
+          #设置成false to use ReactiveLoadBalancerClientFilter instead of blocking ribbon LoadBalancerClient
+          enabled: false
         # springcloudgateway默认lb，可以不配置
         schemePrefix: lb
       default-filters:
@@ -53,6 +55,14 @@ spring:
           order: 9000
           predicates:
             - Path=/echo
+
+        # Add your routes here.
+#        - id: default_path_to_httpbin2222
+#          uri: ${api-application.uri}
+#          predicates:
+#            - Path=/api/**
+#          filters:
+#            - RewritePath=/httpbin/(?<segment>.*), /$\{segment}
         # =====================================
 #        - id: default_path_to_httpbin
 #          uri: ${test.uri}
@@ -94,14 +104,14 @@ spring:
           username: ${username}
           password: ${password}
           enabled: true
-          url: http://localhost:8778
+          url: http://localhost:8888
           instance:
             metadata:
               user.name: ${username}
               user.password: ${password}
 
-  username: "root"
-  password: "root"
+username: "root"
+password: "root"
 
 logging:
   level:

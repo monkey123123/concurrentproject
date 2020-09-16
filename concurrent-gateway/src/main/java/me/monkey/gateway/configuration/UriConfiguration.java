@@ -1,4 +1,4 @@
-package me.monkey.gateway.filter;
+package me.monkey.gateway.configuration;
 
 
 import org.springframework.beans.factory.annotation.Value;

@@ -12,6 +12,7 @@ open class AdditionalRoutes {
 
     @Value("\${test.uri:http://httpbin.org:80}")
     var uri: String? = null
+/*
 
     @Bean
     open fun additionalRouteLocator(builder: RouteLocatorBuilder) = builder.routes {
@@ -24,5 +25,6 @@ open class AdditionalRoutes {
             uri(uri)
         }
     }
+*/
 
 }

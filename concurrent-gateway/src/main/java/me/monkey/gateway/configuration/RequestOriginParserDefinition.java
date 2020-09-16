@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
-@Component
+//@Component
 public class RequestOriginParserDefinition implements RequestOriginParser {
     @Override
     public String parseOrigin(HttpServletRequest request) {

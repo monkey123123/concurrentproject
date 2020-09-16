@@ -1,5 +1,6 @@
-package me.monkey.gateway.filter;
+package me.monkey.gateway.configuration;
 
+import me.monkey.gateway.filter.CustomGlobalFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -11,6 +12,11 @@ import reactor.core.publisher.Mono;
 @Configuration
 public class ExampleConfiguration {
 	private Logger log = LoggerFactory.getLogger(ExampleConfiguration.class);
+
+	@Bean
+	public GlobalFilter customFilter() {
+		return new CustomGlobalFilter();
+	}
 
 	@Bean
 	@Order(-1)

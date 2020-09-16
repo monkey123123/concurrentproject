@@ -136,7 +136,7 @@ Action:
 Consider defining a bean of type 'org.springframework.http.codec.ServerCodecConfigurer' in your configuration.
 
 2020-09-14 16:16:04 5225 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: No ConfigurationProperties annotation found on  'me.monkey.gateway.filter.UriConfiguration'.
+java.lang.IllegalStateException: No ConfigurationProperties annotation found on  'me.monkey.gateway.configuration.UriConfiguration'.
 	at org.springframework.util.Assert.state(Assert.java:97)
 	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.registerBeanDefinition(ConfigurationPropertiesBeanRegistrar.java:85)
 	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.register(ConfigurationPropertiesBeanRegistrar.java:59)
@@ -164,7 +164,7 @@ java.lang.IllegalStateException: No ConfigurationProperties annotation found on 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at me.monkey.gateway.GatewaySampleApplication.main(GatewaySampleApplication.java:64)
 2020-09-14 16:18:01 4641 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: No ConfigurationProperties annotation found on  'me.monkey.gateway.filter.UriConfiguration'.
+java.lang.IllegalStateException: No ConfigurationProperties annotation found on  'me.monkey.gateway.configuration.UriConfiguration'.
 	at org.springframework.util.Assert.state(Assert.java:97)
 	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.registerBeanDefinition(ConfigurationPropertiesBeanRegistrar.java:85)
 	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar.register(ConfigurationPropertiesBeanRegistrar.java:59)

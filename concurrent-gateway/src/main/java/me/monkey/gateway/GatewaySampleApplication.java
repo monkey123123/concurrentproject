@@ -20,15 +20,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import me.monkey.gateway.filter.AuthFilter;
-import me.monkey.gateway.filter.LogGatewayFilterFactory;
-import me.monkey.gateway.filter.ThrottleGatewayFilter;
-import me.monkey.gateway.filter.UriConfiguration;
-import org.springframework.beans.factory.annotation.Autowired;
+import me.monkey.gateway.configuration.UriConfiguration;
+import me.monkey.gateway.filter.*;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import reactor.core.publisher.Mono;
 
@@ -59,7 +54,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 @SpringBootConfiguration
 @EnableAutoConfiguration
 @EnableDiscoveryClient
-@Import(AdditionalRoutes.class)
+//@Import(AdditionalRoutes.class)
 public class GatewaySampleApplication {
 
     public static final String HELLO_FROM_FAKE_ACTUATOR_METRICS_GATEWAY_REQUESTS = "hello from fake /actuator/metrics/gateway.requests";
@@ -69,7 +64,7 @@ public class GatewaySampleApplication {
         SpringApplication.run(GatewaySampleApplication.class, args);
     }
 
-    //注册自定义的filter
+    //注册自定义的filter，测试发现未生效
     @Bean
     public LogGatewayFilterFactory logGatewayFilterFactory() {
         return new LogGatewayFilterFactory();
@@ -83,34 +78,39 @@ public class GatewaySampleApplication {
         String uri = uriConfiguration.getUri();
 
         return builder.routes()
+                .route("test_two_filter", r -> r.path("/twofilter")
+                        .filters(
+                                f -> f.filter(new TestFilter())
+                                      .filter(new TestFilter())
+                        )
+                        .uri(uri)
+                )
                 .route("rewrite_empty_response", r -> r.path("/")
                         .filters(f -> f
                                 .addResponseHeader("X-TestHeader", "rewrite_empty_response")
                                 .modifyResponseBody(String.class, String.class,
                                         (exchange, s) -> {
-                                            return Mono.just("Error!BecauseOfYouCannotAccessThisAddress!");
+                                            return Mono.just("Error!YouCannotAccessThisAddress!");
                                         })
-
                         ).uri(uri)
                 )
                 .route("default_path_to_httpbin1111",
-                        r -> r.path("/")
-                                .filters(
-                                        f -> f.filter(
-                                                new AuthFilter()
-                                        )
-
+                    r -> r.path("/")
+                        .filters(
+                                f -> f.filter(
+                                        new AuthFilter()
                                 )
-
-                                .uri(uri)
+                        )
+                        .uri(uri)
                 )
+
                 .route("default_path_to_httpbin2222",
-                        r -> r.path("/api/**")
+                        r -> r.path("/api")
                                 .filters(f -> f.filter(new AuthFilter())   // .prefixPath("/") //prefixPath就是在uri最前面加上指定字符串
-//                                .stripPrefix(1) //转发时去掉请求地址的服务名前缀
                                 .addResponseHeader("X-TestHeader", "foobar2222"))
                                 .uri(uri)
                 )
+
                 .route("default_path_to_websocket1111",
                         r -> r.path("/websocket/**")
                                 .filters(f -> f.filter(new AuthFilter()))
@@ -276,4 +276,7 @@ public class GatewaySampleApplication {
         res.put("data", "service not available");
         return res;
     }
+
+
+
 }
