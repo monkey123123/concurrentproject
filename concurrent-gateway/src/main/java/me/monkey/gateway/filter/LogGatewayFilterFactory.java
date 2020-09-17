@@ -19,6 +19,7 @@ public class LogGatewayFilterFactory extends AbstractGatewayFilterFactory<LogGat
 
     @Override
     public GatewayFilter apply(Config config) {
+        System.out.println("apply----------------------");
         return (exchange, chain) -> {
             exchange.getAttributes().put(REQUEST_START_TIME, System.currentTimeMillis());
             return chain.filter(exchange).then(

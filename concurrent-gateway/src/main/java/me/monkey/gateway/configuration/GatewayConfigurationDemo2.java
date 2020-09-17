@@ -1,9 +1,6 @@
 package me.monkey.gateway.configuration;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import javax.annotation.PostConstruct;
 
@@ -17,8 +14,15 @@ import com.alibaba.csp.sentinel.adapter.gateway.common.rule.GatewayParamFlowItem
 import com.alibaba.csp.sentinel.adapter.gateway.common.rule.GatewayRuleManager;
 import com.alibaba.csp.sentinel.adapter.gateway.sc.SentinelGatewayFilter;
 import com.alibaba.csp.sentinel.adapter.gateway.sc.exception.SentinelGatewayBlockExceptionHandler;
+import com.alibaba.csp.sentinel.datasource.ReadableDataSource;
+import com.alibaba.csp.sentinel.datasource.zookeeper.ZookeeperDataSource;
+import com.alibaba.csp.sentinel.property.SentinelProperty;
 import com.alibaba.csp.sentinel.slots.block.RuleConstant;
 
+import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
+import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.context.annotation.Bean;
@@ -31,14 +35,14 @@ import org.springframework.web.reactive.result.view.ViewResolver;
 /**
  * @author Eric Zhao
  */
-@Configuration
-public class GatewayConfiguration {
+//@Configuration
+public class GatewayConfigurationDemo2 {
 
     private final List<ViewResolver> viewResolvers;
     private final ServerCodecConfigurer serverCodecConfigurer;
 
-    public GatewayConfiguration(ObjectProvider<List<ViewResolver>> viewResolversProvider,
-                                ServerCodecConfigurer serverCodecConfigurer) {
+    public GatewayConfigurationDemo2(ObjectProvider<List<ViewResolver>> viewResolversProvider,
+                                     ServerCodecConfigurer serverCodecConfigurer) {
         this.viewResolvers = viewResolversProvider.getIfAvailable(Collections::emptyList);
         this.serverCodecConfigurer = serverCodecConfigurer;
     }
@@ -60,27 +64,40 @@ public class GatewayConfiguration {
     public void doInit() {
         System.out.println("doInit--------------------------------");
 //        initCustomizedApis();
-        initGatewayRules2();
+//        initGatewayRules();
+//        initFlowQpsRule();
+//        loadRules();
+        initGatewayFlowRules();
     }
 
-    private void initGatewayRules2() {
+
+    private void initGatewayFlowRules() {
         Set<GatewayFlowRule> rules = new HashSet<>();
 
         rules.add(new GatewayFlowRule("default_path_to_httpbin2222")
-                .setCount(1)
-                .setIntervalSec(1)
-                .setControlBehavior(RuleConstant.CONTROL_BEHAVIOR_DEFAULT)
-                .setMaxQueueingTimeoutMs(600)
-                /*
-                .setParamItem(new GatewayParamFlowItem()
-                        .setParseStrategy(SentinelGatewayConstants.PARAM_PARSE_STRATEGY_HEADER)
-                        .setFieldName("X-Sentinel-Flag")
-                )*/
+                        .setCount(0)
+                        .setIntervalSec(1)
+                        .setControlBehavior(RuleConstant.CONTROL_BEHAVIOR_DEFAULT)
+                        .setMaxQueueingTimeoutMs(600)
         );
 
         GatewayRuleManager.loadRules(rules);
         System.out.println("initGatewayRules2--------------------------------");
     }
+
+    private void loadRules() {
+        System.out.println("-----------loadRules----------------");
+        final String remoteAddress = "127.0.0.1:2181";
+        final String path = "/Sentinel-Demo/SYSTEM-CODE-DEMO-FLOW";
+
+        ReadableDataSource<String, List<FlowRule>> flowRuleDataSource = new ZookeeperDataSource<>(remoteAddress, path,
+                source -> JSON.parseObject(source, new TypeReference<List<FlowRule>>() {}));
+//        flowRuleDataSource.getProperty().updateValue()
+        SentinelProperty<List<FlowRule>> property = flowRuleDataSource.getProperty();
+        FlowRuleManager.register2Property(flowRuleDataSource.getProperty());
+
+    }
+
     private void initCustomizedApis() {
         Set<ApiDefinition> definitions = new HashSet<>();
         ApiDefinition api1 = new ApiDefinition("some_customized_api")
@@ -99,6 +116,21 @@ public class GatewayConfiguration {
         GatewayApiDefinitionManager.loadApiDefinitions(definitions);
     }
 
+    //限流规则
+    private void initFlowQpsRule() {
+        List<FlowRule> rules = new ArrayList<>();
+        FlowRule rule = new FlowRule("default_path_to_httpbin2222");
+        // set limit qps to 20
+        rule.setCount(0);
+        rule.setStrategy(0);
+        rule.setControlBehavior(0);
+        rule.setResource("default_path_to_httpbin2222");
+        rule.setGrade(RuleConstant.FLOW_GRADE_QPS);
+        rule.setLimitApp("default");
+        rules.add(rule);
+        FlowRuleManager.loadRules(rules);
+    }
+
     private void initGatewayRules() {
         Set<GatewayFlowRule> rules = new HashSet<>();
         rules.add(new GatewayFlowRule("aliyun_route")
@@ -113,17 +145,21 @@ public class GatewayConfiguration {
                 .setParseStrategy(SentinelGatewayConstants.PARAM_PARSE_STRATEGY_CLIENT_IP)
             )
         );
-        rules.add(new GatewayFlowRule("httpbin_route_custom")
-            .setCount(0)
+
+        rules.add(new GatewayFlowRule("default_path_to_httpbin2222")
+            .setCount(0.0)
             .setIntervalSec(1)
-            .setControlBehavior(RuleConstant.CONTROL_BEHAVIOR_RATE_LIMITER)
+            .setControlBehavior(0)
+                .setGrade(1)
+//            .setControlBehavior(RuleConstant.CONTROL_BEHAVIOR_RATE_LIMITER)
             .setMaxQueueingTimeoutMs(600)
             .setParamItem(new GatewayParamFlowItem()
                 .setParseStrategy(SentinelGatewayConstants.PARAM_PARSE_STRATEGY_HEADER)
                 .setFieldName("X-Sentinel-Flag")
             )
         );
-        rules.add(new GatewayFlowRule("httpbin_route_custom")
+/*
+        rules.add(new GatewayFlowRule("default_path_to_httpbin2222")
             .setCount(0)
             .setIntervalSec(1)
             .setParamItem(new GatewayParamFlowItem()
@@ -131,7 +167,7 @@ public class GatewayConfiguration {
                 .setFieldName("pa")
             )
         );
-        rules.add(new GatewayFlowRule("httpbin_route_custom")
+        rules.add(new GatewayFlowRule("default_path_to_httpbin2222")
             .setCount(0)
             .setIntervalSec(30)
             .setParamItem(new GatewayParamFlowItem()
@@ -141,6 +177,7 @@ public class GatewayConfiguration {
                 .setMatchStrategy(SentinelGatewayConstants.PARAM_MATCH_STRATEGY_CONTAINS)
             )
         );
+*/
 
         rules.add(new GatewayFlowRule("some_customized_api")
             .setResourceMode(SentinelGatewayConstants.RESOURCE_MODE_CUSTOM_API_NAME)

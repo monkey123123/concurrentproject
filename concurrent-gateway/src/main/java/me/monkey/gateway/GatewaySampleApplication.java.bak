@@ -49,26 +49,25 @@ import org.springframework.web.reactive.function.server.ServerResponse;
  * @EnableCircuitBreaker - 开启断路器。就是开启hystrix服务容错能力。
  * 当应用启用Hystrix服务容错的时候，必须增加的一个注解。
  */
-@EnableConfigurationProperties(UriConfiguration.class)
-//@EnableCircuitBreaker
-@SpringBootConfiguration
-@EnableAutoConfiguration
-@EnableDiscoveryClient
+//@EnableConfigurationProperties(UriConfiguration.class)
+//@SpringBootConfiguration
+//@EnableAutoConfiguration
+//@EnableDiscoveryClient
 //@Import(AdditionalRoutes.class)
 public class GatewaySampleApplication {
 
     public static final String HELLO_FROM_FAKE_ACTUATOR_METRICS_GATEWAY_REQUESTS = "hello from fake /actuator/metrics/gateway.requests";
 
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         SpringApplication.run(GatewaySampleApplication.class, args);
     }
 
     //注册自定义的filter，测试发现未生效
-    @Bean
-    public LogGatewayFilterFactory logGatewayFilterFactory() {
-        return new LogGatewayFilterFactory();
-    }
+//    @Bean
+//    public LogGatewayFilterFactory logGatewayFilterFactory() {
+//        return new LogGatewayFilterFactory();
+//    }
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder, UriConfiguration uriConfiguration) {
@@ -103,13 +102,14 @@ public class GatewaySampleApplication {
                         )
                         .uri(uri)
                 )
-
+/*
                 .route("default_path_to_httpbin2222",
-                        r -> r.path("/api")
+                        r -> r.path("/api/**")
                                 .filters(f -> f.filter(new AuthFilter())   // .prefixPath("/") //prefixPath就是在uri最前面加上指定字符串
                                 .addResponseHeader("X-TestHeader", "foobar2222"))
                                 .uri(uri)
                 )
+*/
 
                 .route("default_path_to_websocket1111",
                         r -> r.path("/websocket/**")

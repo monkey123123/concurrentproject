@@ -27,6 +27,8 @@ default-filters:
       fallbackUri: forward:/fallbackcontroller
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
   application:
     name: concurrent-gateway
   jmx:
@@ -57,10 +59,10 @@ spring:
             - Path=/echo
 
         # Add your routes here.
-#        - id: default_path_to_httpbin2222
-#          uri: ${api-application.uri}
-#          predicates:
-#            - Path=/api/**
+        - id: default_path_to_httpbin2222
+          uri: ${api-application.uri}
+          predicates:
+            - Path=/api/**
 #          filters:
 #            - RewritePath=/httpbin/(?<segment>.*), /$\{segment}
         # =====================================

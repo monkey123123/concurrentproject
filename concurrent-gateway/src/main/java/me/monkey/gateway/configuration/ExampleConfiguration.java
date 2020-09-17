@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import reactor.core.publisher.Mono;
 
-@Configuration
+//@Configuration
 public class ExampleConfiguration {
 	private Logger log = LoggerFactory.getLogger(ExampleConfiguration.class);
 
