@@ -22,6 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 import me.monkey.gateway.configuration.UriConfiguration;
 import me.monkey.gateway.filter.*;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,17 +50,18 @@ import org.springframework.web.reactive.function.server.ServerResponse;
  * @EnableCircuitBreaker - 开启断路器。就是开启hystrix服务容错能力。
  * 当应用启用Hystrix服务容错的时候，必须增加的一个注解。
  */
-//@EnableConfigurationProperties(UriConfiguration.class)
+@EnableConfigurationProperties(UriConfiguration.class)
 //@SpringBootConfiguration
+@SpringBootApplication
 //@EnableAutoConfiguration
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 //@Import(AdditionalRoutes.class)
 public class GatewaySampleApplication {
 
     public static final String HELLO_FROM_FAKE_ACTUATOR_METRICS_GATEWAY_REQUESTS = "hello from fake /actuator/metrics/gateway.requests";
 
 
-    public static void main2(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(GatewaySampleApplication.class, args);
     }
 

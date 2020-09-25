@@ -2,7 +2,7 @@
 <configuration>
     <!--<include resource="org/springframework/boot/logging/logback/base.xml"/>-->
     <!-- 项目的appid -->
-    <property name="APP_ID" value="pkms-dbadapter"/>
+    <property name="APP_ID" value="concurrent-gateway"/>
     <property name="LOG_PATH" value="log"></property>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>

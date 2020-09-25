@@ -17,8 +17,16 @@ import com.alibaba.csp.sentinel.adapter.gateway.common.rule.GatewayParamFlowItem
 import com.alibaba.csp.sentinel.adapter.gateway.common.rule.GatewayRuleManager;
 import com.alibaba.csp.sentinel.adapter.gateway.sc.SentinelGatewayFilter;
 import com.alibaba.csp.sentinel.adapter.gateway.sc.exception.SentinelGatewayBlockExceptionHandler;
+import com.alibaba.csp.sentinel.adapter.gateway.zuul.fallback.ZuulBlockFallbackManager;
+import com.alibaba.csp.sentinel.datasource.ReadableDataSource;
+import com.alibaba.csp.sentinel.datasource.zookeeper.ZookeeperDataSource;
 import com.alibaba.csp.sentinel.slots.block.RuleConstant;
 
+import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
+import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import me.monkey.gateway.fallback.MyBlockFallbackProvider;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.context.annotation.Bean;
@@ -60,14 +68,36 @@ public class GatewayConfiguration {
     public void doInit() {
         System.out.println("doInit--------------------------------");
 //        initCustomizedApis();
+//        来自于dashboard的在客户端重启后会失效，在zookeeper里的会仍然存在。
+//      实现dashboard与zookeeper同步参考  https://blog.csdn.net/tianyaleixiaowu/article/details/94442906
+//        loadRules();
+
         initGatewayRules2();
+        customFallbackResponse();
+    }
+
+    //拉取持久化配置，经测试，只要zookeeper里的配置变化，网关这边同步就能获取到并生效
+    private static void loadRules() {
+
+        final String remoteAddress = "127.0.0.1:2181";
+        final String path = "/Sentinel-Demo/SYSTEM-CODE-DEMO-FLOW";
+
+        ReadableDataSource<String, List<FlowRule>> flowRuleDataSource = new ZookeeperDataSource<>(remoteAddress, path,
+                source -> JSON.parseObject(source, new TypeReference<List<FlowRule>>() {}));
+        FlowRuleManager.register2Property(flowRuleDataSource.getProperty());
+
+
+    }
+    //拉取持久化配置，经测试，只要zookeeper里的配置变化，网关这边同步就能获取到并生效
+    private static void customFallbackResponse() {
+        ZuulBlockFallbackManager.registerProvider(new MyBlockFallbackProvider());
     }
 
     private void initGatewayRules2() {
         Set<GatewayFlowRule> rules = new HashSet<>();
 
         rules.add(new GatewayFlowRule("default_path_to_httpbin2222")
-                .setCount(1)
+                .setCount(0)
                 .setIntervalSec(1)
                 .setControlBehavior(RuleConstant.CONTROL_BEHAVIOR_DEFAULT)
                 .setMaxQueueingTimeoutMs(600)

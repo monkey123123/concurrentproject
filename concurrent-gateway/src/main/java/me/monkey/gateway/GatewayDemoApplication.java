@@ -29,10 +29,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Eric Zhao
  */
-@SpringBootApplication
+//@SpringBootApplication
 public class GatewayDemoApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(GatewayDemoApplication.class, args);
-    }
+//
+//    public static void main(String[] args) {
+//        SpringApplication.run(GatewayDemoApplication.class, args);
+//    }
 }

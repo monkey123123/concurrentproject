@@ -9,7 +9,6 @@ public class TestSynchronized {
         try {
             cdl.await();
             System.out.println("Thread.Id="+Thread.currentThread().getName()+"  ,到达");
-
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
