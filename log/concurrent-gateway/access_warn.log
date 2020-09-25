@@ -102,3 +102,7 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 2020-09-25 15:19:59 7438 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
 2020-09-25 15:19:59 7445 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
 2020-09-25 15:20:08 16638 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-09-25 15:38:13 4919 [main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-25 15:38:15 7110 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-25 15:38:15 7118 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-09-25 15:38:24 15753 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.

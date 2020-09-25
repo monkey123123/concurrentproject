@@ -3259,3 +3259,175 @@ Stack trace:
 2020-09-25 15:38:51 43152 [reactor-http-nio-4] DEBUG reactor.netty.ReactorNetty - [id: 0x4ce7eac0, L:/127.0.0.1:58665 - R:localhost/127.0.0.1:8080] Added decoder [WebSocketFrameAggregator] at the end of the user pipeline, full pipeline: [reactor.left.httpCodec, ws-decoder, ws-encoder, WebSocketFrameAggregator, reactor.right.reactiveBridge, DefaultChannelPipeline$TailContext#0]
 2020-09-25 15:38:51 43153 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x46dee2ce, L:/0:0:0:0:0:0:0:1:8191 - R:/0:0:0:0:0:0:0:1:58664] Subscribing inbound receiver [pending: 1, cancelled:false, inboundDone: false]
 2020-09-25 15:38:51 43153 [reactor-http-nio-4] DEBUG reactor.netty.channel.FluxReceive - [id: 0x4ce7eac0, L:/127.0.0.1:58665 - R:localhost/127.0.0.1:8080] Subscribing inbound receiver [pending: 0, cancelled:false, inboundDone: false]
+2020-09-25 15:46:06 478387 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:46:06 478389 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:46:06 478390 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:46:06 478391 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying {pattern=/api-gateway/**} to Path
+2020-09-25 15:46:06 478392 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying filter {regexp=/api-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:46:06 478394 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_api-gateway
+2020-09-25 15:46:06 478394 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:46:06 478395 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:46:06 478400 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:46:06 478402 [boundedElastic-39] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:47:26 557806 [boundedElastic-40] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:47:26 557807 [boundedElastic-40] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:47:26 557808 [boundedElastic-40] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:47:26 557809 [boundedElastic-40] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:47:26 557809 [boundedElastic-40] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:47:26 557809 [boundedElastic-40] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:47:26 557810 [boundedElastic-40] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:49:02 653925 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:49:02 653928 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:49:02 653929 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:49:02 653930 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying {pattern=/api-gateway/**} to Path
+2020-09-25 15:49:02 653936 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying filter {regexp=/api-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:49:02 653937 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_api-gateway
+2020-09-25 15:49:02 653937 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:49:02 653939 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:49:02 653945 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:49:02 653947 [boundedElastic-43] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:50:37 749220 [reactor-http-nio-4] DEBUG r.n.h.server.HttpServerOperations - [id: 0x46dee2ce, L:/0:0:0:0:0:0:0:1:8191 - R:/0:0:0:0:0:0:0:1:58664] Cancelling Websocket inbound. Closing Websocket
+2020-09-25 15:50:37 749221 [reactor-http-nio-2] DEBUG r.n.h.server.HttpServerOperations - [id: 0x20231579, L:/0:0:0:0:0:0:0:1:8191 - R:/0:0:0:0:0:0:0:1:58594] Cancelling Websocket inbound. Closing Websocket
+2020-09-25 15:50:37 749222 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [id: 0x3f68a46a, L:/127.0.0.1:58596 ! R:localhost/127.0.0.1:8080] Channel closed, now 1 active connections and 0 inactive connections
+2020-09-25 15:50:37 749222 [reactor-http-nio-3] DEBUG reactor.netty.ReactorNetty - [id: 0x3f68a46a, L:/127.0.0.1:58596 ! R:localhost/127.0.0.1:8080] Non Removed handler: reactor.left.httpAggregator, context: null, pipeline: DefaultChannelPipeline{(ws-decoder = io.netty.handler.codec.http.websocketx.WebSocket13FrameDecoder), (ws-encoder = io.netty.handler.codec.http.websocketx.WebSocket13FrameEncoder), (WebSocketFrameAggregator = io.netty.handler.codec.http.websocketx.WebSocketFrameAggregator), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2020-09-25 15:50:37 749223 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [id: 0x3f68a46a, L:/127.0.0.1:58596 ! R:localhost/127.0.0.1:8080] onStateChange(ws{uri=/im, connection=PooledConnection{channel=[id: 0x3f68a46a, L:/127.0.0.1:58596 ! R:localhost/127.0.0.1:8080]}}, [response_completed])
+2020-09-25 15:50:37 749223 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [id: 0x3f68a46a, L:/127.0.0.1:58596 ! R:localhost/127.0.0.1:8080] onStateChange(ws{uri=/im, connection=PooledConnection{channel=[id: 0x3f68a46a, L:/127.0.0.1:58596 ! R:localhost/127.0.0.1:8080]}}, [disconnecting])
+2020-09-25 15:50:37 749234 [reactor-http-nio-2] DEBUG r.netty.channel.ChannelOperations - [id: 0x20231579, L:/0:0:0:0:0:0:0:1:8191 ! R:/0:0:0:0:0:0:0:1:58594] An outbound error could not be processed
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ ws://localhost:8080/im [ReactorNettyWebSocketClient]
+	|_ checkpoint ⇢ http://localhost:8191/im [ReactorNettyRequestUpgradeStrategy]
+Stack trace:
+		at sun.nio.ch.SocketDispatcher.read0(Native Method)
+		at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+		at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+		at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+		at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+		at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+		at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+		at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:748)
+2020-09-25 15:50:37 749234 [reactor-http-nio-4] DEBUG r.netty.channel.ChannelOperations - [id: 0x46dee2ce, L:/0:0:0:0:0:0:0:1:8191 ! R:/0:0:0:0:0:0:0:1:58664] An outbound error could not be processed
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ ws://localhost:8080/im [ReactorNettyWebSocketClient]
+	|_ checkpoint ⇢ http://localhost:8191/im [ReactorNettyRequestUpgradeStrategy]
+Stack trace:
+		at sun.nio.ch.SocketDispatcher.read0(Native Method)
+		at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+		at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+		at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+		at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+		at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+		at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+		at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:748)
+2020-09-25 15:50:37 749238 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0x4ce7eac0, L:/127.0.0.1:58665 ! R:localhost/127.0.0.1:8080] Channel closed, now 0 active connections and 0 inactive connections
+2020-09-25 15:50:37 749238 [reactor-http-nio-4] DEBUG reactor.netty.ReactorNetty - [id: 0x4ce7eac0, L:/127.0.0.1:58665 ! R:localhost/127.0.0.1:8080] Non Removed handler: reactor.left.httpAggregator, context: null, pipeline: DefaultChannelPipeline{(ws-decoder = io.netty.handler.codec.http.websocketx.WebSocket13FrameDecoder), (ws-encoder = io.netty.handler.codec.http.websocketx.WebSocket13FrameEncoder), (WebSocketFrameAggregator = io.netty.handler.codec.http.websocketx.WebSocketFrameAggregator), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2020-09-25 15:50:37 749238 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0x4ce7eac0, L:/127.0.0.1:58665 ! R:localhost/127.0.0.1:8080] onStateChange(ws{uri=/im, connection=PooledConnection{channel=[id: 0x4ce7eac0, L:/127.0.0.1:58665 ! R:localhost/127.0.0.1:8080]}}, [response_completed])
+2020-09-25 15:50:37 749239 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [id: 0x4ce7eac0, L:/127.0.0.1:58665 ! R:localhost/127.0.0.1:8080] onStateChange(ws{uri=/im, connection=PooledConnection{channel=[id: 0x4ce7eac0, L:/127.0.0.1:58665 ! R:localhost/127.0.0.1:8080]}}, [disconnecting])
+2020-09-25 15:51:23 795324 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:51:23 795325 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:51:23 795327 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:51:23 795327 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:51:23 795328 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:51:23 795328 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:51:23 795329 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:51:46 817804 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying {pattern=/api-gateway/**} to Path
+2020-09-25 15:51:46 817805 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying filter {regexp=/api-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:51:46 817806 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_api-gateway
+2020-09-25 15:51:46 817806 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:51:46 817807 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:51:46 817808 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:51:46 817808 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:51:46 817810 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:51:46 817811 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:51:46 817813 [boundedElastic-48] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:52:23 854643 [boundedElastic-45] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:52:23 854644 [boundedElastic-45] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:52:23 854644 [boundedElastic-45] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:52:23 854645 [boundedElastic-45] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:52:23 854646 [boundedElastic-45] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:52:23 854647 [boundedElastic-45] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:52:23 854647 [boundedElastic-45] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:52:48 879586 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying {pattern=/api-gateway/**} to Path
+2020-09-25 15:52:48 879588 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying filter {regexp=/api-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:52:48 879589 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_api-gateway
+2020-09-25 15:52:48 879589 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:52:48 879592 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:52:48 879593 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:52:48 879593 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:52:48 879595 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:52:48 879595 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:52:48 879596 [boundedElastic-47] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:55:33 1045260 [boundedElastic-51] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:55:33 1045262 [boundedElastic-51] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:55:33 1045262 [boundedElastic-51] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:55:33 1045262 [boundedElastic-51] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:55:33 1045263 [boundedElastic-51] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:55:33 1045263 [boundedElastic-51] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:55:33 1045264 [boundedElastic-51] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:56:06 1077728 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:56:06 1077730 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:56:06 1077730 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:56:06 1077731 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying {pattern=/api-gateway/**} to Path
+2020-09-25 15:56:06 1077733 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying filter {regexp=/api-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:56:06 1077734 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_api-gateway
+2020-09-25 15:56:06 1077735 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:56:06 1077735 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:56:06 1077736 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:56:06 1077736 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:56:25 1097239 [boundedElastic-49] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:56:25 1097240 [boundedElastic-49] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:56:25 1097241 [boundedElastic-49] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:56:25 1097241 [boundedElastic-49] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:56:25 1097242 [boundedElastic-49] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:56:25 1097242 [boundedElastic-49] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:56:25 1097243 [boundedElastic-49] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:56:52 1124194 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying {pattern=/api-gateway/**} to Path
+2020-09-25 15:56:52 1124195 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying filter {regexp=/api-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:56:52 1124196 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_api-gateway
+2020-09-25 15:56:52 1124197 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:56:52 1124198 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:56:52 1124199 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:56:52 1124199 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:56:52 1124201 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:56:52 1124201 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:56:52 1124202 [boundedElastic-52] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 15:56:57 1128523 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 15:56:57 1128524 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 15:56:57 1128525 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 15:56:57 1128525 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 15:56:57 1128526 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 15:56:57 1128526 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 15:56:57 1128527 [boundedElastic-50] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
+2020-09-25 16:07:50 1781843 [boundedElastic-54] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying {pattern=/api-gateway/**} to Path
+2020-09-25 16:07:50 1781846 [boundedElastic-54] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_api-gateway applying filter {regexp=/api-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 16:07:50 1781848 [boundedElastic-54] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_api-gateway
+2020-09-25 16:07:50 1781857 [boundedElastic-55] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-09-25 16:07:50 1781858 [boundedElastic-55] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-09-25 16:07:50 1781859 [boundedElastic-55] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-09-25 16:07:50 1781859 [boundedElastic-55] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition websocket_test applying {_genkey_0=/**} to Path
+2020-09-25 16:07:50 1781861 [boundedElastic-55] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: websocket_test
+2020-09-25 16:07:50 1781862 [boundedElastic-55] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition default_path_to_httpbin2222 applying {_genkey_0=/api/**} to Path
+2020-09-25 16:07:50 1781862 [boundedElastic-55] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: default_path_to_httpbin2222
