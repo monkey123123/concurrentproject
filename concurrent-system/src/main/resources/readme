@@ -2,3 +2,5 @@ http://localhost:8101/api/test
 http://localhost:8080/api/test
 ctrl + alt + L 格式化
 ctrl + shift + r 全局搜索
+本工程日志框架使用的是logback,另一个与logback旗鼓相当的日志框架是apache的Log4j2,
+性能方面，Log4j2 官网有很好的性能测试报告，结果是 Log4j2 完胜。

@@ -104,14 +104,18 @@ public class GatewaySampleApplication {
                         )
                         .uri(uri)
                 )
-/*
+
                 .route("default_path_to_httpbin2222",
+                        r -> r.path("/api/im/**")
+                                .uri("ws://localhost:9080")
+                )
+                .route("default_path_to_httpbin3333",
                         r -> r.path("/api/**")
                                 .filters(f -> f.filter(new AuthFilter())   // .prefixPath("/") //prefixPath就是在uri最前面加上指定字符串
                                 .addResponseHeader("X-TestHeader", "foobar2222"))
                                 .uri(uri)
                 )
-*/
+
 
                 .route("default_path_to_websocket1111",
                         r -> r.path("/websocket/**")

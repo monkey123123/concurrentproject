@@ -72,12 +72,13 @@ public class GatewayConfiguration {
 //      实现dashboard与zookeeper同步参考  https://blog.csdn.net/tianyaleixiaowu/article/details/94442906
 //        loadRules();
 
-        initGatewayRules2();
-        customFallbackResponse();
+//        initGatewayRules2();
+//        customFallbackResponse();
+        loadRules();
     }
 
     //拉取持久化配置，经测试，只要zookeeper里的配置变化，网关这边同步就能获取到并生效
-    private static void loadRules() {
+    private void loadRules() {
 
         final String remoteAddress = "127.0.0.1:2181";
         final String path = "/Sentinel-Demo/SYSTEM-CODE-DEMO-FLOW";

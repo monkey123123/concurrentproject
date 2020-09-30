@@ -1,0 +1,53 @@
+克隆分支code:
+git clone -b dev-soa  http://git.pujitech.com/hachiiot/hachi-iot.git
+
+git checkout . #本地所有修改的。没有的提交的，都返回到原来的状态
+
+git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
+
+git reset --hard HASH #返回到某个节点，不保留修改。
+
+git reset --soft HASH #返回到某个节点。
+
+保留修改git clean -df #返回到某个节点
+
+git clean 参数
+
+-n 显示 将要 删除的文件和目录
+
+-f 删除 文件
+
+-df 删除文件和目录
+
+
+在xuchp分支上操作 
+git merge dev-gateway 可以把其他指定分支的代码合入本地。
+git fetch --all
+git reset --hard origin/master
+git reset --hard origin/dev-gateway
+git pull //可以省略
+参考：
+https://www.jianshu.com/p/1e3484e72a83
+
+
+
+1. 本地分支重命名
+Git branch -m oldbranchname newbranchname
+e.g.    git branch -m dev-gateway dev-msa
+2.远程分支重命名
+.如果修改远程分支，只需要将本地分支重命名为新分支名称，然后删除远程分支，再把本地分支上传就可以了
+
+
+Git修改远程分支名
+1. git branch -m 旧分支名 新分支名
+git branch -m dev-gateway dev-msa
+2. git push --delete origin 旧分支名
+git push --delete origin dev-gateway
+3. 将新分支名push上去 git push origin 新分支名
+git push origin dev-msa
+
+查看冲突文件
+git status命令
+Unmerged paths:下面列出的就是全部冲突文件，挨个解决即可
+
+

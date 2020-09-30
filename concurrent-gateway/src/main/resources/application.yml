@@ -20,11 +20,12 @@ api-application:
   #  hostport: localhost:5000
   #  uri: http://${test.hostport}
   #uri: https://www.baidu.com
-  uri: lb://application
+  uri: http://127.0.0.1:8080
+  #uri: lb://application
   #uri: lb://httpbin
 
 server:
-  port: 8191
+  port: 8091
 
 
 spring:
@@ -63,18 +64,18 @@ spring:
         # $ wscat --listen 9000
         # to run client
         # $ wscat --connect ws://localhost:8080/echo
-        - id: websocket_test
-          #uri: lb:ws://terminal-server
-          uri: ws://localhost:8080
-          order: 9000
-          predicates:
-            - Path=/**
+#        - id: websocket_test
+#          #uri: lb:ws://terminal-server
+#          uri: ws://localhost:8080
+#          order: 9000
+#          predicates:
+#            - Path=/im/**
 
         # Add your routes here.
-        - id: default_path_to_httpbin2222
-          uri: ${api-application.uri}
-          predicates:
-            - Path=/api/**
+#        - id: default_path_to_httpbin2222
+#          uri: ${api-application.uri}
+#          predicates:
+#            - Path=/api/**
 #          filters:
 #            - RewritePath=/httpbin/(?<segment>.*), /$\{segment}
         # =====================================
