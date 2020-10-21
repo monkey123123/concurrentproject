@@ -50,4 +50,21 @@ git push origin dev-msa
 git status命令
 Unmerged paths:下面列出的就是全部冲突文件，挨个解决即可
 
+查看本地分支与远程分支的映射关系
+使用以下命令（注意是双v）：
+git branch -vv
+建立本地分支与远程分支的映射关系
+建立当前分支与远程分支的映射关系:
+git branch -u origin/addFile
+或者使用命令：
+git branch --set-upstream-to origin/dev-msa
+撤销本地分支与远程分支的映射关系
+撤销本地分支与远程分支的映射关系
+git branch --unset-upstream
+
+
+
+
+
+
 
