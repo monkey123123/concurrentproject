@@ -10,6 +10,7 @@
         <jjwt.version>0.9.1</jjwt.version>
         <springboot.version>2.3.3.RELEASE</springboot.version>
         <springcloud.version>Hoxton.SR8</springcloud.version>
+        <pulsar.version>2.3.2</pulsar.version>
     </properties>
     <parent>
         <groupId>me.monkey</groupId>
@@ -233,6 +234,12 @@
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor_2.11</artifactId>
             <version>2.4.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.pulsar</groupId>
+            <artifactId>pulsar-client</artifactId>
+            <version>${pulsar.version}</version>
         </dependency>
     </dependencies>
 <!--      

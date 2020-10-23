@@ -1,8 +1,93 @@
-2020-09-24 17:43:58 5268 [main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-09-24 17:44:00 7785 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2020-09-24 17:44:00 7793 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2020-09-24 17:44:09 16469 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2020-09-24 17:45:59 5479 [main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-09-24 17:46:14 19867 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2020-09-24 17:46:14 19875 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2020-09-24 17:46:22 28654 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-10-23 14:57:55 13088 [pulsar-client-io-1-1] WARN  o.a.p.client.impl.ConnectionPool - Failed to open connection to 192.168.80.150:26650 : org.apache.pulsar.shade.io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.80.150:26650
+2020-10-23 14:57:55 13106 [pulsar-client-io-1-1] WARN  o.a.p.client.impl.PulsarClientImpl - [topic1] Failed to get partitioned topic metadata
+java.util.concurrent.CompletionException: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: org.apache.pulsar.shade.io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.80.150:26650
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire$$$capture(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.apache.pulsar.client.impl.ConnectionPool.lambda$null$9(ConnectionPool.java:202)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at org.apache.pulsar.shade.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: org.apache.pulsar.shade.io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.80.150:26650
+	... 7 common frames omitted
+Caused by: java.util.concurrent.CompletionException: org.apache.pulsar.shade.io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.80.150:26650
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire$$$capture(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.apache.pulsar.client.impl.ConnectionPool.lambda$connectToAddress$17(ConnectionPool.java:275)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:504)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:483)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:121)
+	at org.apache.pulsar.shade.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:269)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.PromiseTask$RunnableAdapter.call(PromiseTask.java:38)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:127)
+	... 6 common frames omitted
+Caused by: org.apache.pulsar.shade.io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.80.150:26650
+	at org.apache.pulsar.shade.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:267)
+	... 8 common frames omitted
+2020-10-23 14:59:40 3783 [pulsar-client-io-1-1] WARN  o.a.p.client.impl.ConnectionPool - Failed to open connection to localhost:6650 : org.apache.pulsar.shade.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6650
+2020-10-23 14:59:40 3791 [pulsar-client-io-1-1] WARN  o.a.p.client.impl.PulsarClientImpl - [topic1] Failed to get partitioned topic metadata
+java.util.concurrent.CompletionException: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: org.apache.pulsar.shade.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6650
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire$$$capture(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.apache.pulsar.client.impl.ConnectionPool.lambda$null$9(ConnectionPool.java:202)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at org.apache.pulsar.shade.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: org.apache.pulsar.shade.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6650
+	... 7 common frames omitted
+Caused by: java.util.concurrent.CompletionException: org.apache.pulsar.shade.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6650
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire$$$capture(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.apache.pulsar.client.impl.ConnectionPool.lambda$connectToAddress$17(ConnectionPool.java:275)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:504)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:483)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424)
+	at org.apache.pulsar.shade.io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:121)
+	at org.apache.pulsar.shade.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:327)
+	at org.apache.pulsar.shade.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:343)
+	at org.apache.pulsar.shade.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at org.apache.pulsar.shade.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:591)
+	at org.apache.pulsar.shade.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:508)
+	at org.apache.pulsar.shade.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:470)
+	... 3 common frames omitted
+Caused by: org.apache.pulsar.shade.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6650
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:715)
+	at org.apache.pulsar.shade.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at org.apache.pulsar.shade.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	... 7 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 11 common frames omitted
+2020-10-23 15:10:06 4117 [main] WARN  c.s.c.checksum.Crc32cIntChecksum - Failed to load Circe JNI library. Falling back to Java based CRC32c provider
+2020-10-23 15:14:56 3693 [main] WARN  c.s.c.checksum.Crc32cIntChecksum - Failed to load Circe JNI library. Falling back to Java based CRC32c provider
+2020-10-23 15:17:14 3685 [main] WARN  c.s.c.checksum.Crc32cIntChecksum - Failed to load Circe JNI library. Falling back to Java based CRC32c provider
+2020-10-23 15:17:15 185006 [pulsar-client-io-1-1] WARN  c.s.c.checksum.Crc32cIntChecksum - Failed to load Circe JNI library. Falling back to Java based CRC32c provider
+2020-10-23 15:21:46 3426 [main] WARN  c.s.c.checksum.Crc32cIntChecksum - Failed to load Circe JNI library. Falling back to Java based CRC32c provider
