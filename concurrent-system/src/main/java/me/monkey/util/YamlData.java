@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class YamlData {
     private static String name;
-    @Value("${response.name}")
+    @Value("${response.name:test}")
     public void setName(String name) {
         YamlData.name = name;
     }

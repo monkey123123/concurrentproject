@@ -17,7 +17,7 @@
         <relativePath/>
     </parent>
     <modules>
-		<module>concurrent-common</module>
+		<!--<module>concurrent-common</module>-->
 		<module>concurrent-rule-engine</module>
         <module>concurrent-system</module>
         <module>concurrent-gateway</module>

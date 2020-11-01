@@ -871,3 +871,77 @@
 2020-10-26 14:02:08 254878603 [pulsar-timer-4-1] INFO  o.a.p.client.impl.ConnectionHandler - [topic1] [my-sub] Reconnecting after connection was closed
 2020-10-26 14:03:09 254939352 [pulsar-timer-4-1] INFO  o.a.p.client.impl.ConnectionHandler - [topic1] [my-sub] Reconnecting after connection was closed
 2020-10-26 14:04:08 254998054 [pulsar-timer-4-1] INFO  o.a.p.client.impl.ConnectionHandler - [topic1] [my-sub] Reconnecting after connection was closed
+2020-11-01 17:11:53 1336 [restartedMain] INFO  me.monkey.App - Starting App on WIN-G9QOPNT5D4A with PID 1924 (D:\xuchp\IdeaProjects\concurrentproject\concurrent-system\target\classes started by Administrator in D:\xuchp\IdeaProjects\concurrentproject)
+2020-11-01 17:11:53 1339 [restartedMain] INFO  me.monkey.App - No active profile set, falling back to default profiles: default
+2020-11-01 17:11:53 1451 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-01 17:11:53 1451 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-01 17:11:54 3163 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-11-01 17:11:54 3178 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 17:11:54 3180 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-01 17:11:54 3180 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-01 17:11:55 3335 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-01 17:11:55 3335 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1883 ms
+2020-11-01 17:11:55 3451 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-01 17:11:55 3472 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-01 17:56:14 1123 [restartedMain] INFO  me.monkey.App - Starting App on WIN-G9QOPNT5D4A with PID 6984 (D:\xuchp\IdeaProjects\concurrentproject\concurrent-system\target\classes started by Administrator in D:\xuchp\IdeaProjects\concurrentproject)
+2020-11-01 17:56:14 1127 [restartedMain] INFO  me.monkey.App - No active profile set, falling back to default profiles: default
+2020-11-01 17:56:14 1245 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-01 17:56:14 1245 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-01 17:56:15 2859 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-11-01 17:56:15 2868 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 17:56:15 2869 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-01 17:56:15 2869 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-01 17:56:16 2993 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-01 17:56:16 2994 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1749 ms
+2020-11-01 17:56:16 3098 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-01 17:56:16 3115 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-01 18:24:31 1311 [restartedMain] INFO  me.monkey.App - Starting App on WIN-G9QOPNT5D4A with PID 10012 (D:\xuchp\IdeaProjects\concurrentproject\concurrent-system\target\classes started by Administrator in D:\xuchp\IdeaProjects\concurrentproject)
+2020-11-01 18:24:31 1316 [restartedMain] INFO  me.monkey.App - No active profile set, falling back to default profiles: default
+2020-11-01 18:24:31 1478 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-01 18:24:31 1479 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-01 18:24:33 3443 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-11-01 18:24:33 3455 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 18:24:33 3457 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-01 18:24:33 3458 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-01 18:24:33 3607 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-01 18:24:33 3607 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2128 ms
+2020-11-01 18:24:34 3734 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-01 18:24:34 3754 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-01 18:33:56 1230 [restartedMain] INFO  me.monkey.App - Starting App on WIN-G9QOPNT5D4A with PID 18240 (D:\xuchp\IdeaProjects\concurrentproject\concurrent-system\target\classes started by Administrator in D:\xuchp\IdeaProjects\concurrentproject)
+2020-11-01 18:33:56 1250 [restartedMain] INFO  me.monkey.App - No active profile set, falling back to default profiles: default
+2020-11-01 18:33:56 1376 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-01 18:33:56 1377 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-01 18:33:58 3151 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-11-01 18:33:58 3162 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 18:33:58 3163 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-01 18:33:58 3163 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-01 18:33:58 3307 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-01 18:33:58 3307 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1930 ms
+2020-11-01 18:33:58 3417 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-01 18:33:58 3435 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-01 18:35:53 1122 [restartedMain] INFO  me.monkey.App - Starting App on WIN-G9QOPNT5D4A with PID 15104 (D:\xuchp\IdeaProjects\concurrentproject\concurrent-system\target\classes started by Administrator in D:\xuchp\IdeaProjects\concurrentproject)
+2020-11-01 18:35:53 1126 [restartedMain] INFO  me.monkey.App - No active profile set, falling back to default profiles: default
+2020-11-01 18:35:53 1258 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-01 18:35:53 1258 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-01 18:35:55 3197 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-11-01 18:35:55 3210 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-01 18:35:55 3211 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-01 18:35:55 3211 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-01 18:35:56 3352 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-01 18:35:56 3352 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2094 ms
+2020-11-01 18:35:56 3546 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-11-01 18:35:56 3548 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'asyncServiceTaskExecutor'
+2020-11-01 18:35:56 3554 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'asyncServiceTaskExecutor'
+2020-11-01 18:35:56 3554 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'asyncServiceTaskExecutor'
+2020-11-01 18:35:56 3559 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-01 18:35:56 3579 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

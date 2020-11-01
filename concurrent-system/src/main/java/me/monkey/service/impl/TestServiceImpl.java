@@ -13,8 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class TestServiceImpl implements TestService {
 
-    @Autowired
-    private MongoTemplate mongoTemplate;
+//    @Autowired
+//    private MongoTemplate mongoTemplate;
 
     @Async
     @Override
@@ -26,6 +26,7 @@ public class TestServiceImpl implements TestService {
         }
         System.out.println("--------run方法-----休眠3秒----");
     }
+/*
 
 //    @Async
     @Transactional(rollbackFor = Exception.class)
@@ -39,6 +40,7 @@ public class TestServiceImpl implements TestService {
         item.setName("item0004");
         mongoTemplate.save(item);
     }
+*/
 
     @Scheduled(fixedDelay = 5000) //上一次执行完毕时间点之后5秒再执行
     @Override
@@ -59,6 +61,10 @@ public class TestServiceImpl implements TestService {
         System.out.println("Execute testPlaceholder2 at " + System.currentTimeMillis());
     }
 
+    @Override
+    public void testTransaction() {
+
+    }
 
 
 }
