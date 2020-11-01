@@ -28,3 +28,9 @@
 2020-11-01 18:38:38 88117 [main] WARN  o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (2150). Pinning to 500
 2020-11-01 18:38:41 91222 [main] WARN  o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (13250). Pinning to 500
 2020-11-01 18:38:45 94329 [main] WARN  o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (27400). Pinning to 500
+2020-11-01 20:01:38 8739 [main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-01 20:01:49 19285 [Curator-Framework-0] WARN  org.apache.curator.utils.ZKPaths - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+2020-11-01 20:01:49 19582 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-01 20:01:49 19588 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-01 20:02:09 39085 [main] WARN  o.s.c.s.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-11-01 20:02:09 39335 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.

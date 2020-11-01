@@ -490,3 +490,70 @@ org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionL
 2020-11-01 20:01:49 19582 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
 2020-11-01 20:01:49 19588 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
 2020-11-01 20:01:49 19589 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-01 20:01:53 23310 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:01:53 23335 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Starting
+2020-11-01 20:01:53 23336 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5dd6a4c8
+2020-11-01 20:01:53 23337 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Default schema
+2020-11-01 20:01:53 23338 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-11-01 20:01:53 23338 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2020-11-01 20:01:53 23349 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1000021fe9f0002, negotiated timeout = 40000
+2020-11-01 20:01:53 23350 [main-EventThread] INFO  o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+2020-11-01 20:01:56 26344 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:01:59 29410 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-11-01 20:02:01 31285 [main] DEBUG o.s.w.r.f.s.s.RouterFunctionMapping - 2 RouterFunction(s) in 'routerFunctionMapping'
+2020-11-01 20:02:01 31302 [main] DEBUG o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-11-01 20:02:03 32988 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-01 20:02:03 33084 [main] DEBUG o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2020-11-01 20:02:06 36513 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:09 39085 [main] WARN  o.s.c.s.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-11-01 20:02:09 39335 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-11-01 20:02:09 39524 [main] DEBUG r.netty.resources.DefaultLoopKQueue - Default KQueue support : false
+2020-11-01 20:02:09 39530 [main] DEBUG r.netty.resources.DefaultLoopEpoll - Default Epoll support : false
+2020-11-01 20:02:11 41075 [reactor-http-nio-1] DEBUG reactor.netty.tcp.TcpServer - [id: 0x4bfa82f1, L:/0:0:0:0:0:0:0:0:8091] Bound new server
+2020-11-01 20:02:11 41077 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8091
+2020-11-01 20:02:14 43952 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:17 46778 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:17 47076 [main] INFO  m.m.g.GatewaySampleApplication - Started GatewaySampleApplication in 46.651 seconds (JVM running for 50.081)
+2020-11-01 20:02:17 47106 [boundedElastic-1] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-4] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-7] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-9] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-5] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-11] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-6] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47107 [boundedElastic-8] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47106 [boundedElastic-2] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying {pattern=/concurrent-gateway/**} to Path
+2020-11-01 20:02:17 47147 [boundedElastic-8] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47147 [boundedElastic-9] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47149 [boundedElastic-5] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47149 [boundedElastic-2] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47147 [boundedElastic-6] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47150 [boundedElastic-4] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47153 [boundedElastic-7] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47154 [boundedElastic-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47154 [boundedElastic-1] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47161 [boundedElastic-11] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition ReactiveCompositeDiscoveryClient_concurrent-gateway applying filter {regexp=/concurrent-gateway/(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2020-11-01 20:02:17 47169 [boundedElastic-4] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-3] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-2] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-1] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-9] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-6] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-7] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-8] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47169 [boundedElastic-5] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway
+2020-11-01 20:02:17 47172 [boundedElastic-11] DEBUG o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: ReactiveCompositeDiscoveryClient_concurrent-gateway

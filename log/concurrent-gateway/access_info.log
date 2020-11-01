@@ -376,3 +376,32 @@
 2020-11-01 20:01:49 19410 [main] INFO  c.a.c.s.g.s.SentinelSCGAutoConfiguration - [Sentinel SpringCloudGateway] register SentinelGatewayFilter with order: -2147483648
 2020-11-01 20:01:49 19582 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
 2020-11-01 20:01:49 19589 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-01 20:01:53 23310 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:01:53 23335 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Starting
+2020-11-01 20:01:53 23336 [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5dd6a4c8
+2020-11-01 20:01:53 23337 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl - Default schema
+2020-11-01 20:01:53 23338 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-11-01 20:01:53 23338 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:2181, initiating session
+2020-11-01 20:01:53 23349 [main-SendThread(localhost:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1000021fe9f0002, negotiated timeout = 40000
+2020-11-01 20:01:53 23350 [main-EventThread] INFO  o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+2020-11-01 20:01:56 26344 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:01:59 29410 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2020-11-01 20:02:01 31187 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2020-11-01 20:02:01 31188 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-11-01 20:02:03 32988 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-01 20:02:06 36513 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:11 41077 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8091
+2020-11-01 20:02:14 43952 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:17 46778 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-01 20:02:17 47076 [main] INFO  m.m.g.GatewaySampleApplication - Started GatewaySampleApplication in 46.651 seconds (JVM running for 50.081)
