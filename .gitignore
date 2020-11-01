@@ -3,5 +3,6 @@
 *.iml
 */target/*
 */*.iml
+log
 ./log/*
 */~$*
