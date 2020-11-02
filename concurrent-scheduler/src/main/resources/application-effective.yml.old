@@ -1,0 +1,85 @@
+test:
+  #  hostport: httpbin.org:80
+  #  hostport: localhost:5000
+  #  uri: http://${test.hostport}
+  #uri: https://www.baidu.com
+  uri: lb://application
+  #uri: lb://httpbin
+
+server:
+  port: 8191
+
+#module:
+  #name: user
+
+spring:
+  application:
+    name: concurrent-gateway
+  jmx:
+    enabled: false
+  cloud:
+    gateway:
+      default-filters:
+        #- PrefixPath=/httpbin
+        - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+
+      routes:
+        # =====================================
+        # to run server
+        # $ wscat --listen 9000
+        # to run client
+        # $ wscat --connect ws://localhost:8080/echo
+        - id: websocket_test
+          uri: ws://localhost:9000
+          order: 9000
+          predicates:
+            - Path=/echo
+        # =====================================
+        - id: default_path_to_httpbin
+          uri: ${test.uri}
+          order: 10000
+          predicates:
+            - Path=/**
+    zookeeper:
+      connect-string: localhost:2181
+        #config:
+        #discovery:
+        #enabled: true
+        #service-id: sc-config-server
+        #fail-fast: true
+        #username: root
+      #password: booszy
+      #profile: csdn
+    zipkin:
+      base-url: http://localhost:9411
+    sleuth:
+      sampler:
+        percentage: 1.0
+    boot:
+      admin:
+        client:
+          username: ${username}
+          password: ${password}
+          enabled: true
+          url: http://localhost:8778
+          instance:
+            metadata:
+              user.name: ${username}
+              user.password: ${password}
+
+  username: "root"
+  password: "root"
+
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+    reactor.netty: DEBUG
+
+management.endpoints.web.exposure.include: '*'
+
+feign:
+  hystrix:
+    enabled: true

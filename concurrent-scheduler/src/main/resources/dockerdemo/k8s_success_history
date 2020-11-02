@@ -1,0 +1,319 @@
+[root@localhost-localdomaintest codedemo]# history
+    1  ls
+    2  ifconfig
+    3  yum
+    4  yum -h
+    5  python -V
+    6  ls
+    7  mkdir tongyong
+    8  cd tongyong/
+    9  ls
+   10  mkdir dockerdemo
+   11  cd dockerdemo/
+   12  ls
+   13  yum install docker
+   14  ifconfig
+   15  ping www.baidu.com
+   16  ifconfig
+   17  ping www.baidu.com
+   18  ifconfig
+   19  vi /etc/sysconfig/network-scripts/ifcfg-ens33
+   20  service network restart
+   21  ifconfig
+   22  yum install docker
+   23  docker version
+   24  systemctl enable docker.service
+   25  ps -ef|grep docker
+   26  systemctl start docker.service
+   27  ps -ef|grep docker
+   28  yum install etcd -y
+   29  docker run hello-world
+   30  netstat -an|grep docker
+   31  docker images
+   32  ls
+   33  cd tongyong/
+   34  ls
+   35  cd dockerdemo/
+   36  ls
+   37  ps -ef|grep hello
+   38  ps -ef|grep world
+   39  docker logs
+   40  docker images
+   41  history
+   42  docker run hello-world
+   43  systemctl start etcd
+   44  systemctl enable etcd
+   45  etcdctl -C http://localhost:2379 cluster-health
+   46  yum install kubernetes -y
+   47  ls
+   48  jps
+   49  java -version
+   50  ifconfig
+   51  ls
+   52  docker logs
+   53  free
+   54  top -Hp
+   55  netstat -an
+   56  netstat -an|grep tcp
+   57  yum install bind-utils
+   58  docker images
+   59  ls
+   60  cd tongyong/co
+   61  cd tongyong/dockerdemo/codedemo/
+   62  ls
+   63  oot@localhost-localdomaintest codedemo]# docker build -t demo .
+   64  docker build -t demo .
+   65  cd tongyong/dockerdemo/codedemo/
+   66  docker build -t demo .
+   67  docker version
+   68  ps -ef|grep docker
+   69  yum install etcd -y
+   70  systemctl start etcd
+   71  systemctl enable etcd
+   72  etcdctl -C http://localhost:2379 cluster-health
+   73  yum install kubernetes -y
+   74  cat /etc/kubernetes/apiserver
+   75  vim /etc/kubernetes/apiserver
+   76  systemctl start kube-apiserver
+   77  ps -ef|grep kube
+   78  free
+   79  systemctl enable kube-apiserver
+   80  systemctl start kube-controller-manager
+   81  systemctl enable kube-controller-manager
+   82  systemctl start kube-scheduler
+   83  systemctl enable kube-scheduler
+   84  systemctl start kubelet
+   85  systemctl enable kubelet
+   86  systemctl start kube-proxy
+   87  systemctl enable kube-proxy
+   88  free
+   89  kubectl get no
+   90  yum install flannel -y
+   91  vim /etc/sysconfig/flanneld
+   92  ifconfig
+   93  etcdctl mk /atomic.io/network/config '{ "Network": "10.0.0.0/16" }'
+   94  pwd
+   95  cd tongyong/
+   96  ls
+   97  cd dockerdemo/
+   98  ls
+   99  vim start.sh
+  100  sh start.sh 
+  101  ls
+  102  free
+  103  ifconfig
+  104  ls
+  105  cd codedemo/
+  106  ls
+  107  docker build -t demo .
+  108  vim /etc/docker/daemon.json 
+  109  systemctl restart docker.service 
+  110  docker build -t demo .
+  111  vim /etc/docker/daemon.json 
+  112  docker build -t demo .
+  113  systemctl restart docker.service 
+  114  vim /etc/docker/daemon.json 
+  115  systemctl daemon-reload 
+  116  systemctl restart docker
+  117  docker build -t demo .
+  118  docker images
+  119  ls
+  120  vim demo-rc.yaml
+  121  kubectl create -f demo-rc.yaml
+  122  vim demo-rc.yaml
+  123  kubectl create -f demo-rc.yaml
+  124  vim demo-rc.yaml
+  125  ls
+  126  kubectl create -f demo-rc.yaml
+  127  ls
+  128  vim demo-rc.yaml
+  129  kubectl create -f demo-rc.yaml
+  130  kubectl get po
+  131  kubectl describe po demo-71cwf
+  132  yum install *rhsm* -y
+  133  ll /etc/rhsm/ca/redhat-uep.pem
+  134  kubectl describe po demo-71cwf
+  135  ll /etc/docker/certs.d/registry.access.redhat.com/redhat-ca.crt
+  136  ll /etc/rhsm/ca/redhat-uep.pem
+  137  touch /etc/rhsm/ca/redhat-uep.pem
+  138  kubectl delete rc demo
+  139  kubectl create -f demo-rc.yaml 
+  140  kubectl get po
+  141  vim demo-svc.yaml
+  142  kubectl create -f demo-svc.yaml 
+  143  kubectl get svc
+  144  curl http://10.254.72.248:31001/api/test
+  145  curl http://10.254.72.248:/api/test
+  146  curl http://10.254.72.248:8080/api/test
+  147  telnet 10.254.72.248 30001
+  148  yum install telnet
+  149  free
+  150  telnet 10.254.72.248 30001
+  151  ping  10.254.72.248
+  152  vim dashboard-a.yaml
+  153  vim dashboard-b.yaml
+  154  kubectl create -f dashboard-a.yaml --validate
+  155  kubectl create -f dashboard-b.yaml --validate
+  156  kubectl get svc
+  157  vim dashboard-a.yaml
+  158  kubectl create -f dashboard-a.yaml --validate
+  159  kubectl delete kubernetes-dashboard-latest
+  160  kubectl delete kubernetes-dashboard
+  161  kubectl version
+  162  kubectl get pods
+  163  kubectl create -f dashboard-a.yaml --validate
+  164  kubectl get pod --all-namespaces
+  165  kubectl delete  -f dashboard-a.yaml --validate
+  166  kubectl delete  -f dashboard-a.yaml
+  167  kubectl create -f dashboard-a.yaml --validate
+  168  kubectl create -f dashboard-b.yaml --validate
+  169  kubectl delete  -f dashboard-b.yaml
+  170  kubectl create -f dashboard-b.yaml --validate
+  171  kubectl get pods --namespace kube-system
+  172  kubectl describe pod kubernetes-dashboard-latest-1802404550-8t132
+  173  kubectl describe pod kubernetes-dashboard-latest-1802404550-8t132 --namespace kube-system
+  174  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.0/src/deploy/recommended/kubernetes-dashboard.yaml
+  175  vim dashboard-a.yaml 
+  176  docker pull lhcalibur/pause-amd64
+  177  docker tag lhcalibur/pause-amd64:latest gcr.io/google_containers/pause-amd64:3.0
+  178  https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+  179  kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+  180  kubectl create clusterrolebinding add-on-cluster-admin --clusterrole=cluster-admin --serviceaccount=kube-system:default 
+  181  helm install stable/kubernetes-dashboard --name kubernetes-dashboard --namespace kube-system --debug 
+  182  helm install stable/heapster --namespace kube-system
+  183  Docker pull lhcalibur/pause-amd64
+  184  docker pull lhcalibur/pause-amd64
+  185  docker tag lhcalibur/pause-amd64:latest gcr.io/google_containers/pause-amd64:3.0
+  186  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
+  187  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml
+  188  ls
+  189  free
+  190  jps
+  191  free
+  192  cd tongyong/dockerdemo/
+  193  ls
+  194  mkdir codedemo2OnlyDockerSpringBoot
+  195  cd codedemo2OnlyDockerSpringBoot/
+  196  ls
+  197  cp ../codedemo/concurrent-system-2.1.jar ./
+  198  ls
+  199  vim Dockerfile
+  200   docker build -t kevin-boot .
+  201  docker images
+  202  docker run -d -p 8099:8080 kevin-boot
+  203  ifconfig
+  204  docker run -d -p 9999:8101 kevin-boot2
+  205   docker build -t kevin-boot2 .
+  206  docker run -d -p 9999:8101 kevin-boot2
+  207  vim record
+  208  docker ps
+  209  cd ..
+  210  ls
+  211  cd codedemo
+  212  ls
+  213  docker images
+  214  docker build -t demo2 .
+  215  docker images
+  216  docker rmi b7164b39ea1e
+  217  docker rm 69b45e867914
+  218  docker rm -f  69b45e867914
+  219  docker rmi b7164b39ea1e
+  220  docker rm 1956075c505e
+  221  docker stop 1956075c505e0a3d196e5e37b354880fe88cb672b8d00f2d007bd469b3879736
+  222  docker rm 1956075c505e
+  223  docker rmi b7164b39ea1e
+  224  docker ps -a
+  225  docker ps -s
+  226  docker stop f4c4857448bc
+  227  docker ps -s
+  228  docker images
+  229  docker rmi b7164b39ea1e
+  230  docker ps -s
+  231  kubectl get po
+  232  kubectl get pod
+  233  kubectl get pod -n
+  234  kubectl get pod -n demo
+  235  kubectl get pod
+  236  kubectl stop demo-vtc27
+  237  kubectl delete  demo-vtc27
+  238  kubectl get pods
+  239  kubectl delete pod  demo-vtc27
+  240  docker ps -a
+  241  docker ps -s
+  242  docker stop 6891a8ef5a7e
+  243  docker ps -s
+  244  kubectl get pods
+  245  kubectl delete  -f demo-svc.yaml 
+  246  kubectl get pods
+  247  kubectl delete pod  demo-0sfvt
+  248  kubectl get pods
+  249  kubectl delete rc demo
+  250  kubectl create -f demo-rc.yaml 
+  251  kubectl delete rc demo
+  252  kubectl get pods
+  253  docker ps -s
+  254  docker images
+  255  docker delete b7164b39ea1e
+  256  history
+  257  docker rmi  b7164b39ea1e
+  258  docker images
+  259  docker build -t demo .
+  260  docker images
+  261  ls
+  262  cat Dockerfile 
+  263  kubectl create -f demo-rc.yaml 
+  264  kubectl get pods
+  265  kubectl create -f demo-svc.yaml 
+  266  kubectl get svc
+  267  systemctl stop firewalld
+  268  iptables -P FORWARD ACCEPT
+  269  ping 10.254.120.137
+  270  kubectl logs -f demo
+  271  kubectl logs -f kubernetes
+  272  kubectl logs -f demo
+  273  kubectl get po
+  274  kubectl describe po demo-xp28b
+  275  yum install *rhsm* -y
+  276  kubectl get po
+  277  kubectl delete demo -all
+  278  kubectl delete rc demo
+  279  kubectl delete demo
+  280  kubectl delete demo -all
+  281  kubectl delete -al demo
+  282  kubectl delete -all demo
+  283  kubectl create -f demo-rc.yaml 
+  284  kubectl get po
+  285  kubectl create -f demo-svc.yaml 
+  286  kubectl get svc
+  287  kubectl delete  -f demo-svc.yaml 
+  288  kubectl get svc
+  289  kubectl create -f demo-svc.yaml 
+  290  kubectl get svc
+  291  ls
+  292  vim record 
+  293  ping 10.254.227.163
+  294  telnet  10.254.227.163 8080
+  295  telnet  10.254.227.163 30001
+  296  telnet  127.0.0.1  30001
+
+k8s坑The connection to the server localhost:8080 was refused - did you specify the right host or port
+#没有启动k8s集群或启动顺序不对，重新按一下顺序启动所有服务：
+systemctl stop kube-proxy
+systemctl stop kubelet
+systemctl stop kube-scheduler
+systemctl stop kube-controller-manager
+systemctl stop kube-apiserver
+systemctl stop docker
+systemctl stop etcd
+
+
+systemctl start etcd
+systemctl start docker
+systemctl start kube-apiserver
+systemctl start kube-controller-manager
+systemctl start kube-scheduler
+systemctl start kubelet
+systemctl start kube-proxy
+
+我的环境经检查是没有启动kube-apiserver，启动之后就正常了。
+

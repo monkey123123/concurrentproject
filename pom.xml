@@ -23,6 +23,7 @@
         <module>concurrent-gateway</module>
         <module>concurrent-admin</module>
         <module>concurrent-hystrix-dashboard</module>
+        <module>concurrent-scheduler</module>
     </modules>
     <name>concurrent</name>
 
@@ -43,11 +44,22 @@
         <scala.version>2.11</scala.version>
         <grpc.version>1.6.1</grpc.version>
         <protobuf.version>3.3.0</protobuf.version>
-
+        <lombok.version>1.18.12</lombok.version>
     </properties>
+    <!--统一规定版本-->
+    <dependencyManagement>
 
+
+    </dependencyManagement>
+    <!--所有工程共有的依赖，尽量不要放太多，避免子工程打的包太大-->
     <dependencies>
-
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
         <!--Spring boot start-->
         <!-- gateway必须排除该引用，否则报错
         <dependency>
