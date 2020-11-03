@@ -32,7 +32,9 @@ git pull //可以省略
 参考：
 https://www.jianshu.com/p/1e3484e72a83
 
-
+目前有2个定时任务：
+1设备报警
+2海客的拉取设备状态。
 
 1. 本地分支重命名
 Git branch -m oldbranchname newbranchname
