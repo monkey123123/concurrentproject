@@ -1,6 +1,9 @@
 克隆分支code:
 git clone -b dev-soa  http://git.pujitech.com/hachiiot/hachi-iot.git
 
+1. 未使用git add 缓存代码
+使用git checkout -- filename，注意中间有--
+git checkout -- filename 放弃对某个文件的修改
 git checkout . #本地所有修改的。没有的提交的，都返回到原来的状态
 
 git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
