@@ -45,10 +45,47 @@
         <grpc.version>1.6.1</grpc.version>
         <protobuf.version>3.3.0</protobuf.version>
         <lombok.version>1.18.12</lombok.version>
+
+        <jjwt.version>0.9.1</jjwt.version>
+        <springboot.version>2.3.3.RELEASE</springboot.version>
+        <springcloud.version>Hoxton.SR8</springcloud.version>
+        <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
+        <curator.version>4.0.1</curator.version>
+        <spring-kafka.version>2.6.2</spring-kafka.version>
+        <druid.version>1.1.20</druid.version>
+        <httpclient.version>4.5.10</httpclient.version>
+        <json.version>20190722</json.version>
+        <pulsar.version>2.3.2</pulsar.version>
+        <log4j-core.version>2.11.2</log4j-core.version>
+        <query-dsl-version>4.3.1</query-dsl-version>
+        <common-objstorage.version>1.7.2.2-SNAPSHOT</common-objstorage.version>
+        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+        <token-bucket.version>1.7</token-bucket.version>
+        <powerjob.worker.starter.version>3.3.1</powerjob.worker.starter.version>
+        <powerjob-client.version>3.3.1</powerjob-client.version>
     </properties>
     <!--统一规定版本-->
     <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.kfcfans</groupId>
+                <artifactId>powerjob-worker-spring-boot-starter</artifactId>
+                <version>${powerjob.worker.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.kfcfans</groupId>
+                <artifactId>powerjob-client</artifactId>
+                <version>${powerjob-client.version}</version>
 
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${spring-kafka.version}</version>
+            </dependency>
+
+        </dependencies>
 
     </dependencyManagement>
     <!--所有工程共有的依赖，尽量不要放太多，避免子工程打的包太大-->

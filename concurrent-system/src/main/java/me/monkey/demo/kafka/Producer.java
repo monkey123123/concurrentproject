@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -23,6 +24,7 @@ public class Producer {
     private static Gson gson = new GsonBuilder().create();
 
     //发送消息方法
+    @Scheduled(fixedDelay = 3000)
     public void send() {
         Message message = new Message();
         message.setId("KFK_"+System.currentTimeMillis());

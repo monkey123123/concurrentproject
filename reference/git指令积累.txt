@@ -79,6 +79,10 @@ git config --global --unset user.name
 
 git config --global --edit
 
+非全局修改：
+git config user.name "Affandi"
+git config user.email "123333333@qq.com"
+然后执行命令查看config文件：cat config
 
 
 
