@@ -15,6 +15,7 @@ import static me.monkey.demo.actor.akkacluster.TransformationMessages.BACKEND_RE
 
 /*
 https://blog.csdn.net/liubenlong007/article/details/54603296
+老版本使用UntypedActor，新版本已改成AbstractActor
  */
 public class MyAkkaClusterServer extends UntypedActor {
 

@@ -12,7 +12,7 @@ public class HelloWorldSimpleMain {
 
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("Hello", ConfigFactory.load("samplehello.conf"));
-        ActorRef a =system.actorOf(Props.create(HelloWorld.class),"helloworld");
+        ActorRef a =system.actorOf(Props.create(HelloWorldActor.class),"helloworld");
         System.err.println("HelloWorld path :"+a.path());
     }
 }
