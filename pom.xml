@@ -24,6 +24,7 @@
         <module>concurrent-admin</module>
         <module>concurrent-hystrix-dashboard</module>
         <module>concurrent-scheduler</module>
+        <module>concurrent-user</module>
     </modules>
     <name>concurrent</name>
 
@@ -64,6 +65,15 @@
         <token-bucket.version>1.7</token-bucket.version>
         <powerjob.worker.starter.version>3.3.1</powerjob.worker.starter.version>
         <powerjob-client.version>3.3.1</powerjob-client.version>
+
+        <scala.version>2.11</scala.version>
+        <akka.version>2.4.2</akka.version>
+        <jjwt.version>0.9.1</jjwt.version>
+        <springboot.version>2.3.3.RELEASE</springboot.version>
+        <springcloud.version>Hoxton.SR8</springcloud.version>
+        <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
+        <curator.version>4.0.1</curator.version>
     </properties>
     <!--统一规定版本-->
     <dependencyManagement>
@@ -85,8 +95,31 @@
                 <version>${spring-kafka.version}</version>
             </dependency>
 
-        </dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.3.3.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${springcloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- alibaba cloud -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
     </dependencyManagement>
     <!--所有工程共有的依赖，尽量不要放太多，避免子工程打的包太大-->
     <dependencies>

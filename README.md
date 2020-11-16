@@ -15,3 +15,6 @@ git config --global user.email "514081681@qq.com"
 concurrent-admin 微服务监控模块\n
 localhost:8888 登录名/密码 root/root 
 启动报错（因为没有配置正确的邮箱，代码里不能体现真实邮箱密码，部署环境配置即可）：javax.mail.MessagingException: Could not convert socket to TLS
+
+服务都注册到zk注册中心，包括网关api-gateway应用。
+各服务间

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.monkey</groupId>
     <artifactId>concurrent-rule-engine</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${project.version}</version>
     <name>concurrent-rule-engine</name>
     <description>concurrent-rule-engine project for Spring Boot</description>
     <!-- 此parent可选-->
@@ -59,11 +59,7 @@
         <!-- all above, spring cloud ,  -->
 
 
-        <dependency>
-            <groupId>me.monkey</groupId>
-            <artifactId>concurrent-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
