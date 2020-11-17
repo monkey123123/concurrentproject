@@ -9,8 +9,9 @@ public class GreeterActor extends UntypedActor {
     @Override
     public void onReceive(Object arg0)  {
         if(arg0==Msg.GREET){
-            System.err.println("Hello World");
+            System.err.println("GreeterActor onReceive----");
             getSender().tell(Msg.DONE, getSelf());
+            getSender().tell("dfdfdfsdfsdf", getSelf());
         }else{
             unhandled(arg0);
         }
