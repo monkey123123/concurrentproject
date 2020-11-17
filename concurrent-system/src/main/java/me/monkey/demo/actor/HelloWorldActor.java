@@ -19,12 +19,13 @@ public class HelloWorldActor extends UntypedActor {
     @Override
     public void onReceive(Object msg)  {
 
+        System.out.println(getSender()+"   ---"+msg.toString());
         if(msg== GreeterActor.Msg.DONE){
-            System.out.println("1111:"+msg);
+            System.out.println("HelloWorldActor 1111:"+msg);
             //停止actor
             getContext().stop(getSelf());
         }else{
-            System.out.println("2222:"+msg);
+            System.out.println("HelloWorldActor 2222:"+msg);
             unhandled(msg);
         }
     }

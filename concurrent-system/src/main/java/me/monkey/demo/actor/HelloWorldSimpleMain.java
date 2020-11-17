@@ -14,6 +14,7 @@ public class HelloWorldSimpleMain {
         ActorSystem system = ActorSystem.create("ActorSystem", ConfigFactory.load("samplehello.conf"));
         ActorRef a =system.actorOf(Props.create(HelloWorldActor.class),"xxxxhelloworldxxx");
         a.tell("sdkjfkdjfkdsjf", a);
-        System.err.println("HelloWorldPath :"+a.path());
+//        a.tell("sdkjfkdjfkdsjf", ActorRef.noSender());
+        System.err.println("a.path :"+a.path());
     }
 }

@@ -7,13 +7,14 @@ public class GreeterActor extends UntypedActor {
         GREET,DONE;
     }
     @Override
-    public void onReceive(Object arg0)  {
-        if(arg0==Msg.GREET){
+    public void onReceive(Object msg)  {
+        System.out.println(getSender()+"   ------"+msg.toString());
+        if(msg==Msg.GREET){
             System.err.println("GreeterActor onReceive----");
             getSender().tell(Msg.DONE, getSelf());
-            getSender().tell("dfdfdfsdfsdf", getSelf());
+//            getSender().tell("dfdfdfsdfsdf", getSelf());
         }else{
-            unhandled(arg0);
+            unhandled(msg);
         }
     }
 }
