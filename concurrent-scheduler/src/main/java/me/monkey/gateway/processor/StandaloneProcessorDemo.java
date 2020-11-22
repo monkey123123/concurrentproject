@@ -9,16 +9,10 @@ import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 
-/**
- * 单机处理器 示例
- * com.github.kfcfans.oms.server.processors.StandaloneProcessorDemo
- *
- * @author tjq
- * @since 2020/4/17
- */
+
 @Slf4j
 @Component
-public class StandaloneProcessorDemo implements BasicProcessor {
+public class  StandaloneProcessorDemo implements BasicProcessor {
 
     @Override
     public ProcessResult process(TaskContext context) throws Exception {
@@ -37,6 +31,8 @@ public class StandaloneProcessorDemo implements BasicProcessor {
 
         System.out.println("================ StandaloneProcessorDemo#process ================");
         System.out.println(context.getJobParams());
+        System.out.println(context.getInstanceParams());
+        System.out.println("================ StandaloneProcessorDemo#process ================");
         // 根据控制台参数判断是否成功
         boolean success = !"failed".equals(context.getJobParams());
         omsLogger.info("StandaloneProcessorDemo finished process,success: .", success);

@@ -1,8 +1,97 @@
 server:
-  port: 8083
+  port: 8084
+
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+
+default-filters:
+  - name: Hystrix
+    args:
+      name: fallbackcmd
+      fallbackUri: forward:/fallbackcontroller
+
+api-application:
+  #  hostport: httpbin.org:80
+  #  hostport: localhost:5000
+  #  uri: http://${test.hostport}
+  #uri: https://www.baidu.com
+  uri: http://127.0.0.1:8080
+  #uri: lb://application
+  #uri: lb://httpbin
+
 spring:
   jpa:
     open-in-view: false
+
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: concurrent-scheduler
+  jmx:
+    enabled: false
+  cloud:
+    loadbalancer:
+      ribbon:
+        #设置成false to use ReactiveLoadBalancerClientFilter instead of blocking ribbon LoadBalancerClient
+        enabled: false
+    gateway:
+      #      globalcors:
+      #        cors-configurations:
+      #          '[/**]':
+      #            allowedOrigins: "*"
+      #            allowedOrigins: "https://docs.spring.io"
+      #            allowedMethods:
+      #              - GET
+      discovery:
+        locator:
+          enabled: true
+      loadbalancer:
+        # springcloudgateway默认lb，可以不配置
+        schemePrefix: lb
+      default-filters:
+      #- PrefixPath=/httpbin
+      #- AddResponseHeader=X-Response-Default-Foo, Default-Bar
+      # 可以使用java代码硬编码配置路由过滤器,也可以使用yml配置
+      routes:
+
+    sentinel:
+      eager: true  #是否提前触发 Sentinel 初始化
+      transport:
+        #client-ip: 10.101.128.64  #客户端IP（将被注册到 Sentinel Server 端）
+        port: 8719  #应用与Sentinel控制台交互的端口，应用本地会起一个该端口占用的HttpServer
+        dashboard: localhost:9990  #Sentinel服务端地址和端口号
+        heartbeat-interval-ms: 500  #应用与Sentinel控制台的心跳间隔时间
+      enabled: true
+      scg:
+        fallback:
+          content-type: application/json
+          mode: response
+          response-status: 455
+          response-body: {"code":455,"msg":"error!YouCanSeeThisInCaseOfQPSOverflow!"}
+
+    zookeeper:
+      connect-string: localhost:2181
+        #config:
+        #discovery:
+        #enabled: true
+        #service-id: sc-config-server
+        #fail-fast: true
+      #username: root
+      #password: booszy
+      #profile: csdn
+    zipkin:
+      base-url: http://localhost:9411
+    sleuth:
+      sampler:
+        percentage: 1.0
 
 ########### powerjob-worker 配置（老配置 powerjob.xxx 即将废弃，请使用 xxx） ###########
 # akka 工作端口，可选，默认 27777
