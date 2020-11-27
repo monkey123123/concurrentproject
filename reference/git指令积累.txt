@@ -82,5 +82,49 @@ git config user.name "Affandi"
 git config user.email "123333333@qq.com"
 然后执行命令查看config文件：cat config
 
+curl -v -X POST -d "{\"temperature\": 35}" http://localhost:8080/api/v1/IBDLkWbksy6xFZrgUTBz/telemetry --header "Content-Type:application/json"
+
+INSERT INTO rule_node (id,rule_chain_id,additional_info,"configuration","type",name,debug_mode,search_text) VALUES
+	 ('1eb2c78e1e76cb0a1b7254e61a0c0c5','1eb2beca7b2c8008274976192e20cd1','{"description":"miaoshu","layoutX":736,"layoutY":177}','{"restEndpointUrlPattern":"http://localhost/api/xxxx","requestMethod":"POST","headers":{"key1":"value1"},"useSimpleClientHttpFactory":false,"readTimeoutMs":0,"maxParallelRequestsCount":0,"useRedisQueueForMsgPersistence":false,"trimQueue":false,"maxQueueSize":0}','org.thingsboard.rule.engine.scheduler.TbRunJobNode','test_powerjob',true,'test_powerjob');
+前
+14 
+26
+75-82
+
+后
+79
+84-89
+
+
+device
+relation
+device_attribute_kv
+device_credentials
+
+
+INSERT INTO hachi_iot.relation (from_id,from_type,to_id,to_type,relation_type_group,relation_type,additional_info) VALUES
+  ('1ea051e4365e35086dcf5288b06b6e5','RULE_NODE','1eb2c78e1e76cb0a1b7254e61a0c0c5','RULE_NODE','RULE_NODE','Failure',NULL);
+  
+  hachi_iot:
+规则链所属tenant_id:
+1ea10ed66d30360b1f957d240bff40d
+
+device_credentials:
+9Y9nZ5MrmQf8QL2TEq1W
+
+device_id:
+1eaf88f8b3f88b0bd0361ed406c8bb2
+
+所属tenant_id:
+1ea10ed66d30360b1f957d240bff40d
+经查设备对应的tenant_id=规则链所属的tenant_id
+
+thingsboard:
+
+device_credentials:
+IBDLkWbksy6xFZrgUTBz
+curl -v -X POST -d "{\"temperature\": 36}" http://localhost:8080/api/v1/IBDLkWbksy6xFZrgUTBz/telemetry --header "Content-Type:application/json"
+
+
 
 
