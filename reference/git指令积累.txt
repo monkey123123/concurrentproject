@@ -125,6 +125,11 @@ device_credentials:
 IBDLkWbksy6xFZrgUTBz
 curl -v -X POST -d "{\"temperature\": 36}" http://localhost:8080/api/v1/IBDLkWbksy6xFZrgUTBz/telemetry --header "Content-Type:application/json"
 
+[Environment]::SetEnvironmentVariable("KUBECONFIG", $HOME + ".kube\config", [EnvironmentVariableTarget]::Machine)
 
+wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc5/aio/deploy/recommended.yaml
+ 
+# 创建 pod
+kubectl apply -f recommended.yaml
 
 

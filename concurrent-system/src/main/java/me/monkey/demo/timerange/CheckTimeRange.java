@@ -9,6 +9,7 @@ import java.util.Date;
 public class CheckTimeRange {
 
     public static void main(String[] args) {
+        //LocalDate is API scensed from JDK1.8
         LocalDate currDate = LocalDate.now();
         LocalTime currTime = LocalTime.now();
 
