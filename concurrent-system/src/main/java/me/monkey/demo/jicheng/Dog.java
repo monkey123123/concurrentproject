@@ -1,4 +1,4 @@
-package me.monkey.demo;
+package me.monkey.demo.jicheng;
 
 import me.monkey.demo.jicheng.Animal;
 
@@ -23,7 +23,7 @@ public class Dog extends Animal
 
         dog.run();
 
-        dog.shout();//static method
+        Animal.shout();//static method
 
         shout();
 
@@ -33,6 +33,8 @@ public class Dog extends Animal
 
 
         dog2.shout();
+
+        dog.die2();
         /*
 
 -------Animal static block ---------

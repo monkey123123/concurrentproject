@@ -1,6 +1,6 @@
-package me.monkey.demo;
+package me.monkey.demo.jicheng;
 
-public class Animal {
+public class Animal extends Life{
 
 
     static {
@@ -20,6 +20,11 @@ public class Animal {
 
         System.out.println("动物可以叫");
 
+    }
+
+    public int die2() {
+        System.out.println("动物死了");
+        return super.die();
     }
 
 }
