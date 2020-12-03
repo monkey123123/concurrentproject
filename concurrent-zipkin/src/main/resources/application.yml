@@ -1,0 +1,17 @@
+server:
+  port: 9411
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: concurrent-zipkin
+  profiles:
+    active: local
+management:
+  metrics:
+    web:
+      server:
+        request:
+          autotime:
+            enabled: false

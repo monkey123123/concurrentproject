@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <properties>
+        <property name="LOG_HOME">/opt/log/concurrent/concurrent-zipkin</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %C %logger{36} - %msg%n"/>
+        </Console>
+        <!--只输出error级别的日志 看需要是否加上-->
+        <RollingFile name="errorLog" fileName="${LOG_HOME}/errorLog/errorLog.log"
+                     filePattern="${LOG_HOME}/errorLog/errorLog-%d{yyyy-MM-dd}.log">
+            <PatternLayout charset="UTF-8" pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %C %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <logger name="org.springframework.boot.autoconfigure" level="error" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="errorLog"/>
+        </logger>
+        <logger name="org.springframework.boot" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="errorLog"/>
+        </logger>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

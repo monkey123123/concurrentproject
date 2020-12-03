@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: concurrent-zipkin-dev
+  cloud:
+    zookeeper:
+      connect-string: "${ZOOKEEPER_URL:127.0.0.1:2181}"
