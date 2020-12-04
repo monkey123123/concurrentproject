@@ -1,7 +1,7 @@
 package me.monkey.controller;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+//import io.swagger.annotations.Api;
+//import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import me.monkey.service.TestService;
 import me.monkey.util.SnmpPref;
@@ -19,7 +19,7 @@ import java.util.Map;
  */
 @Slf4j
 @RestController
-@Api(tags = "系统:定时任务管理")
+//@Api(tags = "系统:定时任务管理")
 @RequestMapping("/api/test")
 public class TestController {
 
@@ -29,7 +29,7 @@ public class TestController {
     @Autowired
     private TestService testService;
 
-    @ApiOperation("查询定时任务")
+//    @ApiOperation("查询定时任务")
     @GetMapping
     public ResponseEntity<Object> getJobs(HttpServletRequest request, JobQueryCriteria criteria, Pageable pageable){
 //        HTTP Referer是baiheader的一部分，当浏览器向web服务器发送du请求的时候，一般会带上Referer，告诉服zhi务器我是从哪个页面链接dao过来的，服务器籍此可以获得一些信息用于处理。比如从我主页上链接到一个朋友那里，他的服务器就能够从HTTP Referer中统计出每天有多少用户点击我主页上的链接访问他的网站。

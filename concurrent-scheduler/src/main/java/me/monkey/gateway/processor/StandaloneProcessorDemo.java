@@ -4,13 +4,13 @@ import com.github.kfcfans.powerjob.worker.core.processor.ProcessResult;
 import com.github.kfcfans.powerjob.worker.core.processor.TaskContext;
 import com.github.kfcfans.powerjob.worker.core.processor.sdk.BasicProcessor;
 import com.github.kfcfans.powerjob.worker.log.OmsLogger;
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 
 
-@Slf4j
+//@Slf4j
 @Component
 public class  StandaloneProcessorDemo implements BasicProcessor {
 

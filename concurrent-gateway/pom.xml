@@ -10,17 +10,6 @@
     <name>concurrent-gateway Sample</name>
     <description>concurrent-gateway Sample</description>
 
-    <properties>
-        <scala.version>2.11</scala.version>
-        <akka.version>2.4.2</akka.version>
-        <jjwt.version>0.9.1</jjwt.version>
-        <springboot.version>2.3.3.RELEASE</springboot.version>
-        <springcloud.version>Hoxton.SR8</springcloud.version>
-        <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
-        <zookeeper.version>3.4.14</zookeeper.version>
-        <curator.version>4.0.1</curator.version>
-    </properties>
-
     <parent>
         <groupId>me.monkey</groupId>
         <artifactId>concurrent</artifactId>
@@ -237,8 +226,20 @@
 
         <dependency>
             <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-actor_2.11</artifactId>
-            <version>2.4.9</version>
+            <artifactId>akka-actor-typed_2.13</artifactId>
+            <version>2.6.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor-testkit-typed_2.13</artifactId>
+            <scope>test</scope>
+            <version>2.6.10</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

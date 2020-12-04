@@ -6,3 +6,8 @@
 log
 ./log/*
 */~$*
+src/main/java/me/monkey/demo/actor/akkacluster/
+src/main/java/me/monkey/demo/actor/delayExecute/
+src/main/java/me/monkey/demo/sort/
+src/main/java/me/monkey/rule-enine/
+src/main/scala/
