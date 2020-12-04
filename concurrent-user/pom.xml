@@ -234,7 +234,22 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
+        <!--不要引入了，避免启动时，必须保证cassandra可用-->
+        <!--<dependency>
+                    <groupId>org.springframework.data</groupId>
+                    <artifactId>spring-data-cassandra</artifactId>
+                </dependency>-->
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-core</artifactId>
+            <version>3.4.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-mapping</artifactId>
+            <version>3.4.0</version>
+        </dependency>
     </dependencies>
 
     <build>
