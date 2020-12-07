@@ -1,27 +1,20 @@
-version: '3'
+version: '2'
 services:
-  cassandra-7000:
-    image: cassandra:3.11.6
-    container_name: cassandra-7000
-    volumes:
-      - /ssddata/workspace/data/cassandra/cassandra/7000:/var/lib/cassandra
-    environment:
-      - CASSANDRA_BROADCAST_ADDRESS=cassandra-7000
+  cassandra:
+    image: cassandra:latest
     ports:
-      - "7000:7000"
       - "9042:9042"
-    restart: always
-  cassandra-7001:
-    image: cassandra:3.11.6
-    container_name: cassandra-7001
-    volumes:
-      -  /ssddata/workspace/data/cassandra/cassandra/7001:/var/lib/cassandra
-    environment:
-      - CASSANDRA_BROADCAST_ADDRESS=cassandra-7001
-      - CASSANDRA_SEEDS=cassandra-7000
+
+  cassandra2:
+    image: cassandra:2.2
     ports:
-      - "7001:7000"
+      - "9042:9042"
+    volumes:
+      - ${PWD}/docker-files/cassandra.yaml:/etc/cassandra/cassandra.yaml
+
+  dse:
+    image: datastax/dse-server
+    environment:
+      - DS_LICENSE=accept
+    ports:
       - "9043:9042"
-    depends_on:
-      - cassandra-7000
-    restart: always
