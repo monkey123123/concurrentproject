@@ -1,20 +1,17 @@
 version: '2'
+
 services:
   cassandra:
-    image: cassandra:latest
+    image: 'docker.io/bitnami/cassandra:3-debian-10'
     ports:
-      - "9042:9042"
-
-  cassandra2:
-    image: cassandra:2.2
-    ports:
-      - "9042:9042"
+      - '7000:7000'
+      - '9042:9042'
     volumes:
-      - ${PWD}/docker-files/cassandra.yaml:/etc/cassandra/cassandra.yaml
-
-  dse:
-    image: datastax/dse-server
+      - 'cassandra_data:/bitnami'
     environment:
-      - DS_LICENSE=accept
-    ports:
-      - "9043:9042"
+      - CASSANDRA_SEEDS=cassandra
+      - CASSANDRA_PASSWORD_SEEDER=yes
+      - CASSANDRA_PASSWORD=cassandra
+volumes:
+  cassandra_data:
+    driver: local
