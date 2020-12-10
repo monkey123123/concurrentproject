@@ -1,0 +1,43 @@
+#服务器任意目录创建zipkinDocker文件夹
+#新建以下文件
+#vi docker-compose.yml
+#编写内容
+#注意mysql数据库版本最好是5.6-5.7的，我用mysql8.0连接不成功
+version: '2'
+services:
+  # The zipkin process services the UI, and also exposes a POST endpoint that
+  # instrumentation can send trace data to. Scribe is disabled by default.
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    #environment:
+      #- STORAGE_TYPE=mysql
+      # Point the zipkin at the storage backend
+      #- MYSQL_DB=zipkin
+      #- MYSQL_USER=root
+      #- MYSQL_PASS=123456
+      #- MYSQL_HOST=127.0.0.1
+      #- MYSQL_TCP_PORT=3306
+      # Uncomment to enable scribe
+      # - SCRIBE_ENABLED=true
+      # Uncomment to enable self-tracing
+      # - SELF_TRACING_ENABLED=true
+      # Uncomment to enable debug logging
+      # - JAVA_OPTS=-Dlogging.level.zipkin=DEBUG -Dlogging.level.zipkin2=DEBUG
+    network_mode: host
+    ports:
+      # Port used for the Zipkin UI and HTTP Api
+      - "9411:9411"
+      # Uncomment if you set SCRIBE_ENABLED=true
+      # - 9410:9410
+    #networks: 
+    #  - default 
+    #  - my_net #创建网路 docker network create my_net 删除网络 docker network rm my_net
+#networks: 
+  #my_net: 
+    #external: true
+#启动服务编排，在docker-compose.yml所在文件目录执行
+#docker-compose up -d
+#Creating zipkin ... done
+#查看服务日志
+#docker-compose logs
