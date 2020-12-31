@@ -2,17 +2,19 @@ package me.monkey.demo.aes256;
 
 import org.apache.commons.codec.binary.Hex;
 
-import java.io.UnsupportedEncodingException;
-import java.security.InvalidAlgorithmParameterException;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 
 /**
  * 描述： AES-256-CBC 对称加密封装类,应用于接口加密
@@ -67,5 +69,8 @@ public class AES256 {
         byte[] ss = AES_cbc_encrypt(text, key, iv);
         System.out.println("加密串: " + Hex.encodeHexString(ss) );
         System.out.println("解密值：" + new String(AES_cbc_decrypt(ss, key, iv)));
+
+
+        System.out.println(LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8")));
     }
 }
