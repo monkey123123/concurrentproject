@@ -1,9 +1,7 @@
 package me.monkey.service;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import scala.collection.convert.Wrappers;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -15,8 +13,9 @@ public class SginCheckService {
 //    @Autowired
 //    private PlatformManageService platformManageService;
 
-    public boolean checkSgin(){
-        HttpServletRequest request = UserContextHolder.getHttpServletRequest();
+    public synchronized boolean checkSgin(){
+        HttpServletRequest request = null;
+//        HttpServletRequest request = UserContextHolder.getHttpServletRequest();
         String appid = request.getHeader("appid");
         String signature = request.getHeader("signature");
         String timestamp = request.getHeader("timestamp");
