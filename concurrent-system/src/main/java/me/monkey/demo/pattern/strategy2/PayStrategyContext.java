@@ -23,7 +23,10 @@ public class PayStrategyContext {
     ConcurrentHashMap<String, PayStrategy> strategyMap = new ConcurrentHashMap<>(20);
 
     /**
-     * 注入策略实例 * 如果使用的是构造器注入，可能会有多个参数注入进来。 * * 如果使用的是field反射注入 * * 如果使用的是setter方法注入，那么你将不能将属性设置为final。 * * @param strategyMap * 注意注入类型要是Map基础类型
+     * 注入策略实例 * 如果使用的是构造器注入，可能会有多个参数注入进来。
+     * * * 如果使用的是field反射注入
+     * * * 如果使用的是setter方法注入，那么你将不能将属性设置为final。
+     * * * @param strategyMap * 注意注入类型要是Map基础类型
      */
     @Autowired
     public PayStrategyContext(Map<String, PayStrategy> strategyMap) { //清空集合数据
@@ -39,7 +42,9 @@ public class PayStrategyContext {
     }
 
     /**
-     * 选择支付方式 * 支付宝、微信、银行卡 * * @param paymentEnums * * @return RemoteResult
+     * 选择支付方式 * 支付宝、微信、银行卡
+     * * * @param paymentEnums
+     * * * @return RemoteResult
      */
     RemoteResult<String> toPayHtml(PaymentEnums paymentEnums) {
         if (CollectionUtils.isEmpty(strategyMap)) {
