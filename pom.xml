@@ -249,6 +249,19 @@
                 <artifactId>spring-boot-starter-data-cassandra</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-actor-typed_${scala.version}</artifactId>
+                <version>${akka.version}</version>
+            </dependency>
+            <!--正式工程里必须去除test包-->
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-actor-testkit-typed_${scala.version}</artifactId>
+                <scope>test</scope>
+                <version>${akka.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <!--所有工程共有的依赖，尽量不要放太多，避免子工程打的包太大-->
