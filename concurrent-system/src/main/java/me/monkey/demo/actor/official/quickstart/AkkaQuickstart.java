@@ -3,6 +3,15 @@ package me.monkey.demo.actor.official.quickstart;
 import akka.actor.typed.ActorSystem;
 
 import java.io.IOException;
+/* from official:
+What Hello World does
+The example consists of three actors:
+
+Greeter: Receives commands to Greet someone and responds with a Greeted to confirm the greeting has taken place
+GreeterBot: receives the reply from the Greeter and sends a number of additional greeting messages and collect the replies until a given max number of messages have been reached.
+GreeterMain: The guardian actor that bootstraps everything
+
+ */
 public class AkkaQuickstart {
   public static void main(String[] args) {
     //#actor-system
