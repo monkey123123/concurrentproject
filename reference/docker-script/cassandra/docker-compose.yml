@@ -10,7 +10,7 @@ services:
       - 'cassandra_data:/bitnami'
     environment:
       - CASSANDRA_SEEDS=cassandra
-      - CASSANDRA_PASSWORD_SEEDER=yes
+      - CASSANDRA_PASSWORD_SEEDER=no
       - CASSANDRA_PASSWORD=cassandra
 volumes:
   cassandra_data:

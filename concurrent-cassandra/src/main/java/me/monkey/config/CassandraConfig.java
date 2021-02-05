@@ -16,7 +16,8 @@ import java.util.List;
 @Configuration
 public class CassandraConfig extends AbstractCassandraConfiguration {
 
-    public static final String KEYSPACE = "guru_keyspace";
+    public static final String KEYSPACE = "testdb";
+//    public static final String KEYSPACE = "guru_keyspace";
 
     @Override
     public SchemaAction getSchemaAction() {
