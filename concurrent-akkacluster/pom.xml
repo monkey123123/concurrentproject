@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>me.monkey</groupId>
-	<artifactId>concurrent-admin</artifactId>
+	<artifactId>concurrent-akkacluster</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>concurrent-admin</name>
+	<name>concurrent-akkacluster</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -85,7 +85,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>concurrent-admin</finalName>
+		<finalName>concurrent-akkacluster</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

@@ -20,7 +20,7 @@
 		<module>concurrent-rule-engine</module>
         <module>concurrent-system</module>
         <module>concurrent-gateway</module>
-        <module>concurrent-admin</module>
+        <module>concurrent-akkacluster</module>
         <module>concurrent-hystrix-dashboard</module>
         <module>concurrent-scheduler</module>
         <module>concurrent-user</module>
