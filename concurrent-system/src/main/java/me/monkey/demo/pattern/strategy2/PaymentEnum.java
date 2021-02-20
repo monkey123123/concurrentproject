@@ -10,7 +10,7 @@ import org.apache.commons.lang3.StringUtils;
  * 6  * @author JinXing
  * 7  * @date 2019/7/12 14:40
  */
-public enum PaymentEnums {
+public enum PaymentEnum {
 
     /**
      * 支付方式
@@ -27,7 +27,7 @@ public enum PaymentEnums {
     private String code;
     private String beanName;
 
-    PaymentEnums(String code, String beanName) {
+    PaymentEnum(String code, String beanName) {
         this.code = code;
         this.beanName = StringUtils.isNotEmpty(beanName) ? beanName.toLowerCase() : null;
     }
@@ -36,10 +36,10 @@ public enum PaymentEnums {
     /**
      * 根据code获取对应的枚举对象
      */
-    public static PaymentEnums getEnum(String code) {
-        PaymentEnums[] values = PaymentEnums.values();
+    public static PaymentEnum getEnum(String code) {
+        PaymentEnum[] values = PaymentEnum.values();
         if (null != code && values.length > 0) {
-            for (PaymentEnums value : values) {
+            for (PaymentEnum value : values) {
                 if (value.code.equals(code)) {
                     return value;
                 }
@@ -52,14 +52,14 @@ public enum PaymentEnums {
      * 该code在枚举列表code属性是否存在
      */
     public static boolean containsCode(String code) {
-        PaymentEnums anEnum = getEnum(code);
+        PaymentEnum anEnum = getEnum(code);
         return anEnum != null;
     }
 
     /**
      * 判断code与枚举中的code是否相同
      */
-    public static boolean equals(String code, PaymentEnums calendarSourceEnum) {
+    public static boolean equals(String code, PaymentEnum calendarSourceEnum) {
         return calendarSourceEnum.code.equals(code);
     }
 

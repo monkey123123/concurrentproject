@@ -46,10 +46,10 @@ public class PayStrategyContext {
      * * * @param paymentEnums
      * * * @return RemoteResult
      */
-    RemoteResult<String> toPayHtml(PaymentEnums paymentEnums) {
+    RemoteResult<String> toPayHtml(PaymentEnum paymentEnum) {
         if (CollectionUtils.isEmpty(strategyMap)) {
             return new RemoteResult<String>().error("策略实例集合初始化失败，请检查是否正确注入！");
         }
-        return this.strategyMap.get(paymentEnums.getBeanName()).toPayHtml();
+        return this.strategyMap.get(paymentEnum.getBeanName()).toPayHtml();
     }
 }
