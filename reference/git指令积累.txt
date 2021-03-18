@@ -101,7 +101,10 @@ git merge 分支名     分支合并
 3.将【远程swagger分支】Merge合并到【本地master分支】上
 4.在【本地master分支】分支上测试无误，将【本地master分支】PUSH到【远程mester分支】上
 
-
+[tag]显示所有tag
+$ git tag -l
+git为项目打tag和使用git show查看tag内容的过程:
+https://blog.csdn.net/lk142500/article/details/83004632
 
 
 
