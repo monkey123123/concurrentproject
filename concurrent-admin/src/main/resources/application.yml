@@ -10,7 +10,7 @@ spring:
       username: 514081681@qq.com # 通知邮箱用户名
       #username: beanpodtechpkms@sohu.com # 通知邮箱用户名
       password: xxxx # 邮箱密码，代码里不要体现真实密码，部署环境填真实密码即可
-      #password: doujia123456 # 邮箱密码
+      #password: xxx # 邮箱密码
       properties:
         mail.smtp.auth: true # 权限通知
         mail.smtp.starttls.enable: true

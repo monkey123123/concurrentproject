@@ -3,3 +3,16 @@ https://blog.csdn.net/weixin_35726962/article/details/109800916
 在git bash控制台执行以下两行命令后重启即可正常运行：
 wsl -d docker-desktop
 sysctl -w vm.max_map_count=262144
+
+
+
+启动成功后登录：http://localhost:9000
+admin/vaiotsmart@office
+
+
+
+安装中文插件：
+http://localhost:9000/admin/marketplace?search=chinese
+
+然后安装切换分支插件：
+
