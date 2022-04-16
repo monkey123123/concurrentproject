@@ -44,14 +44,13 @@
         <hutool.version>[4.1.12,)</hutool.version>
         <commons-pool2.version>2.5.0</commons-pool2.version>
         <mapstruct.version>1.2.0.Final</mapstruct.version>
-        <grpc.version>1.6.1</grpc.version>
+        <!--<grpc.version>1.6.1</grpc.version>-->
         <protobuf.version>3.3.0</protobuf.version>
         <lombok.version>1.18.12</lombok.version>
 
         <jjwt.version>0.9.1</jjwt.version>
         <springboot.version>2.3.3.RELEASE</springboot.version>
         <springcloud.version>Hoxton.SR8</springcloud.version>
-        <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
         <zookeeper.version>3.4.14</zookeeper.version>
         <curator.version>4.0.1</curator.version>
         <spring-kafka.version>2.6.2</spring-kafka.version>

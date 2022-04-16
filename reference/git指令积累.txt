@@ -64,6 +64,8 @@ git branch --set-upstream-to origin/dev-msa
 撤销本地分支与远程分支的映射关系
 git branch --unset-upstream
 
+清空用户名、邮箱、密码 等：
+
 
 【Git】删除某个全局配置项
 1.查看Git所有配置

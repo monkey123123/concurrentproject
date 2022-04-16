@@ -22,7 +22,7 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
     public SchemaAction getSchemaAction() {
         return SchemaAction.CREATE_IF_NOT_EXISTS;
     }
-
+/*
     @Override
     protected List<CreateKeyspaceSpecification> getKeyspaceCreations() {
         CreateKeyspaceSpecification specification = CreateKeyspaceSpecification.createKeyspace(KEYSPACE);
@@ -33,7 +33,7 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
     @Override
     protected List<DropKeyspaceSpecification> getKeyspaceDrops() {
         return Arrays.asList(DropKeyspaceSpecification.dropKeyspace(KEYSPACE));
-    }
+    }*/
 
     @Override
     protected String getKeyspaceName() {
