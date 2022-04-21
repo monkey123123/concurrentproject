@@ -1,0 +1,13 @@
+#version: "3"
+db:
+  image: postgres:9.6.2 
+  container_name: local_postgresql
+  restart: "no"
+  environment:
+    POSTGRES_DB: mydb
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+  ports:
+      - 5432:5432
+  volumes:
+    - /data/postgresql:/var/lib/postgresql/data

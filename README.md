@@ -18,3 +18,5 @@ localhost:8888 登录名/密码 root/root
 
 服务都注册到zk注册中心，包括网关api-gateway应用。
 各服务间
+
+akka cluster : https://github.com/akka/akka-samples/tree/2.6/akka-sample-cluster-java

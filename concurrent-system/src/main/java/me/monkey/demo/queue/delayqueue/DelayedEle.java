@@ -13,7 +13,7 @@ public class DelayedEle implements Delayed {
     public DelayedEle(long delay, String data) {
         delayTime = delay;
         this.data = data;
-        expire = System.currentTimeMillis() + delay; 
+        expire = System.currentTimeMillis() + delay;
     }
 
     /**

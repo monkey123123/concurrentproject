@@ -6,6 +6,7 @@ public class IotMain {
 
   public static void main(String[] args) {
     // Create ActorSystem and top level supervisor
-    ActorSystem.create(IotSupervisor.create(), "iot-system");
+    ActorSystem<Void> actorSystem = ActorSystem.create(IotSupervisor.create(), "iot-system");
+
   }
 }

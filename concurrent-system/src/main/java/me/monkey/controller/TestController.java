@@ -2,6 +2,7 @@ package me.monkey.controller;
 
 //import io.swagger.annotations.Api;
 //import io.swagger.annotations.ApiOperation;
+
 import lombok.extern.slf4j.Slf4j;
 import me.monkey.service.TestService;
 import me.monkey.util.SnmpPref;
@@ -9,7 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -50,5 +55,19 @@ public class TestController {
         return new ResponseEntity<>(map, HttpStatus.OK);
     }
 
+    /**
+     * 根据用户编号获取详细信息
+     */
+//    @PreAuthorize("@sc.checkSgin()")
+    @PreAuthorize("@ss.hasPermi('system:user:query')")
+    @GetMapping(value = { "/info/{userId}" })
+    public ResponseEntity<Object> getInfo(@PathVariable(value = "userId", required = false) Long userId)
+    {
+        System.out.println("业务操作");
+        Map<String,Object> map = new HashMap<>(16);
+        map.put("test", "value");
+
+        return new ResponseEntity<>(map, HttpStatus.OK);
+    }
 
 }

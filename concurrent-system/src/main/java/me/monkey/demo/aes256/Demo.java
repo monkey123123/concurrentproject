@@ -1,9 +1,17 @@
 package me.monkey.demo.aes256;
 
+import org.apache.commons.codec.binary.Hex;
+
+import java.util.Base64;
+
 import static me.monkey.demo.aes256.AESUtil.encryptOrdecrypt;
 
 public class Demo {
     public static void main(String[] args) {
+
+
+        System.out.println(Hex.encodeHexString(Base64.getDecoder().decode("JiDAwXCNbQoUI4bl")));
+
         System.out.println("【1.3】AES_CBC_NoPadding模式");
         String content = "在线助手在线助手在线助手在线助手";
         // 生成密钥需要的密码值

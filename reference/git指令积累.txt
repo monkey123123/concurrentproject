@@ -84,6 +84,40 @@ git config user.name "Affandi"
 git config user.email "123333333@qq.com"
 然后执行命令查看config文件：cat config
 
+【git新建分支以及提交合并】
+git branch -a  查看所有分支
+git branch  分支名    新建本地分支
+git checkout  分支名   切换分支
+git checkout -b 分支名  切换并新建本地分支
+git pull origin 远程分支名：本地分支名    拉取远程分支与本地分支合并
+git push origin 远程分支名    提交本地代码到远程分支
+git push origin  本地分支名：远程分支名       提交本地分支到远程分支，若远程没有这个分支则新建
+git branch -d 分支名    删除本地分支
+git push origin --delete 远程分支名      删除远程分支
+git merge 分支名     分支合并
+目标：（    https://www.cnblogs.com/sxdcgaq8080/p/9293954.html  ）
+将如何将【远程swagger分支 】合并到  【远程 master分支】上
+大概流程
+1.首先将 【本地swagger分支】上的更改 PUSH到 【 远程的 swagger分支】上
+2.再切换当前分支，将【本地swagger分支】切换到【本地master分支】上
+3.将【远程swagger分支】Merge合并到【本地master分支】上
+4.在【本地master分支】分支上测试无误，将【本地master分支】PUSH到【远程mester分支】上
+
+[tag]显示所有tag
+$ git tag -l
+git为项目打tag和使用git show查看tag内容的过程:
+https://blog.csdn.net/lk142500/article/details/83004632
+git删除tag
+随着时间推移，项目频繁发布，会留下很多标签，git有删除tag的命令
+git tag -d tagName 删除tag
+git push origin :refs/tags/tagName  删除远程
+如果tag过多，逐条删除很麻烦，网上提供可以用正则式去匹配。
+这儿提供个算是批量删除的小技巧吧:
+先用git tag命令查处现有tag，粘贴到sublime中，sublime 有编辑多行的功能，选出要删除的tag。
+选中多行后，按快捷键command+shift+L（windows应该是ctrls+shift+L），可同时编辑多行，在行前输入删除命令，然后整体粘入命令行执行
+
+
+
 curl -v -X POST -d "{\"temperature\": 35}" http://localhost:8080/api/v1/IBDLkWbksy6xFZrgUTBz/telemetry --header "Content-Type:application/json"
 
 INSERT INTO rule_node (id,rule_chain_id,additional_info,"configuration","type",name,debug_mode,search_text) VALUES

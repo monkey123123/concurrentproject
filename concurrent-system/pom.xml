@@ -5,7 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>concurrent-system</artifactId>
     <properties>
-        <scala.version>2.11</scala.version>
         <akka.version>2.6.10</akka.version>
         <jjwt.version>0.9.1</jjwt.version>
         <springboot.version>2.3.3.RELEASE</springboot.version>
@@ -92,6 +91,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
         <!--jwt-->
         <!--
         <dependency>
@@ -122,11 +125,12 @@
 		  <version>0.6.12</version>
 		</dependency>
 		
-		<dependency>
+<!--    安全漏洞
+        <dependency>
 			<groupId>org.eclipse.paho</groupId>
 			<artifactId>mqtt-client</artifactId>
 			<version>0.4.0</version>
-		</dependency>
+		</dependency>-->
 
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -210,40 +214,46 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.23</version>
         </dependency>
-<!--
+
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor-typed_${scala.version}</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+        <!--正式工程里必须去除test包-->
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor-testkit-typed_${scala.version}</artifactId>
+            <scope>test</scope>
+            <version>${akka.version}</version>
+        </dependency>
+
+        <!-- 报错，说有多个版本，所以强制指定版本。后直接在dependenciesdependencies里排除了所有的2.10和2.11版本，运行起来了 -->
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor_${scala.version}</artifactId>
+            <version>${akka.version}</version>
         </dependency>
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-slf4j_${scala.version}</artifactId>
+            <version>${akka.version}</version>
         </dependency>
-        -->
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-cluster_${scala.version}</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+
+
+
         <!--尽量不用 漏洞太多-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.69</version>
         </dependency>
-<!--
-        <dependency>
-            <groupId>org.scala-lang</groupId>
-            <artifactId>scala-library</artifactId>
-            <version>2.11.7</version>
-        </dependency>-->
-
-        <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-actor_2.11</artifactId>
-            <version>2.4.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-cluster_2.11</artifactId>
-            <version>2.4.9</version>
-        </dependency>
-
 
         <dependency>
             <groupId>org.apache.pulsar</groupId>

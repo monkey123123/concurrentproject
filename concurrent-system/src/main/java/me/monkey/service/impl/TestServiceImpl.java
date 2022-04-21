@@ -1,17 +1,14 @@
 package me.monkey.service.impl;
 
-import me.monkey.modules.db.Device;
-import me.monkey.modules.db.Item;
 import me.monkey.service.TestService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 @Service
 public class TestServiceImpl implements TestService {
+
 
 //    @Autowired
 //    private MongoTemplate mongoTemplate;
@@ -65,6 +62,10 @@ public class TestServiceImpl implements TestService {
     public void testTransaction() {
 
     }
+    public void init() {
+        System.out.println("----init---------");
+    }
+
 
 
 }

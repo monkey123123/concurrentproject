@@ -13,7 +13,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.3.RELEASE</version>
-        <!-- <version>2.0.3.RELEASE</version> -->
         <relativePath/>
     </parent>
     <modules>
@@ -21,7 +20,7 @@
 		<module>concurrent-rule-engine</module>
         <module>concurrent-system</module>
         <module>concurrent-gateway</module>
-        <module>concurrent-admin</module>
+        <module>concurrent-akkacluster</module>
         <module>concurrent-hystrix-dashboard</module>
         <module>concurrent-scheduler</module>
         <module>concurrent-user</module>
@@ -67,6 +66,7 @@
         <powerjob-client.version>3.3.1</powerjob-client.version>
 
         <zipkin.version>2.9.3</zipkin.version>
+        <spring-boot-starter-webflux.version>2.1.4.RELEASE</spring-boot-starter-webflux.version>
         <gson.version>2.8.6</gson.version>
     </properties>
     <!--统一规定版本-->
@@ -83,6 +83,13 @@
                 <version>${powerjob-client.version}</version>
 
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-webflux</artifactId>
+                <version>${spring-boot-starter-webflux.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.kafka</groupId>
                 <artifactId>spring-kafka</artifactId>
@@ -240,6 +247,19 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-cassandra</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-actor-typed_${scala.version}</artifactId>
+                <version>${akka.version}</version>
+            </dependency>
+            <!--正式工程里必须去除test包-->
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-actor-testkit-typed_${scala.version}</artifactId>
+                <scope>test</scope>
+                <version>${akka.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
