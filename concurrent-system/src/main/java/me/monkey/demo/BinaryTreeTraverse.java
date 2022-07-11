@@ -29,7 +29,7 @@ public class BinaryTreeTraverse {
     private static class Node {
         Node leftChild;
         Node rightChild;
-        int data;
+        int data; //自己本身值
 
         Node(int newData) {
             leftChild = null;
