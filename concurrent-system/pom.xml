@@ -9,7 +9,7 @@
         <jjwt.version>0.9.1</jjwt.version>
         <springboot.version>2.3.3.RELEASE</springboot.version>
         <springcloud.version>Hoxton.SR8</springcloud.version>
-        <pulsar.version>2.3.2</pulsar.version>
+        <pulsar.version>2.7.5</pulsar.version>
     </properties>
     <parent>
         <groupId>me.monkey</groupId>
