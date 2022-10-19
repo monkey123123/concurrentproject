@@ -24,7 +24,7 @@
 		<spring-boot-admin.version>2.0.1</spring-boot-admin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<akka.version>2.6.8</akka.version>
-		<jackson.version>2.10.4</jackson.version>
+		<jackson.version>2.13.4.1</jackson.version>
 	</properties>
 
 	<dependencies>
